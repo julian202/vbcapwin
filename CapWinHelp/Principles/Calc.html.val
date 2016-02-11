@@ -1,0 +1,475 @@
+
+--------------------------------------------------
+
+CSE HTML Validator Standard v6.53 (Registered)
+Checking "C:\source_code\CapWinHelp\Principles\Calc.html" (6117 bytes).
+File date is Tuesday, June 07, 2005 at 11:25:38 AM.
+File checked on Tuesday, June 07, 2005 at 11:47:11 AM.
+
+[CSE] No errors or warnings were detected!
+
+     Number of lines checked: 113 in 0.14 seconds
+      Number of programs run: 233
+ Number of lines in document: 113 (100.0% of lines checked)
+     Number of lines ignored: 0
+Number of character entities: 6
+        Number of start tags: 82
+          Number of end tags: 64 (78.0% of start tags with end tags)
+Number of <% ... %> sections: 0
+     Number of HTML comments: 4
+
+Number of validator comments: 12
+          Number of messages: 10
+            Number of errors: 0
+          Number of warnings: 0
+
+--------------------------------------------------
+
+[CSE] Message number 1:
+[73] WCAG 1.0 accessibility checking is disabled.
+
+[CSE] Message number 2:
+[73] Section 508 accessibility checking is disabled.
+
+   1: <?xml version="1.0" encoding="UTF-8"?>
+-------||||||||||||||||||||||||||||||||||||
+
+[CSE] Message number 3 for the tag beginning in line 1:2:
+[88] Using an XML declaration, although strongly encouraged
+by the XHTML recommendation, may cause problems by causing
+browsers, such as Internet Explorer 6.0, to trigger "quirks"
+mode rendering. This mode causes non-standards complaint
+rendering. Because of this, you may want to consider
+removing the XML declaration.
+
+   2: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   3: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   4: <head>
+
+   5:  <title>Principles of Operation</title>
+--------|||||
+
+[CSE] Message number 4 for the tag beginning in line 5:3:
+[111] Tip - A good title is very important. Use many
+keywords in your title tag but make it readable. This is
+good for search engine rankings and when the page is
+bookmarked. Example: <title>Download CSE HTML Validator -
+Powerful HTML and Link Checking Software for
+Windows</title>.
+
+   5:  <title>Principles of Operation</title>
+--------------|||||||||||||||||||||||
+
+[CSE] Message number 5 for the tag beginning in line 5:9:
+[8] This document's title contains only 3 words. It may be
+inadequate for search engine purposes. A good title is
+important to your search engine rankings and listings. AI
+Internet Solutions recommends a title that is 5-15 words in
+length and that contains a relevant and descriptive phrase.
+
+   6:  <meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+   7: <link href="../style.css" type="text/css" rel="stylesheet" />
+   8: <base target="display" />
+   9: </head>
+  10: 
+  11: <body>
+  12: <h3>Principles of Operation</h3>
+  13: <hr />
+  14: <h4>Calculations Used in CAPREP</h4>
+  15: <p>The calculations performed in the Report program use the formulas below.</p>
+
+  16: <a name="capflo" id="capflo"></a>
+---------||||
+
+[CSE] Message number 6 for the tag beginning in line 16:4:
+[9] The "name" attribute for the "a", "applet", "form",
+"frame", "iframe", "img", and "map" elements is deprecated
+in XHTML 1.0 and has been removed in XHTML 1.1. Consider
+using the "id" attribute instead (although you may want to
+continue to use the "name" attribute for backward
+compatibility).
+
+  17: <h5>Capillary Flow Porometry</h5>
+  18: <div class="imag">
+  19: <img src="../images/princip/capflo.jpg" width="370" height="142" alt="Chart" />
+  20: </div>
+  21: <a name="gasperm" id="gasperm"></a>
+  22: <h5>Gas Permeability</h5>
+  23: <div class="imag">
+  24: <img src="../images/princip/gas.jpg" width="370" height="142" alt="Another chart" />
+  25: </div>
+  26: <div class="smimag">
+  27: <img src="../images/princip/liquidgas.jpg" width="224" height="138" alt="Chart of liquid and gas densities" />
+  28: </div>
+  29: <a name="minPore" id="minPore"></a>
+  30: <h5>
+  31: Maximum Pore Size (Bubble Point)
+  32: </h5>
+  33: <p>The maximum pore size is calculated by the software using the following equation:</p>
+  34: <div class="smimag">
+  35: <img src="../images/princip/min01.jpg" width="198" height="114" alt="bubble point formula" />
+  36: </div>
+  37: <p>The surface tension (dynes/cm), effective pore size range and required pressures (in psi) are listed in the following table:</p>
+  38: <div class="imag">
+  39: <img src="../images/princip/min02.jpg" width="407" height="167" alt="Chart of fluids their surface tensions and thier pore size reanges" />
+  40: </div>
+  41: <a name="meanFlow"></a>
+  42: <h5>Mean Flow Pore Size</h5>
+  43: <p>A saturated sample will pass air when the applied pressure exceeds the capillary attraction of the fluid in the pores, allowing flow to pass through. Smaller pores have a higher capillary attraction than larger pores. Therefore, smaller pores open at higher pressures.</p>
+  44: <p>By comparing the gas flow rates of a wet and dry sample at the same pressures, the percentage of flow passing through the pores larger than or equal to the specified size may be calculated from the pressure-size relationship. By increasing pressure in small steps, it is possible to determine by the flow contribution of very small pore size increments.</p>
+  45: <p>The pressure at which wet flow is one-half the dry flow is used to calculate the mean flow pore size using equation [1] on page 141, Maximum Pore Size</p>
+  46: <h5>
+  47: Pore Size Distribution
+  48: </h5>
+  49: <p>The pore size distribution is calculated by dividing the data points into different groups</p>
+  50: <ol>
+  51: <!-- item # 1-->
+  52: <li><div class="orderList">
+  53: Select the limits of each group.
+  54: </div><br /></li>
+  55: <!-- item #2 -->
+  56: <li><div class="orderList">
+  57: Substitute the limits into equation [1] (see page 141) to find the respective pressures.
+  58: </div><br /></li>
+  59: <!-- item #3 -->
+  60: <li><div class="orderList">
+  61: Determine the wet and dry flows at the pressure limits from the wet and dry flow curves.
+  62: </div><br /></li>
+  63: <!-- item # 4-->
+  64: <li><div class="orderList">
+  65: Substitute the values found in equations [2] and [3]:
+  66: </div><br /></li>
+  67: </ol>
+  68: <div class="imag">
+  69: <img src="../images/princip/pore01.jpg" width="265" height="178" alt="Equation 2" />
+  70: </div>
+  71: <div class="imag">
+  72: <img src="../images/princip/pore04.jpg" width="157" height="155" alt="Equation3" />
+  73: </div>
+  74: <a name="darcy" id="darcy"></a>
+  75: <h5>Darcy's Permeability Constant</h5>
+
+  76: <p><span class="bold">The Darcy's Permeability Constant is calculated using equation:</span></p>
+----------||||
+
+[CSE] Message number 7 for the tag beginning in line 76:5:
+[5] The "span" element is an official HTML 4.01 and XHTML
+element but is not supported by Internet Explorer 2.0-,
+Netscape 3.0-, Opera versions prior to 3.5, and most older
+browsers.
+
+  77: <div class="imag">
+  78: <img src="../images/princip/darcy.jpg" width="310" height="244" alt="Darcy's Formula" />
+  79: </div>
+  80: <a name="envelope" id="envelope"></a>
+  81: <h5>Envelope Surface Area</h5>
+  82: <p>The Envelope Surface Area test is used to find the surface area of pores that allow flow through. The surface area of these pores completely envelopes the sample material, explaining the name of the test. When an ESA test is run, pressure of the system will be gradually increased and the change in through-flow and the resulting pressure drop are measured. Surface area is calculated from flow rate, pressure and the physical characteristics of the particular sample and gas being used by plugging in these data values into the Kozeny Carman equation shown below:</p>
+  83: <div class="imag">
+  84: <img src="../images/princip/envel.jpg" width="362" height="220" alt="Envelope surface area formula" /></div>
+  85: <p>Flow rate, differential pressure, average pressure, thickness of sample and cross-sectional area can be measured either manually or by the porometer. Density and Viscosity must be obtained from appropriate tables and the porosity is calculated from the true density (&rho;t) and the bulk density (&rho;b) of the sample using the following equation:</p>
+  86: <div class="imag">
+  87: <img src="../images/princip/envel01.jpg" width="73" height="20" alt="formula  for P" />
+  88: </div>
+  89: <a name="particle" id="particle"></a>
+  90: <h5>Average Particle Size and Fiber Diameter form ESA Calculations</h5>
+  91: <p>In the Envelope Surface Area test, the surface area per unit mass (Sm) and the density of the particles (&rho;p) is calculated. From these two values, the average particle size (Dp) of a powder sample can be obtained if it can be assumed that all particles of the sample are spherical and are the same size. If you are able to assume that the fibers of the sample being used (should be cylindrical) have the same diameter and length, you can find the average fiber diameter (Df),using the true density of the fiber (&rho;f). The following two equations are used to find Dp and Df respectively:</p>
+  92: <p>Average Particle Size: Dp= 6/(Sm*&rho;p)</p>
+  93: <p>Average Fiber Diameter: Df= 4/(Sm* &rho;f).</p>
+  94: <a name="wesa" id="wesa"></a>
+  95: 
+  96: 
+  97: 
+  98: 
+  99: 
+ 100: 
+ 101: 
+ 102: 
+
+ 103: <table>
+-------|||||
+
+[CSE] Message number 8 for the tag beginning in line 103:2:
+Consider using the "width" attribute with the "table"
+element. This is considered to be good style and can cause
+the table and page to render faster. Note that this is not a
+deprecated attribute in HTML 4.01 nor XHTML 1.0. It's also a
+valid XHTML 1.1 attribute.
+
+ 103: <table>
+-------|||||
+
+[CSE] Message number 9 for the tag beginning in line 103:2:
+[5] The "table" element is an official HTML 4.01 and XHTML
+element but may not be supported by older or nongraphical
+browsers. Furthermore, nongraphical browsers that do support
+tables may not support them the way that you expect.
+However, most browsers used today should support this
+element.
+
+ 104:  <tr>
+
+ 105:   <td height="30" width="50"></td>
+------------||||||
+
+[CSE] Message number 10 for the tag beginning in line 105:7:
+[9] The "height" and "width" attributes for the "td" and
+"th" elements are deprecated in HTML 4.01 and XHTML in favor
+of using style sheets.
+
+ 106:   <td height="30" width="50"><a href="../capwinIntro.html">Back</a></td>
+ 107:   <td height="30" width="50"></td>
+ 108:   <td height="30" width="50"><a href="../MainScreen/selectGr.html">Next</a></td>
+ 109:   <td height="30" width="50"></td>
+ 110:  </tr>
+ 111: </table>
+ 112: </body>
+ 113: </html>
+
+[CSE] Comment number 1:
+This program can help you make your web pages more
+accessible. An accessible page is one that more individuals
+can use, such as individuals who are blind or deaf. It can
+also increase the usefulness of your web page for
+individuals who browse the web using slower devices like
+older computers or wireless devices like cell phones and
+PDAs. An accessible web site makes good business sense (and
+possibly good legal sense as well). You can enable or
+disable accessibility checking in the Validator Engine
+Options.
+
+[CSE] Comment number 2:
+Possibly misspelled words (18, 9 unique): Carman (1x),
+Kozeny (1x), reanges (1x), thier (1x), ESA (2x), Darcy's
+(3x), Df (3x), Dp (3x), Sm (3x). Complete list.
+
+[CSE] Comment number 3:
+XHTML 1.0 Transitional document detected.
+
+[CSE] Comment number 4:
+[111] Tip - Do not use hidden text, small text, comments,
+popular but unrelated words, etc. to try to 'cheat' to gain
+better search engine rankings. This is dishonest and some
+search engines may lower a page's rank for trying to
+'cheat'.
+
+[CSE] Comment number 5:
+[8] <meta name="description" content="(actual description)"
+/> should be used in the "head" section to provide a brief
+description of what is contained on this page. This
+information is used by many search engines when indexing a
+site. If you are using HTML Validator's integrated editor,
+then you can add this from the Tags menu and/or from the Tag
+Inserter.
+
+[CSE] Comment number 6:
+[8] <meta name="keywords" content="(actual keyword list)" />
+should be used in the "head" section to provide a list of
+keywords that are relevent to this page. This information is
+used by many search engines when indexing a site. If you are
+using HTML Validator's integrated editor, then you can add
+this from the Tags menu and/or from the Tag Inserter.
+
+[CSE] Comment number 7:
+An ICRA label (a rating "meta" tag) was not found in the
+"head" section of this document. Browsers that are enabled
+with this rating system may not display documents that have
+not been labelled. If you have labelled this document by
+rating the section (directory) in which it is found, or if
+your site is a personal web space on a large Internet
+Service Provider, it is still recommended that you include
+the rating "meta" tag on all of your pages for performance
+reasons. For more information, please visit
+http://www.icra.org/.
+
+[CSE] Comment number 8:
+Although not normally necessary, you may want to include a
+"meta" tag similar to the following in the "head" section of
+your document: <meta http-equiv="Content-Type"
+content="text/html; charset=us-ascii" />
+
+[CSE] Comment number 9:
+[10] CSE HTML Validator Std/Pro allows you to disable
+certain messages (like this example message) and groups of
+related messages by disabling flags. For instance, the [10]
+at the beginning of this message indicates that you can
+disable this message by disabling validator flag 10. If you
+are using HTML Validator's integrated editor, then you can
+simply use your mouse on this message to open the context
+menu (usually done by right-clicking the mouse on this
+message) and select 'Disable Flag 10' to disable this
+message. For more information about disabling messages,
+please look at the Configuration section in the
+documentation.
+
+[CSE] Comment number 10:
+CSE HTML Validator Std/Pro allows you to disable many
+messages on an individual basis without using flags. For
+instance, you can disable this message by using HTML
+Validator's integrated editor to open the context menu for
+this message (usually done by right-clicking the mouse on
+this message) and selecting 'Options for this
+Message->Disable Message' to disable this message. For more
+information about disabling messages, please look at the
+Configuration section in the documentation.
+
+[CSE] Comment number 11:
+6173 bytes; 4.3s@14.4Kbps, 2.1s@28.8, 1.2s@50, 1.0s@64,
+0.5s@128, 0.2s@384, 0.1s@512, 0.1s@768, 0.0s@1.5Mbps,
+0.0s@10Mbps.
+
+[CSE] Comment number 12:
+0.09s, 0 errors, 0 warnings, 10 messages, 12 validator
+comments, 113 lines, 82 tags (64 closed), 4 document
+comments, 6 entities, 233 programs run.
+
+--------------------------------------------------
+
+<html> (3) 
+| <head> (4) 
+| | <title> (5) 
+| | </title> (5) 
+| | <meta/> (6) <link/> (7) <base/> (8) 
+| </head> (9) 
+| <body> (11) 
+| | <h3> (12) 
+| | </h3> (12) 
+| | <hr/> (13) 
+| | <h4> (14) 
+| | </h4> (14) 
+| | <p> (15) 
+| | </p> (15) 
+| | <a> (16) 
+| | </a> (16) 
+| | <h5> (17) 
+| | </h5> (17) 
+| | <div> (18) 
+| | | <img/> (19) 
+| | </div> (20) 
+| | <a> (21) 
+| | </a> (21) 
+| | <h5> (22) 
+| | </h5> (22) 
+| | <div> (23) 
+| | | <img/> (24) 
+| | </div> (25) 
+| | <div> (26) 
+| | | <img/> (27) 
+| | </div> (28) 
+| | <a> (29) 
+| | </a> (29) 
+| | <h5> (30) 
+| | </h5> (32) 
+| | <p> (33) 
+| | </p> (33) 
+| | <div> (34) 
+| | | <img/> (35) 
+| | </div> (36) 
+| | <p> (37) 
+| | </p> (37) 
+| | <div> (38) 
+| | | <img/> (39) 
+| | </div> (40) 
+| | <a> (41) 
+| | </a> (41) 
+| | <h5> (42) 
+| | </h5> (42) 
+| | <p> (43) 
+| | </p> (43) 
+| | <p> (44) 
+| | </p> (44) 
+| | <p> (45) 
+| | </p> (45) 
+| | <h5> (46) 
+| | </h5> (48) 
+| | <p> (49) 
+| | </p> (49) 
+| | <ol> (50) 
+| | | <li> (52) 
+| | | | <div> (52) 
+| | | | </div> (54) 
+| | | | <br/> (54) 
+| | | </li> (54) 
+| | | <li> (56) 
+| | | | <div> (56) 
+| | | | </div> (58) 
+| | | | <br/> (58) 
+| | | </li> (58) 
+| | | <li> (60) 
+| | | | <div> (60) 
+| | | | </div> (62) 
+| | | | <br/> (62) 
+| | | </li> (62) 
+| | | <li> (64) 
+| | | | <div> (64) 
+| | | | </div> (66) 
+| | | | <br/> (66) 
+| | | </li> (66) 
+| | </ol> (67) 
+| | <div> (68) 
+| | | <img/> (69) 
+| | </div> (70) 
+| | <div> (71) 
+| | | <img/> (72) 
+| | </div> (73) 
+| | <a> (74) 
+| | </a> (74) 
+| | <h5> (75) 
+| | </h5> (75) 
+| | <p> (76) 
+| | | <span> (76) 
+| | | </span> (76) 
+| | </p> (76) 
+| | <div> (77) 
+| | | <img/> (78) 
+| | </div> (79) 
+| | <a> (80) 
+| | </a> (80) 
+| | <h5> (81) 
+| | </h5> (81) 
+| | <p> (82) 
+| | </p> (82) 
+| | <div> (83) 
+| | | <img/> (84) 
+| | </div> (84) 
+| | <p> (85) 
+| | | &rho; (85) &rho; (85) 
+| | </p> (85) 
+| | <div> (86) 
+| | | <img/> (87) 
+| | </div> (88) 
+| | <a> (89) 
+| | </a> (89) 
+| | <h5> (90) 
+| | </h5> (90) 
+| | <p> (91) 
+| | | &rho; (91) &rho; (91) 
+| | </p> (91) 
+| | <p> (92) 
+| | | &rho; (92) 
+| | </p> (92) 
+| | <p> (93) 
+| | | &rho; (93) 
+| | </p> (93) 
+| | <a> (94) 
+| | </a> (94) 
+| | <table> (103) 
+| | | <tr> (104) 
+| | | | <td> (105) 
+| | | | </td> (105) 
+| | | | <td> (106) 
+| | | | | <a> (106) 
+| | | | | </a> (106) 
+| | | | </td> (106) 
+| | | | <td> (107) 
+| | | | </td> (107) 
+| | | | <td> (108) 
+| | | | | <a> (108) 
+| | | | | </a> (108) 
+| | | | </td> (108) 
+| | | | <td> (109) 
+| | | | </td> (109) 
+| | | </tr> (110) 
+| | </table> (111) 
+| </body> (112) 
+</html> (113) 
+

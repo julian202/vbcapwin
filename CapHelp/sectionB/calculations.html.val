@@ -1,0 +1,1706 @@
+
+--------------------------------------------------
+
+CSE HTML Validator Standard v6.53 (Registered)
+Checking "C:\source_code\CapHelp\sectionB\calculations.html" (21082 bytes).
+File date is Wednesday, April 20, 2005 at 11:20:49 AM.
+File checked on Wednesday, April 20, 2005 at 11:31:01 AM.
+
+[CSE] No errors or warnings were detected!
+
+     Number of lines checked: 457 in 0.56 seconds
+      Number of programs run: 1393
+ Number of lines in document: 457 (100.0% of lines checked)
+     Number of lines ignored: 0
+Number of character entities: 14
+        Number of start tags: 510
+          Number of end tags: 489 (95.9% of start tags with end tags)
+Number of <% ... %> sections: 0
+     Number of HTML comments: 0
+
+Number of validator comments: 11
+          Number of messages: 12
+            Number of errors: 0
+          Number of warnings: 0
+
+--------------------------------------------------
+
+[CSE] Message number 1:
+[73] WCAG 1.0 accessibility checking is disabled.
+
+[CSE] Message number 2:
+[73] Section 508 accessibility checking is disabled.
+
+   1: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+   2: <html>
+   3: <head>
+
+   4:  <title>Calculations Used in CAPREP</title>
+--------|||||
+
+[CSE] Message number 3 for the tag beginning in line 4:3:
+[111] Tip - A good title is very important. Use many
+keywords in your title tag but make it readable. This is
+good for search engine rankings and when the page is
+bookmarked. Example: <title>Download CSE HTML Validator -
+Powerful HTML and Link Checking Software for
+Windows</title>.
+
+   4:  <title>Calculations Used in CAPREP</title>
+--------------|||||||||||||||||||||||||||
+
+[CSE] Message number 4 for the tag beginning in line 4:9:
+[8] This document's title contains only 4 words. It may be
+inadequate for search engine purposes. A good title is
+important to your search engine rankings and listings. AI
+Internet Solutions recommends a title that is 5-15 words in
+length and that contains a relevant and descriptive phrase.
+
+   5:  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   6:  <meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">
+   7: </head>
+   8: 
+   9: <body>
+  10: <a name="capFlo"></a>
+
+  11: <h4><font color="#FF0000">Calculations Used in CAPREP</font></h4>
+-----------||||
+
+[CSE] Message number 5 for the tag beginning in line 11:6:
+[9] The "font" element and all of its attributes are
+deprecated in HTML 4.01 and XHTML in favor of using style
+sheets (use the CSS "color", "font", "font-family",
+"font-size", and other font properties instead).
+
+  12: <hr>
+  13: <p>The calculations performed in the Report program use the formulas below.</p>
+  14: <p><font color="#FF0000">Capillary Flow Porometry</font></p>
+
+  15: <table width="90%" border="0" align="center">
+-------|||||
+
+[CSE] Message number 6 for the tag beginning in line 15:2:
+[5] The "table" element is an official HTML 4.01 and XHTML
+element but may not be supported by older or nongraphical
+browsers. Furthermore, nongraphical browsers that do support
+tables may not support them the way that you expect.
+However, most browsers used today should support this
+element.
+
+  15: <table width="90%" border="0" align="center">
+------------------------------------|||||
+
+[CSE] Message number 7 for the tag beginning in line 15:31:
+[9] The "align" and "bgcolor" attributes for the "table"
+element are deprecated in HTML 4.01 and XHTML in favor of
+using style sheets. Instead of align="center", consider
+using the following CSS to center the table: "margin-left:
+auto; margin-right: auto". This is the correct CSS way but
+it may not work with some (mostly older) browsers.
+
+  16:  <tr>
+
+  17:   <td width="25%">Pressure (PSI):</td>
+------------|||||
+
+[CSE] Message number 8 for the tag beginning in line 17:7:
+[9] The "height" and "width" attributes for the "td" and
+"th" elements are deprecated in HTML 4.01 and XHTML in favor
+of using style sheets.
+
+  18:   <td width="10%">P</td>
+  19:   <td>= Raw pressure data</td>
+  20:  </tr>
+  21:  <tr>
+  22:   <td width="25%">Diameter (µm):</td>
+  23:   <td width="10%">Dia</td>
+  24:   <td width="65%">= (0.415 * Surface tension) / P</td>
+  25:  </tr>
+  26:  <tr>
+  27:   <td width="25%">Wet Flow (L/min):</td>
+  28:   <td width="10%">QW</td>
+  29:   <td width="65%">= Raw wet flow data</td>
+  30:  </tr>
+  31:    <tr>
+  32:   <td width="25%">Dry Flow (L/min):</td>
+  33:   <td width="10%">QD</td>
+  34:   <td width="65%">= Raw dry flow data</td>
+  35:  </tr>
+  36:    <tr>
+  37:   <td width="25%">Cumulative Filter Flow %:</td>
+  38:   <td width="10%">CFF</td>
+  39:   <td width="65%">= (QW / QD) * 100</td>
+  40:  </tr>
+  41:    <tr>
+  42:   <td width="25%">Filter Flow %:</td>
+  43:   <td width="10%">FFP</td>
+  44:   <td width="65%">= CFF - Last FFP</td>
+  45:  </tr>
+  46:    <tr>
+  47:   <td width="25%">Pore Size Distribution:</td>
+  48:   <td width="10%">PSD</td>
+  49:   <td width="65%">= (FFP - Last FFP) / (Last Dia - Dia)</td>
+  50:  </tr><tr>
+  51:   <td width="25%">Average Diameter (µm):</td>
+  52:   <td width="10%">AD</td>
+  53:   <td width="65%">= (Dia + Last Dia) / 2</td>
+  54:  </tr>
+  55: </table>
+  56: <a name="gasPerm"></a>
+  57: <h4><font color="#FF0000">Gas Permeability</font></h4>
+  58: <table width="90%" border="0" align="center">
+  59:  <tr>
+  60:   <td width="25%">Differential Pres. (PSI):</td>
+  61:       <td width="10%">DP</td>
+  62:   <td width="65%">= (Raw pressure data) - (Atmospheric pressure)</td>
+  63:  </tr>
+  64:    <tr>
+  65:   <td width="25%">Flow (cc/sec):</td>
+  66:   <td width="10%">F1</td>
+  67:   <td width="65%">= Raw flow data</td>
+  68:  </tr>
+  69:    <tr>
+  70:   <td width="25%">Flow per Area and Pressure:</td>
+  71:   <td width="10%">F2</td>
+  72:   <td width="65%">= F1 / (DP * Pi * Dia2 * 250)    <font color="#00AA00">(in L / (PSI*SqCm*Sec)</font></td>
+  73:  </tr>
+  74:    <tr>
+  75:   <td width="25%">Flow per Area and Pressure:</td>
+  76:   <td width="10%">F3</td>
+  77:   <td width="65%"> = F2 * 60  <font color="#00AA00">(in L / (PSI*SqCm*Min)</font></td>
+  78:  </tr>
+  79:    <tr>
+  80:   <td width="25%">Darcy's Permeability Constant:</td>
+  81:   <td width="10%">DPC</td>
+  82:   <td width="65%">= (8*F1*Length*Mu)/(Pi*Dia2(Atm*Atm-1)</td>
+  83:  </tr>
+  84:    <tr>
+  85:   <td width="25%"></td>
+  86:   <td width="10%">Atm</td>
+  87:   <td width="65%">= (Raw pressure data) / (Atmospheric pressure)<font color="#00AA00">(in PSI)</font></td>
+  88: </tr>
+  89: <tr>
+  90:   <td width="25%"></td>
+  91:   <td width="10%">Pi</td>
+  92:   <td width="65%">= 3.14159265</td>
+  93:  </tr>
+  94: 
+  95: </table>
+  96: <table align="center" width="30%" border="1">
+  97: <tr>
+  98: <td width="50%"><strong>Gas/Liquid</strong></td>
+  99: <td width="50%"><strong>M&#181;</strong></td>
+ 100: </tr>
+ 101: <tr>
+ 102: <td width="50%">Nitrogen</td>
+ 103: <td width="50%">0.0185</td>
+ 104: </tr>
+ 105: <tr>
+ 106: <td width="50%">Water</td>
+ 107: <td width="50%">1.0</td>
+ 108: </tr>
+ 109: <tr>
+ 110: <td width="50%">Air</td>
+ 111: <td width="50%">0.0185</td>
+ 112: </tr>
+ 113: <tr>
+ 114: <td width="50%">Helium</td>
+ 115: <td width="50%">0.000198</td>
+ 116: </tr>
+ 117: <tr>
+ 118: <td width="50%">Argon</td>
+ 119: <td width="50%">0.0221</td>
+ 120: </tr>
+ 121: </table>
+ 122: <a name="maxPorBubPt"></a>
+ 123: <h4><font color="#FF0000">Maximum Pore Size (Bubble Point)</font></h4>
+ 124: <p>maximum pore size is calculated by the software using the following equation:</p>
+
+ 125: <div align="center">
+-----------|||||
+
+[CSE] Message number 9 for the tag beginning in line 125:6:
+[9] The "align" attribute is deprecated in HTML 4.01 and
+XHTML in favor of using style sheets. Instead of
+align="center", consider using the CSS "text-align: center"
+instead.
+
+ 126: <img src="../images/poreSizeForm.jpg" width="156" height="52" alt="Pore size formula">
+ 127: </div>
+ 128: <table align="center" border="0" width="65%">
+
+ 129:  <thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+--------|||||
+
+[CSE] Message number 10 for the tag beginning in line 129:3:
+[5] The "tbody", "thead", and "tfoot" elements are official
+HTML 4.01 and XHTML elements and are supported by Internet
+Explorer 3.0+, Netscape 6.0+, and most newer browsers.
+However, Opera 6 has partial support for "tfoot" because it
+is always displayed at the bottom of a table but styles are
+not assigned. Opera 6- does not support "tbody" and "thead".
+Netscape 4.x- does not support any of these elements at all.
+
+ 129:  <thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+-----------------------|
+
+[CSE] Message number 11 for the tag beginning in line
+129:18:
+The "em" element (for emphasized text) or the "cite" element
+(for citations) may be more appropriate than the "i"
+element. Use the "i" element only if text is in italics by
+convention. Many web authors use the "i" element when the
+"em" element would be more appropriate.
+
+ 130:  <tbody>
+ 131:  <tr>
+ 132:   <td width="10%"><font size="-1"><i>d</i></font> </td>
+ 133:   <td width="90%"><font size="-1">= maximum pore diameter (&#181;m)</font></td>
+ 134:  </tr>
+ 135:    <tr>
+ 136:   <td width="10%"><font size="-1"><i>1</i></font> </td>
+ 137:   <td width="90%"><font size="-1">= surface tension of liquid (dynes/cm)</font></td>
+ 138:  </tr>
+ 139:     <tr>
+ 140:   <td width="10%"><font size="-1"><i>p</i></font> </td>
+ 141:   <td width="90%"><font size="-1">= differential pressure</font></td>
+ 142:  </tr>
+ 143:     <tr>
+ 144:   <td width="10%"><font size="-1"><i>C</i></font> </td>
+ 145:   <td width="90%"><font size="-1">  = constant: 2860 when p is in Pa</font></td>
+ 146:  </tr>
+ 147:    <tr>
+ 148:   <td width="10%"><font size="-1"><i></i></font> </td>
+ 149:   <td width="90%"><font size="-1">2.15 when p is in cm Hg</font></td>
+ 150:  </tr>
+ 151:    <tr>
+ 152:   <td width="10%"><font size="-1"><i></i></font> </td>
+ 153:   <td width="90%"><font size="-1"> 0.415 when p is in psi</font></td>
+ 154:  </tr>
+ 155:  </tbody>
+ 156: </table>
+ 157: <p>The surface tension (dynes/cm), effective pore size range and required pressures (in psi) are listed in the following table:</p>
+
+ 158: <table width="95%" cols="6" align="center" border="1">
+-------------------------||||
+
+[CSE] Message number 12 for the tag beginning in line
+158:20:
+[5] The "cols" attribute for the "table" element is not an
+official HTML or XHTML attribute and is supported by
+Internet Explorer 3.0+ and Netscape 4.0+. Other browsers may
+not support this attribute. Note that the purpose of this
+attribute is to specify the number of columns in the table,
+helping the browser to render the table faster (as it is
+downloaded). Otherwise, the entire table structure may need
+to be received in order for the browser to determine the
+number of columns and the column widths.
+
+ 159:  <tr>
+ 160:   <td rowspan="2" width="20%" align="center"><font size="-1"><strong>Fluid</strong></font></td>
+ 161:     <td rowspan="2" width="20%" align="center"><font size="-1"><strong>Surface Tension</strong><br>(dynes/cm)</font></td>
+ 162:   <td colspan="4" width="60%" align="center"><font size="-1"><strong>Pore Size Range</strong></font></td>
+ 163: </tr>
+ 164: <tr>
+ 165:  <td height="55%" align="center">&#8805;1 &#181;m</td>
+ 166:  <td height="55%" align="center">&#8805;0.5 &#181;m</td>
+ 167:  <td height="55%" align="center">&#8805;0.1 &#181;m</td>
+ 168:  <td height="55%" align="center">&#8805;0.05 &#181;m</td>
+ 169: </tr>
+ 170: <tr>
+ 171:  <td align="center" width="20%"><font size="-1">Water</font></td>
+ 172:  <td align="center" width="20%"><font size="-1">72.0</font></td>
+ 173:  <td align="center" width="15%"><font size="-1">30 psi</font></td>
+ 174:  <td align="center" width="15%"><font size="-1"></font>60 psi</td>
+ 175:  <td align="center" width="15%"><font size="-1"></font>150 psi</td>
+ 176:  <td align="center" width="15%"><font size="-1"></font>600 psi</td>
+ 177:  </tr>
+ 178: <tr>
+ 179:  <td align="center" width="20%"><font size="-1">Mineral Oil</font></td>
+ 180:  <td align="center" width="20%"><font size="-1">34.7</font></td>
+ 181:  <td align="center" width="15%"><font size="-1">15 psi</font></td>
+ 182:  <td align="center" width="15%"><font size="-1">30 psi</font></td>
+ 183:  <td align="center" width="15%"><font size="-1">75 psi</font></td>
+ 184:  <td align="center" width="15%"><font size="-1">300 psi</font></td>
+ 185:  </tr>
+ 186:    <tr>
+ 187:  <td align="center" width="20%"><font size="-1">Petroleum Distillate</font></td>
+ 188:  <td align="center" width="20%"><font size="-1">30.0</font></td>
+ 189:  <td align="center" width="15%"><font size="-1">15 psi</font></td>
+ 190:  <td align="center" width="15%"><font size="-1">25 psi</font></td>
+ 191:  <td align="center" width="15%"><font size="-1">65 psi</font></td>
+ 192:  <td align="center" width="15%"><font size="-1">250 psi</font></td>
+ 193:  </tr>
+ 194:    <tr>
+ 195:  <td align="center" width="20%"><font size="-1">Denatured Alcohol</font></td>
+ 196:  <td align="center" width="20%"><font size="-1"> 22.3</font></td>
+ 197:  <td align="center" width="15%"><font size="-1">10 psi</font></td>
+ 198:  <td align="center" width="15%"><font size="-1">20 psi</font></td>
+ 199:  <td align="center" width="15%"><font size="-1">50 psi</font></td>
+ 200:  <td align="center" width="15%"><font size="-1">200 psi</font></td>
+ 201:  </tr>
+ 202:    <tr>
+ 203:  <td align="center" width="20%"><font size="-1">Silwick</font></td>
+ 204:  <td align="center" width="20%"><font size="-1">20.1</font></td>
+ 205:  <td align="center" width="15%"><font size="-1">10.1psi</font></td>
+ 206:  <td align="center" width="15%"><font size="-1">20.1psi</font></td>
+ 207:  <td align="center" width="15%"><font size="-1">50.2psi</font></td>
+ 208:  <td align="center" width="15%"><font size="-1">125.6psi</font></td>
+ 209:  </tr>
+ 210:    <tr>
+ 211:  <td align="center" width="20%"><font size="-1">Porewick</font></td>
+ 212:  <td align="center" width="20%"><font size="-1"> 16.0</font></td>
+ 213:  <td align="center" width="15%"><font size="-1">8 psi</font></td>
+ 214:  <td align="center" width="15%"><font size="-1">16 psi</font></td>
+ 215:  <td align="center" width="15%"><font size="-1">40 psi</font></td>
+ 216:  <td align="center" width="15%"><font size="-1"> 100 psi</font></td>
+ 217:  </tr>
+ 218: </table>
+ 219: <p><font color="#FF0000">Mean Flow Pore Size</font><br>A saturated sample will pass air when the applied pressure exceeds the capillary attraction of the fluid in the pores, allowing flow to pass through. Smaller pores have a higher capillary attraction than larger pores. Therefore, smaller pores open at higher pressures.</p>
+ 220: <p>By comparing the gas flow rates of a wet and dry sample at the same pressures, the percentage of flow passing through the pores larger than or equal to the specified size may be calculated from the pressure-size relationship. By increasing pressure in small steps, it is possible to determine by the flow contribution of very small pore size increments.</p>
+ 221: <p>The pressure at which wet flow is one-half the dry flow is used to calculate the mean flow pore size using equation [1] in the above section labeled,<a href="#maxPorBubPt"> Maximum Pore Size</a>.</p>
+ 222: <p><font color="#FF0000">Pore Size Distribution</font><br>The pore size distribution is calculated by dividing the data points into different groups.</p>
+ 223: <ol>
+ 224:  <li>Select the limits of each group.</li>
+ 225:  <li>Substitute the limits into equation [1] (see page <a href="#maxPorBubPt"> Maximum Pore Size</a>)    to find the respective pressures.</li>
+ 226:  <li>Determine the wet and dry flows at the pressure limits from the wet and dry flow curves.</li>
+ 227:  <li>Substitute the values found in equations [2] and [3]:</li>
+ 228: </ol>
+ 229: <div align="center">
+ 230: <img  align="middle" src="../images/formula2a.jpg" width="278" height="83" alt="Formula 2 q=wet flow subscript h over dry flow h minus wet flow l over dry flow l times 100. Where q equals filter flow precentage, l equals low pressure limit, and h equals high pressure limit.">
+ 231: </div>
+ 232: <table align="center" border="0" width="65%">
+ 233:  <thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+ 234:  <tbody>
+ 235:  <tr>
+ 236:   <td width="10%"><font size="-1"><i>Q</i></font> </td>
+ 237:   <td width="90%"><font size="-1">= filter flow percentage</font></td>
+ 238:  </tr>
+ 239:    <tr>
+ 240:   <td width="10%"><font size="-1"><i>l</i></font> </td>
+ 241:   <td width="90%"><font size="-1">= low pressure limit</font></td>
+ 242:  </tr>
+ 243:     <tr>
+ 244:   <td width="10%"><font size="-1"><i>h</i></font> </td>
+ 245:   <td width="90%"><font size="-1">= high pressure limit</font></td>
+ 246:  </tr>
+ 247:    </tbody>
+ 248: </table>
+ 249: <div align="center">
+ 250: <img  align="middle" src="../images/formula3a.jpg" width="329" height="67" alt="Pore size formula">
+ 251: </div>
+ 252: <table align="center" border="0" width="65%">
+ 253:  <thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+ 254:  <tbody>
+ 255:  <tr>
+ 256:   <td width="10%"><font size="-1"><i>D</i></font> </td>
+ 257:   <td width="90%"><font size="-1">= pore distribution</font></td>
+ 258:  </tr>
+ 259:    <tr>
+ 260:   <td width="10%"><font size="-1"><i>Q</i></font> </td>
+ 261:   <td width="90%"><font size="-1">= Filter flow incremental</font></td>
+ 262:  </tr>
+ 263:     <tr>
+ 264:   <td width="10%"><font size="-1"><i>d<sub>L</sub></i></font> </td>
+ 265:   <td width="90%"><font size="-1">= average pore diameter for previous point</font></td>
+ 266:  </tr>
+ 267:     <tr>
+ 268:   <td width="10%"><font size="-1"><i>Q<sub>L</sub></i></font> </td>
+ 269:   <td width="90%"><font size="-1">  = previous value</font></td>
+ 270:  </tr>
+ 271:    <tr>
+ 272:   <td width="10%"><font size="-1"><i>d</i></font> </td>
+ 273:   <td width="90%"><font size="-1">average diameter for current point</font></td>
+ 274:  </tr>
+ 275:  </tbody>
+ 276: </table>
+ 277: <p><font color="#FF0000">Darcy's Permeability Constant</font><br></p>
+ 278: <p><font color="#FF0000"><strong>The Darcy's Permeability Constant is calculated using equation:</strong></font></p>
+ 279: <div align="center">
+ 280: <img src="../images/formula5a.jpg" width="340" height="68" alt="C equals 8 timse F times T times V diveded by P squared minus one times D squared times Pi where:">
+ 281: </div>
+ 282: <table align="center" border="0" width="65%">
+ 283:  <thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+ 284:  <tbody>
+ 285:  <tr>
+ 286:   <td width="10%"><font size="-1"><i>C</i></font> </td>
+ 287:   <td width="90%"><font size="-1">= Darcy's Permeability Constant</font></td>
+ 288:  </tr>
+ 289:    <tr>
+ 290:   <td width="10%"><font size="-1"><i>F</i></font> </td>
+ 291:   <td width="90%"><font size="-1">= Flow</font></td>
+ 292:  </tr>
+ 293:     <tr>
+ 294:   <td width="10%"><font size="-1"><i>T</i></font> </td>
+ 295:   <td width="90%"><font size="-1">= Sample thickness</font></td>
+ 296:  </tr>
+ 297:     <tr>
+ 298:   <td width="10%"><font size="-1"><i> V</i></font> </td>
+ 299:   <td width="90%"><font size="-1">= Viscosity (table below)</font></td>
+ 300:  </tr>
+ 301:    <tr>
+ 302:   <td width="10%"><font size="-1"><i>D</i></font> </td>
+ 303:   <td width="90%"><font size="-1">= Sample diameter</font></td>
+ 304:  </tr>
+ 305:    <tr>
+ 306:   <td width="10%"><font size="-1"><i>P</i></font> </td>
+ 307:   <td width="90%"><font size="-1">= Pressure (atmospheres)</font></td>
+ 308:  </tr>
+ 309:  </tbody>
+ 310: </table>
+ 311: <div align="center">
+ 312: <h2><strong>Table of Viscosity</strong></h2>
+ 313: <table align="center" width="90%" cols="6" border="1">
+ 314: <tr>
+ 315:  <td width="16%" align="center"><strong>Gas / Liquid:</strong></td>
+ 316:  <td width="16%" align="center"><strong>Air</strong></td>
+ 317:  <td width="16%" align="center"><strong>Argon</strong></td>
+ 318:  <td width="16%" align="center"><strong>Helium</strong></td>
+ 319:  <td width="16%" align="center"><strong>Nitrogen</strong></td>
+ 320:  <td width="16%" align="center"><strong>Water</strong></td>
+ 321: </tr>
+ 322: <tr>
+ 323:  <td width="16%" align="center">Viscosity:</td>
+ 324:  <td width="16%" align="center">0.0185</td>
+ 325:  <td width="16%" align="center">0.0221</td>
+ 326:  <td width="16%" align="center">0.000198</td>
+ 327:  <td width="16%" align="center">0.0185</td>
+ 328:  <td width="16%" align="center">1</td>
+ 329: </tr>
+ 330: </table>
+ 331: </div>
+ 332: <p><font color="#FF0000">Envelope Surface Area</font><br>The Envelope Surface Area test is used to find the surface area of pores that allow flow through. The surface area of these pores completely envelopes the sample material, explaining the name of the test. When an ESA test is run, pressure of the system will be gradually increased and the change in through-flow and the resulting pressure drop are measured. Surface area is calculated from flow rate, pressure and the physical characteristics of the particular sample and gas being used by plugging in these data values into the Kozeny Carman equation shown below:    </p>
+ 333: <div align="center">
+ 334: <img src="../images/formula5.jpg" width="384" height="34" alt="very complex math formula">
+ 335: </div>
+ 336: <table align="center" width="90%" cols="4" border="0">
+ 337: <thead><tr><th colspan="4">Where:</th></tr>
+ 338: </thead>
+ 339: <tbody>
+ 340: <tr>
+ 341: <td width="10%" align="center">F</td>
+ 342: <td width="40%" align="left">= flow rate at average pressure, p</td>
+ 343: <td width="10%" align="center">l</td>
+ 344: <td width="40%" align="left">=thickness of sample</td>
+ 345: </tr>
+ 346: <tr>
+ 347: <td width="10%" align="center">p</td>
+ 348: <td width="40%" align="left">=differential pressure</td>
+ 349: <td width="10%" align="center">a</td>
+ 350: <td width="40%" align="left">= area of sample</td>
+ 351: </tr>
+ 352: <tr>
+ 353: <td width="10%" align="center">P</td>
+ 354: <td width="40%" align="left">=porosity</td>
+ 355: <td width="10%" align="center">S</td>
+ 356: <td width="40%" align="left">= through pore surface area per volume of solid</td>
+ 357: </tr>
+ 358: <tr>
+ 359: <td width="10%" align="center">&#961;</td>
+ 360: <td width="40%" align="left">= density of gas at p</td>
+ 361: <td width="10%" align="center">&#181;</td>
+ 362: <td width="40%" align="left">= viscosity</td>
+ 363: </tr>
+ 364: <tr>
+ 365: <td width="10%" align="center">K</td>
+ 366: <td width="40%" align="left">= a porosity constant
+ 367: </td>
+ 368: <td width="10%" align="center">Z</td>
+ 369: <td width="40%" align="left">= a constant</td>
+ 370: </tr>
+ 371: </tbody>
+ 372: </table>
+ 373: <p>Flow rate, differential pressure, average pressure, thickness of sample and cross-sectional area can be measured either manually or by the porometer. Density and Viscosity must be obtained from appropriate tables and the porosity is calculated from the true density ( t) and the bulk density ( b) of the sample using the following equation:</p>
+ 374: <div align="center">
+ 375: <img src="../images/formula6.jpg" width="527" height="21" alt="P equals one minus rho times b minus rho times t">
+ 376: </div>
+ 377: <p><font color="#FF0000">Average Particle Size and Fiber Diameter form ESA Calculations</font><br> In the Envelope Surface Area test, the surface area per unit mass (Sm) and the density of the particles ( p) is calculated. From these two values, the average particle size (Dp) of a powder sample can be obtained if it can be assumed that all particles of the sample are spherical and are the same size. If you are able to assume that the fibers of the sample being used (should be cylindrical) have the same diameter and length, you can find the average fiber diameter (Df),using the true density of the fiber ( f). The following two equations are used to find Dp and Df respectively:</p>
+ 378: <div align="center">
+ 379: <img src="../images/formula7.jpg" width="523" height="42" alt="Equations for the aaverage particl size and average fiber diameter">
+ 380: </div>
+ 381: <p><font color="#FF0000">WESA Calculation</font><br>Volumetric, dynamic flow, and gravimetric methods area three traditional technologies in solid surface area analysis via adsorption. The first two methods (volumetric and dynamic flow) have been widely used because of the availability of commercial automated operating systems. Though there are significant differences among these techniques regarding the methodology of isotherm measurement they all utilize the same models to process the isotherm for surface area analysis. The most common one is Brunauer-Emmett-Teller (BET) multilayer physical adsorption model. The BET theory is almost universally employed for total surface area measurement on various solids and/or powder materials.</p>
+ 382: <p>An alternate approach for surface area analysis is the flow permeametry method which is probably the simplest experiment for surface area determination. In addition, this method is capable of measuring the external or envelope area of a powder sample, which is otherwise not readily available by any adsorption methods.</p>
+ 383: <p>The most critical aspect of using flow permeametry to measure the surface area of a powder is the control of the flow pattern. Comparison studies were made between specific surface areas measured by conventional volumetric auto sorptometer and fluid permeameter methods and flow permeametry. It was found that for materials with a surface area of only several square meters per gram, such as most pharmaceutical, metal and ceramic powders, flow permeametry offers a simple, fast and reliable technology for surface area measurement.</p>
+ 384: <p>The porosity of the sample material is calculated using the following equations:</p>
+ 385: <div align="center">
+ 386: <img src="../images/formula8.jpg" width="90" height="64" alt="Vs equals M over rho">
+ 387: </div>
+ 388: <div align="center">
+ 389: <img src="../images/formula9.jpg" width="227" height="70" alt="Vv equals one quarter pi times D squared times H then subtract Vs">
+ 390: </div>
+ 391: <table align="center" width="50%" cols="2">
+ 392: <thead><tr><th colspan="2" align="left"><strong>where:</strong></th></tr></thead>
+ 393: <tbody>
+ 394: <tr>
+ 395:  <td width="25%" align="center">M</td>
+ 396:  <td width="75%" align="left">= mass of sample</td>
+ 397: </tr>
+ 398: <tr>
+ 399:  <td width="25%" align="center">&#961;</td>
+ 400:  <td width="75%" align="left"> = density of sample</td>
+ 401: </tr>
+ 402: <tr>
+ 403:  <td width="25%" align="center">D</td>
+ 404:  <td width="75%" align="left">= diameter of sample chamber</td>
+ 405: </tr>
+ 406: <tr>
+ 407:  <td width="25%" align="center">H</td>
+ 408:  <td width="75%" align="left">= height of sample in sample chamber</td>
+ 409: </tr>
+ 410: </tbody>
+ 411: </table>
+ 412: <p>Using these two equations we get the following porosity equation:</p>
+ 413: <div align="center">
+ 414: <img src="../images/formula10.jpg" width="175" height="60" alt="Porosity equals Vv over Vs plus Vv ">
+ 415: </div>
+ 416: <p>
+ 417: The porosity of the sample is calculated from intrinsic properties of the sample and the geometry of the sample chamber. The surface area equation is described below:
+ 418: </p>
+ 419: <div align="center">
+ 420: <img src="../images/formula11.jpg" width="282" height="91" alt="complex formula for surface area of the sample">
+ 421: </div>
+ 422: <table cols="2" align="center" width="55%">
+ 423: <thead><tr><th colspan="2" align="left"><strong>where:</strong></th></tr></thead>
+ 424: <tbody>
+ 425: <tr>
+ 426:  <td width="25%" align="center">SA</td>
+ 427:  <td width="75%" align="left">= surface area</td>
+ 428: </tr>
+ 429: <tr>
+ 430:  <td width="25%" align="center">&#961;</td>
+ 431:  <td width="75%" align="left">=  density of sample</td>
+ 432: </tr>
+ 433: <tr>
+ 434:  <td width="25%" align="center">P</td>
+ 435:  <td width="75%" align="left">= pressure (in pascals)</td>
+ 436: </tr>
+ 437: <tr>
+ 438:  <td width="25%" align="center">H</td>
+ 439:  <td width="75%" align="left">= height of sample in sample chamber</td>
+ 440: </tr>
+ 441: <tr>
+ 442:  <td width="25%" align="center">A</td>
+ 443:  <td width="75%" align="left">= aspect factor</td>
+ 444: </tr>
+ 445: <tr>
+ 446:  <td width="25%" align="center">V</td>
+ 447:  <td width="75%" align="left">= viscosity</td>
+ 448: </tr>
+ 449: <tr>
+ 450:  <td width="25%" align="center">F</td>
+ 451:  <td width="75%" align="left">= flow rate</td>
+ 452: </tr>
+ 453: </tbody>
+ 454: </table>
+ 455: <p>From this equation it can be seen that the envelope surface area is calculated from various sample properties, gas properties, sample chamber properties and pressure and flow values. The value used for the aspect factor is a function of the porosity of the sample itself and ranges from 1 to 10. The higher the porosity the larger the aspect factor should be. For most materials a reasonable value for the aspect factor is 5.</p>
+ 456: </body>
+ 457: </html>
+
+[CSE] Comment number 1:
+This program can help you make your web pages more
+accessible. An accessible page is one that more individuals
+can use, such as individuals who are blind or deaf. It can
+also increase the usefulness of your web page for
+individuals who browse the web using slower devices like
+older computers or wireless devices like cell phones and
+PDAs. An accessible web site makes good business sense (and
+possibly good legal sense as well). You can enable or
+disable accessibility checking in the Validator Engine
+Options.
+
+[CSE] Comment number 2:
+Possibly misspelled words (60, 34 unique): aaverage (1x),
+Brunauer (1x), Carman (1x), diveded (1x), DPC (1x),
+gravimetric (1x), Hg (1x), Kozeny (1x), multilayer (1x),
+particl (1x), pascals (1x), permeameter (1x), Porewick (1x),
+porometer (1x), precentage (1x), PSD (1x), Silwick (1x), Sm
+(1x), sorptometer (1x), timse (1x), WESA (1x), CFF (2x), Df
+(2x), ESA (2x), QD (2x), QW (2x), SqCm (2x), Atm (3x), Vv
+(3x), Darcy's (4x), DP (4x), FFP (4x), permeametry (4x), Dia
+(5x). Complete list.
+
+[CSE] Comment number 3:
+HTML 4.01 Transitional document detected.
+
+[CSE] Comment number 4:
+[111] Tip - Do not use hidden text, small text, comments,
+popular but unrelated words, etc. to try to 'cheat' to gain
+better search engine rankings. This is dishonest and some
+search engines may lower a page's rank for trying to
+'cheat'.
+
+[CSE] Comment number 5:
+[8] <meta name="description" content="(actual description)">
+should be used in the "head" section to provide a brief
+description of what is contained on this page. This
+information is used by many search engines when indexing a
+site. If you are using HTML Validator's integrated editor,
+then you can add this from the Tags menu and/or from the Tag
+Inserter.
+
+[CSE] Comment number 6:
+[8] <meta name="keywords" content="(actual keyword list)">
+should be used in the "head" section to provide a list of
+keywords that are relevent to this page. This information is
+used by many search engines when indexing a site. If you are
+using HTML Validator's integrated editor, then you can add
+this from the Tags menu and/or from the Tag Inserter.
+
+[CSE] Comment number 7:
+An ICRA label (a rating "meta" tag) was not found in the
+"head" section of this document. Browsers that are enabled
+with this rating system may not display documents that have
+not been labelled. If you have labelled this document by
+rating the section (directory) in which it is found, or if
+your site is a personal web space on a large Internet
+Service Provider, it is still recommended that you include
+the rating "meta" tag on all of your pages for performance
+reasons. For more information, please visit
+http://www.icra.org/.
+
+[CSE] Comment number 8:
+[10] CSE HTML Validator Std/Pro allows you to disable
+certain messages (like this example message) and groups of
+related messages by disabling flags. For instance, the [10]
+at the beginning of this message indicates that you can
+disable this message by disabling validator flag 10. If you
+are using HTML Validator's integrated editor, then you can
+simply use your mouse on this message to open the context
+menu (usually done by right-clicking the mouse on this
+message) and select 'Disable Flag 10' to disable this
+message. For more information about disabling messages,
+please look at the Configuration section in the
+documentation.
+
+[CSE] Comment number 9:
+CSE HTML Validator Std/Pro allows you to disable many
+messages on an individual basis without using flags. For
+instance, you can disable this message by using HTML
+Validator's integrated editor to open the context menu for
+this message (usually done by right-clicking the mouse on
+this message) and selecting 'Options for this
+Message->Disable Message' to disable this message. For more
+information about disabling messages, please look at the
+Configuration section in the documentation.
+
+[CSE] Comment number 10:
+21310 bytes; 14.8s@14.4Kbps, 7.4s@28.8, 4.3s@50, 3.3s@64,
+1.7s@128, 0.6s@384, 0.4s@512, 0.3s@768, 0.1s@1.5Mbps,
+0.0s@10Mbps.
+
+[CSE] Comment number 11:
+0.48s, 0 errors, 0 warnings, 12 messages, 11 validator
+comments, 457 lines, 510 tags (489 closed), 0 document
+comments, 14 entities, 1393 programs run.
+
+--------------------------------------------------
+
+<html> (2) 
+| <head> (3) 
+| | <title> (4) 
+| | </title> (4) 
+| | <meta> (5) <meta> (6) 
+| </head> (7) 
+| <body> (9) 
+| | <a> (10) 
+| | </a> (10) 
+| | <h4> (11) 
+| | | <font> (11) 
+| | | </font> (11) 
+| | </h4> (11) 
+| | <hr> (12) 
+| | <p> (13) 
+| | </p> (13) 
+| | <p> (14) 
+| | | <font> (14) 
+| | | </font> (14) 
+| | </p> (14) 
+| | <table> (15) 
+| | | <tr> (16) 
+| | | | <td> (17) 
+| | | | </td> (17) 
+| | | | <td> (18) 
+| | | | </td> (18) 
+| | | | <td> (19) 
+| | | | </td> (19) 
+| | | </tr> (20) 
+| | | <tr> (21) 
+| | | | <td> (22) 
+| | | | </td> (22) 
+| | | | <td> (23) 
+| | | | </td> (23) 
+| | | | <td> (24) 
+| | | | </td> (24) 
+| | | </tr> (25) 
+| | | <tr> (26) 
+| | | | <td> (27) 
+| | | | </td> (27) 
+| | | | <td> (28) 
+| | | | </td> (28) 
+| | | | <td> (29) 
+| | | | </td> (29) 
+| | | </tr> (30) 
+| | | <tr> (31) 
+| | | | <td> (32) 
+| | | | </td> (32) 
+| | | | <td> (33) 
+| | | | </td> (33) 
+| | | | <td> (34) 
+| | | | </td> (34) 
+| | | </tr> (35) 
+| | | <tr> (36) 
+| | | | <td> (37) 
+| | | | </td> (37) 
+| | | | <td> (38) 
+| | | | </td> (38) 
+| | | | <td> (39) 
+| | | | </td> (39) 
+| | | </tr> (40) 
+| | | <tr> (41) 
+| | | | <td> (42) 
+| | | | </td> (42) 
+| | | | <td> (43) 
+| | | | </td> (43) 
+| | | | <td> (44) 
+| | | | </td> (44) 
+| | | </tr> (45) 
+| | | <tr> (46) 
+| | | | <td> (47) 
+| | | | </td> (47) 
+| | | | <td> (48) 
+| | | | </td> (48) 
+| | | | <td> (49) 
+| | | | </td> (49) 
+| | | </tr> (50) 
+| | | <tr> (50) 
+| | | | <td> (51) 
+| | | | </td> (51) 
+| | | | <td> (52) 
+| | | | </td> (52) 
+| | | | <td> (53) 
+| | | | </td> (53) 
+| | | </tr> (54) 
+| | </table> (55) 
+| | <a> (56) 
+| | </a> (56) 
+| | <h4> (57) 
+| | | <font> (57) 
+| | | </font> (57) 
+| | </h4> (57) 
+| | <table> (58) 
+| | | <tr> (59) 
+| | | | <td> (60) 
+| | | | </td> (60) 
+| | | | <td> (61) 
+| | | | </td> (61) 
+| | | | <td> (62) 
+| | | | </td> (62) 
+| | | </tr> (63) 
+| | | <tr> (64) 
+| | | | <td> (65) 
+| | | | </td> (65) 
+| | | | <td> (66) 
+| | | | </td> (66) 
+| | | | <td> (67) 
+| | | | </td> (67) 
+| | | </tr> (68) 
+| | | <tr> (69) 
+| | | | <td> (70) 
+| | | | </td> (70) 
+| | | | <td> (71) 
+| | | | </td> (71) 
+| | | | <td> (72) 
+| | | | | <font> (72) 
+| | | | | </font> (72) 
+| | | | </td> (72) 
+| | | </tr> (73) 
+| | | <tr> (74) 
+| | | | <td> (75) 
+| | | | </td> (75) 
+| | | | <td> (76) 
+| | | | </td> (76) 
+| | | | <td> (77) 
+| | | | | <font> (77) 
+| | | | | </font> (77) 
+| | | | </td> (77) 
+| | | </tr> (78) 
+| | | <tr> (79) 
+| | | | <td> (80) 
+| | | | </td> (80) 
+| | | | <td> (81) 
+| | | | </td> (81) 
+| | | | <td> (82) 
+| | | | </td> (82) 
+| | | </tr> (83) 
+| | | <tr> (84) 
+| | | | <td> (85) 
+| | | | </td> (85) 
+| | | | <td> (86) 
+| | | | </td> (86) 
+| | | | <td> (87) 
+| | | | | <font> (87) 
+| | | | | </font> (87) 
+| | | | </td> (87) 
+| | | </tr> (88) 
+| | | <tr> (89) 
+| | | | <td> (90) 
+| | | | </td> (90) 
+| | | | <td> (91) 
+| | | | </td> (91) 
+| | | | <td> (92) 
+| | | | </td> (92) 
+| | | </tr> (93) 
+| | </table> (95) 
+| | <table> (96) 
+| | | <tr> (97) 
+| | | | <td> (98) 
+| | | | | <strong> (98) 
+| | | | | </strong> (98) 
+| | | | </td> (98) 
+| | | | <td> (99) 
+| | | | | <strong> (99) 
+| | | | | | &#181; (99) 
+| | | | | </strong> (99) 
+| | | | </td> (99) 
+| | | </tr> (100) 
+| | | <tr> (101) 
+| | | | <td> (102) 
+| | | | </td> (102) 
+| | | | <td> (103) 
+| | | | </td> (103) 
+| | | </tr> (104) 
+| | | <tr> (105) 
+| | | | <td> (106) 
+| | | | </td> (106) 
+| | | | <td> (107) 
+| | | | </td> (107) 
+| | | </tr> (108) 
+| | | <tr> (109) 
+| | | | <td> (110) 
+| | | | </td> (110) 
+| | | | <td> (111) 
+| | | | </td> (111) 
+| | | </tr> (112) 
+| | | <tr> (113) 
+| | | | <td> (114) 
+| | | | </td> (114) 
+| | | | <td> (115) 
+| | | | </td> (115) 
+| | | </tr> (116) 
+| | | <tr> (117) 
+| | | | <td> (118) 
+| | | | </td> (118) 
+| | | | <td> (119) 
+| | | | </td> (119) 
+| | | </tr> (120) 
+| | </table> (121) 
+| | <a> (122) 
+| | </a> (122) 
+| | <h4> (123) 
+| | | <font> (123) 
+| | | </font> (123) 
+| | </h4> (123) 
+| | <p> (124) 
+| | </p> (124) 
+| | <div> (125) 
+| | | <img> (126) 
+| | </div> (127) 
+| | <table> (128) 
+| | | <thead> (129) 
+| | | | <tr> (129) 
+| | | | | <td> (129) 
+| | | | | | <i> (129) 
+| | | | | | | <strong> (129) 
+| | | | | | | </strong> (129) 
+| | | | | | </i> (129) 
+| | | | | </td> (129) 
+| | | | </tr> (129) 
+| | | </thead> (129) 
+| | | <tbody> (130) 
+| | | | <tr> (131) 
+| | | | | <td> (132) 
+| | | | | | <font> (132) 
+| | | | | | | <i> (132) 
+| | | | | | | </i> (132) 
+| | | | | | </font> (132) 
+| | | | | </td> (132) 
+| | | | | <td> (133) 
+| | | | | | <font> (133) 
+| | | | | | | &#181; (133) 
+| | | | | | </font> (133) 
+| | | | | </td> (133) 
+| | | | </tr> (134) 
+| | | | <tr> (135) 
+| | | | | <td> (136) 
+| | | | | | <font> (136) 
+| | | | | | | <i> (136) 
+| | | | | | | </i> (136) 
+| | | | | | </font> (136) 
+| | | | | </td> (136) 
+| | | | | <td> (137) 
+| | | | | | <font> (137) 
+| | | | | | </font> (137) 
+| | | | | </td> (137) 
+| | | | </tr> (138) 
+| | | | <tr> (139) 
+| | | | | <td> (140) 
+| | | | | | <font> (140) 
+| | | | | | | <i> (140) 
+| | | | | | | </i> (140) 
+| | | | | | </font> (140) 
+| | | | | </td> (140) 
+| | | | | <td> (141) 
+| | | | | | <font> (141) 
+| | | | | | </font> (141) 
+| | | | | </td> (141) 
+| | | | </tr> (142) 
+| | | | <tr> (143) 
+| | | | | <td> (144) 
+| | | | | | <font> (144) 
+| | | | | | | <i> (144) 
+| | | | | | | </i> (144) 
+| | | | | | </font> (144) 
+| | | | | </td> (144) 
+| | | | | <td> (145) 
+| | | | | | <font> (145) 
+| | | | | | </font> (145) 
+| | | | | </td> (145) 
+| | | | </tr> (146) 
+| | | | <tr> (147) 
+| | | | | <td> (148) 
+| | | | | | <font> (148) 
+| | | | | | | <i> (148) 
+| | | | | | | </i> (148) 
+| | | | | | </font> (148) 
+| | | | | </td> (148) 
+| | | | | <td> (149) 
+| | | | | | <font> (149) 
+| | | | | | </font> (149) 
+| | | | | </td> (149) 
+| | | | </tr> (150) 
+| | | | <tr> (151) 
+| | | | | <td> (152) 
+| | | | | | <font> (152) 
+| | | | | | | <i> (152) 
+| | | | | | | </i> (152) 
+| | | | | | </font> (152) 
+| | | | | </td> (152) 
+| | | | | <td> (153) 
+| | | | | | <font> (153) 
+| | | | | | </font> (153) 
+| | | | | </td> (153) 
+| | | | </tr> (154) 
+| | | </tbody> (155) 
+| | </table> (156) 
+| | <p> (157) 
+| | </p> (157) 
+| | <table> (158) 
+| | | <tr> (159) 
+| | | | <td> (160) 
+| | | | | <font> (160) 
+| | | | | | <strong> (160) 
+| | | | | | </strong> (160) 
+| | | | | </font> (160) 
+| | | | </td> (160) 
+| | | | <td> (161) 
+| | | | | <font> (161) 
+| | | | | | <strong> (161) 
+| | | | | | </strong> (161) 
+| | | | | | <br> (161) 
+| | | | | </font> (161) 
+| | | | </td> (161) 
+| | | | <td> (162) 
+| | | | | <font> (162) 
+| | | | | | <strong> (162) 
+| | | | | | </strong> (162) 
+| | | | | </font> (162) 
+| | | | </td> (162) 
+| | | </tr> (163) 
+| | | <tr> (164) 
+| | | | <td> (165) 
+| | | | | &#8805; (165) &#181; (165) 
+| | | | </td> (165) 
+| | | | <td> (166) 
+| | | | | &#8805; (166) &#181; (166) 
+| | | | </td> (166) 
+| | | | <td> (167) 
+| | | | | &#8805; (167) &#181; (167) 
+| | | | </td> (167) 
+| | | | <td> (168) 
+| | | | | &#8805; (168) &#181; (168) 
+| | | | </td> (168) 
+| | | </tr> (169) 
+| | | <tr> (170) 
+| | | | <td> (171) 
+| | | | | <font> (171) 
+| | | | | </font> (171) 
+| | | | </td> (171) 
+| | | | <td> (172) 
+| | | | | <font> (172) 
+| | | | | </font> (172) 
+| | | | </td> (172) 
+| | | | <td> (173) 
+| | | | | <font> (173) 
+| | | | | </font> (173) 
+| | | | </td> (173) 
+| | | | <td> (174) 
+| | | | | <font> (174) 
+| | | | | </font> (174) 
+| | | | </td> (174) 
+| | | | <td> (175) 
+| | | | | <font> (175) 
+| | | | | </font> (175) 
+| | | | </td> (175) 
+| | | | <td> (176) 
+| | | | | <font> (176) 
+| | | | | </font> (176) 
+| | | | </td> (176) 
+| | | </tr> (177) 
+| | | <tr> (178) 
+| | | | <td> (179) 
+| | | | | <font> (179) 
+| | | | | </font> (179) 
+| | | | </td> (179) 
+| | | | <td> (180) 
+| | | | | <font> (180) 
+| | | | | </font> (180) 
+| | | | </td> (180) 
+| | | | <td> (181) 
+| | | | | <font> (181) 
+| | | | | </font> (181) 
+| | | | </td> (181) 
+| | | | <td> (182) 
+| | | | | <font> (182) 
+| | | | | </font> (182) 
+| | | | </td> (182) 
+| | | | <td> (183) 
+| | | | | <font> (183) 
+| | | | | </font> (183) 
+| | | | </td> (183) 
+| | | | <td> (184) 
+| | | | | <font> (184) 
+| | | | | </font> (184) 
+| | | | </td> (184) 
+| | | </tr> (185) 
+| | | <tr> (186) 
+| | | | <td> (187) 
+| | | | | <font> (187) 
+| | | | | </font> (187) 
+| | | | </td> (187) 
+| | | | <td> (188) 
+| | | | | <font> (188) 
+| | | | | </font> (188) 
+| | | | </td> (188) 
+| | | | <td> (189) 
+| | | | | <font> (189) 
+| | | | | </font> (189) 
+| | | | </td> (189) 
+| | | | <td> (190) 
+| | | | | <font> (190) 
+| | | | | </font> (190) 
+| | | | </td> (190) 
+| | | | <td> (191) 
+| | | | | <font> (191) 
+| | | | | </font> (191) 
+| | | | </td> (191) 
+| | | | <td> (192) 
+| | | | | <font> (192) 
+| | | | | </font> (192) 
+| | | | </td> (192) 
+| | | </tr> (193) 
+| | | <tr> (194) 
+| | | | <td> (195) 
+| | | | | <font> (195) 
+| | | | | </font> (195) 
+| | | | </td> (195) 
+| | | | <td> (196) 
+| | | | | <font> (196) 
+| | | | | </font> (196) 
+| | | | </td> (196) 
+| | | | <td> (197) 
+| | | | | <font> (197) 
+| | | | | </font> (197) 
+| | | | </td> (197) 
+| | | | <td> (198) 
+| | | | | <font> (198) 
+| | | | | </font> (198) 
+| | | | </td> (198) 
+| | | | <td> (199) 
+| | | | | <font> (199) 
+| | | | | </font> (199) 
+| | | | </td> (199) 
+| | | | <td> (200) 
+| | | | | <font> (200) 
+| | | | | </font> (200) 
+| | | | </td> (200) 
+| | | </tr> (201) 
+| | | <tr> (202) 
+| | | | <td> (203) 
+| | | | | <font> (203) 
+| | | | | </font> (203) 
+| | | | </td> (203) 
+| | | | <td> (204) 
+| | | | | <font> (204) 
+| | | | | </font> (204) 
+| | | | </td> (204) 
+| | | | <td> (205) 
+| | | | | <font> (205) 
+| | | | | </font> (205) 
+| | | | </td> (205) 
+| | | | <td> (206) 
+| | | | | <font> (206) 
+| | | | | </font> (206) 
+| | | | </td> (206) 
+| | | | <td> (207) 
+| | | | | <font> (207) 
+| | | | | </font> (207) 
+| | | | </td> (207) 
+| | | | <td> (208) 
+| | | | | <font> (208) 
+| | | | | </font> (208) 
+| | | | </td> (208) 
+| | | </tr> (209) 
+| | | <tr> (210) 
+| | | | <td> (211) 
+| | | | | <font> (211) 
+| | | | | </font> (211) 
+| | | | </td> (211) 
+| | | | <td> (212) 
+| | | | | <font> (212) 
+| | | | | </font> (212) 
+| | | | </td> (212) 
+| | | | <td> (213) 
+| | | | | <font> (213) 
+| | | | | </font> (213) 
+| | | | </td> (213) 
+| | | | <td> (214) 
+| | | | | <font> (214) 
+| | | | | </font> (214) 
+| | | | </td> (214) 
+| | | | <td> (215) 
+| | | | | <font> (215) 
+| | | | | </font> (215) 
+| | | | </td> (215) 
+| | | | <td> (216) 
+| | | | | <font> (216) 
+| | | | | </font> (216) 
+| | | | </td> (216) 
+| | | </tr> (217) 
+| | </table> (218) 
+| | <p> (219) 
+| | | <font> (219) 
+| | | </font> (219) 
+| | | <br> (219) 
+| | </p> (219) 
+| | <p> (220) 
+| | </p> (220) 
+| | <p> (221) 
+| | | <a> (221) 
+| | | </a> (221) 
+| | </p> (221) 
+| | <p> (222) 
+| | | <font> (222) 
+| | | </font> (222) 
+| | | <br> (222) 
+| | </p> (222) 
+| | <ol> (223) 
+| | | <li> (224) 
+| | | </li> (224) 
+| | | <li> (225) 
+| | | | <a> (225) 
+| | | | </a> (225) 
+| | | </li> (225) 
+| | | <li> (226) 
+| | | </li> (226) 
+| | | <li> (227) 
+| | | </li> (227) 
+| | </ol> (228) 
+| | <div> (229) 
+| | | <img> (230) 
+| | </div> (231) 
+| | <table> (232) 
+| | | <thead> (233) 
+| | | | <tr> (233) 
+| | | | | <td> (233) 
+| | | | | | <i> (233) 
+| | | | | | | <strong> (233) 
+| | | | | | | </strong> (233) 
+| | | | | | </i> (233) 
+| | | | | </td> (233) 
+| | | | </tr> (233) 
+| | | </thead> (233) 
+| | | <tbody> (234) 
+| | | | <tr> (235) 
+| | | | | <td> (236) 
+| | | | | | <font> (236) 
+| | | | | | | <i> (236) 
+| | | | | | | </i> (236) 
+| | | | | | </font> (236) 
+| | | | | </td> (236) 
+| | | | | <td> (237) 
+| | | | | | <font> (237) 
+| | | | | | </font> (237) 
+| | | | | </td> (237) 
+| | | | </tr> (238) 
+| | | | <tr> (239) 
+| | | | | <td> (240) 
+| | | | | | <font> (240) 
+| | | | | | | <i> (240) 
+| | | | | | | </i> (240) 
+| | | | | | </font> (240) 
+| | | | | </td> (240) 
+| | | | | <td> (241) 
+| | | | | | <font> (241) 
+| | | | | | </font> (241) 
+| | | | | </td> (241) 
+| | | | </tr> (242) 
+| | | | <tr> (243) 
+| | | | | <td> (244) 
+| | | | | | <font> (244) 
+| | | | | | | <i> (244) 
+| | | | | | | </i> (244) 
+| | | | | | </font> (244) 
+| | | | | </td> (244) 
+| | | | | <td> (245) 
+| | | | | | <font> (245) 
+| | | | | | </font> (245) 
+| | | | | </td> (245) 
+| | | | </tr> (246) 
+| | | </tbody> (247) 
+| | </table> (248) 
+| | <div> (249) 
+| | | <img> (250) 
+| | </div> (251) 
+| | <table> (252) 
+| | | <thead> (253) 
+| | | | <tr> (253) 
+| | | | | <td> (253) 
+| | | | | | <i> (253) 
+| | | | | | | <strong> (253) 
+| | | | | | | </strong> (253) 
+| | | | | | </i> (253) 
+| | | | | </td> (253) 
+| | | | </tr> (253) 
+| | | </thead> (253) 
+| | | <tbody> (254) 
+| | | | <tr> (255) 
+| | | | | <td> (256) 
+| | | | | | <font> (256) 
+| | | | | | | <i> (256) 
+| | | | | | | </i> (256) 
+| | | | | | </font> (256) 
+| | | | | </td> (256) 
+| | | | | <td> (257) 
+| | | | | | <font> (257) 
+| | | | | | </font> (257) 
+| | | | | </td> (257) 
+| | | | </tr> (258) 
+| | | | <tr> (259) 
+| | | | | <td> (260) 
+| | | | | | <font> (260) 
+| | | | | | | <i> (260) 
+| | | | | | | </i> (260) 
+| | | | | | </font> (260) 
+| | | | | </td> (260) 
+| | | | | <td> (261) 
+| | | | | | <font> (261) 
+| | | | | | </font> (261) 
+| | | | | </td> (261) 
+| | | | </tr> (262) 
+| | | | <tr> (263) 
+| | | | | <td> (264) 
+| | | | | | <font> (264) 
+| | | | | | | <i> (264) 
+| | | | | | | | <sub> (264) 
+| | | | | | | | </sub> (264) 
+| | | | | | | </i> (264) 
+| | | | | | </font> (264) 
+| | | | | </td> (264) 
+| | | | | <td> (265) 
+| | | | | | <font> (265) 
+| | | | | | </font> (265) 
+| | | | | </td> (265) 
+| | | | </tr> (266) 
+| | | | <tr> (267) 
+| | | | | <td> (268) 
+| | | | | | <font> (268) 
+| | | | | | | <i> (268) 
+| | | | | | | | <sub> (268) 
+| | | | | | | | </sub> (268) 
+| | | | | | | </i> (268) 
+| | | | | | </font> (268) 
+| | | | | </td> (268) 
+| | | | | <td> (269) 
+| | | | | | <font> (269) 
+| | | | | | </font> (269) 
+| | | | | </td> (269) 
+| | | | </tr> (270) 
+| | | | <tr> (271) 
+| | | | | <td> (272) 
+| | | | | | <font> (272) 
+| | | | | | | <i> (272) 
+| | | | | | | </i> (272) 
+| | | | | | </font> (272) 
+| | | | | </td> (272) 
+| | | | | <td> (273) 
+| | | | | | <font> (273) 
+| | | | | | </font> (273) 
+| | | | | </td> (273) 
+| | | | </tr> (274) 
+| | | </tbody> (275) 
+| | </table> (276) 
+| | <p> (277) 
+| | | <font> (277) 
+| | | </font> (277) 
+| | | <br> (277) 
+| | </p> (277) 
+| | <p> (278) 
+| | | <font> (278) 
+| | | | <strong> (278) 
+| | | | </strong> (278) 
+| | | </font> (278) 
+| | </p> (278) 
+| | <div> (279) 
+| | | <img> (280) 
+| | </div> (281) 
+| | <table> (282) 
+| | | <thead> (283) 
+| | | | <tr> (283) 
+| | | | | <td> (283) 
+| | | | | | <i> (283) 
+| | | | | | | <strong> (283) 
+| | | | | | | </strong> (283) 
+| | | | | | </i> (283) 
+| | | | | </td> (283) 
+| | | | </tr> (283) 
+| | | </thead> (283) 
+| | | <tbody> (284) 
+| | | | <tr> (285) 
+| | | | | <td> (286) 
+| | | | | | <font> (286) 
+| | | | | | | <i> (286) 
+| | | | | | | </i> (286) 
+| | | | | | </font> (286) 
+| | | | | </td> (286) 
+| | | | | <td> (287) 
+| | | | | | <font> (287) 
+| | | | | | </font> (287) 
+| | | | | </td> (287) 
+| | | | </tr> (288) 
+| | | | <tr> (289) 
+| | | | | <td> (290) 
+| | | | | | <font> (290) 
+| | | | | | | <i> (290) 
+| | | | | | | </i> (290) 
+| | | | | | </font> (290) 
+| | | | | </td> (290) 
+| | | | | <td> (291) 
+| | | | | | <font> (291) 
+| | | | | | </font> (291) 
+| | | | | </td> (291) 
+| | | | </tr> (292) 
+| | | | <tr> (293) 
+| | | | | <td> (294) 
+| | | | | | <font> (294) 
+| | | | | | | <i> (294) 
+| | | | | | | </i> (294) 
+| | | | | | </font> (294) 
+| | | | | </td> (294) 
+| | | | | <td> (295) 
+| | | | | | <font> (295) 
+| | | | | | </font> (295) 
+| | | | | </td> (295) 
+| | | | </tr> (296) 
+| | | | <tr> (297) 
+| | | | | <td> (298) 
+| | | | | | <font> (298) 
+| | | | | | | <i> (298) 
+| | | | | | | </i> (298) 
+| | | | | | </font> (298) 
+| | | | | </td> (298) 
+| | | | | <td> (299) 
+| | | | | | <font> (299) 
+| | | | | | </font> (299) 
+| | | | | </td> (299) 
+| | | | </tr> (300) 
+| | | | <tr> (301) 
+| | | | | <td> (302) 
+| | | | | | <font> (302) 
+| | | | | | | <i> (302) 
+| | | | | | | </i> (302) 
+| | | | | | </font> (302) 
+| | | | | </td> (302) 
+| | | | | <td> (303) 
+| | | | | | <font> (303) 
+| | | | | | </font> (303) 
+| | | | | </td> (303) 
+| | | | </tr> (304) 
+| | | | <tr> (305) 
+| | | | | <td> (306) 
+| | | | | | <font> (306) 
+| | | | | | | <i> (306) 
+| | | | | | | </i> (306) 
+| | | | | | </font> (306) 
+| | | | | </td> (306) 
+| | | | | <td> (307) 
+| | | | | | <font> (307) 
+| | | | | | </font> (307) 
+| | | | | </td> (307) 
+| | | | </tr> (308) 
+| | | </tbody> (309) 
+| | </table> (310) 
+| | <div> (311) 
+| | | <h2> (312) 
+| | | | <strong> (312) 
+| | | | </strong> (312) 
+| | | </h2> (312) 
+| | | <table> (313) 
+| | | | <tr> (314) 
+| | | | | <td> (315) 
+| | | | | | <strong> (315) 
+| | | | | | </strong> (315) 
+| | | | | </td> (315) 
+| | | | | <td> (316) 
+| | | | | | <strong> (316) 
+| | | | | | </strong> (316) 
+| | | | | </td> (316) 
+| | | | | <td> (317) 
+| | | | | | <strong> (317) 
+| | | | | | </strong> (317) 
+| | | | | </td> (317) 
+| | | | | <td> (318) 
+| | | | | | <strong> (318) 
+| | | | | | </strong> (318) 
+| | | | | </td> (318) 
+| | | | | <td> (319) 
+| | | | | | <strong> (319) 
+| | | | | | </strong> (319) 
+| | | | | </td> (319) 
+| | | | | <td> (320) 
+| | | | | | <strong> (320) 
+| | | | | | </strong> (320) 
+| | | | | </td> (320) 
+| | | | </tr> (321) 
+| | | | <tr> (322) 
+| | | | | <td> (323) 
+| | | | | </td> (323) 
+| | | | | <td> (324) 
+| | | | | </td> (324) 
+| | | | | <td> (325) 
+| | | | | </td> (325) 
+| | | | | <td> (326) 
+| | | | | </td> (326) 
+| | | | | <td> (327) 
+| | | | | </td> (327) 
+| | | | | <td> (328) 
+| | | | | </td> (328) 
+| | | | </tr> (329) 
+| | | </table> (330) 
+| | </div> (331) 
+| | <p> (332) 
+| | | <font> (332) 
+| | | </font> (332) 
+| | | <br> (332) 
+| | </p> (332) 
+| | <div> (333) 
+| | | <img> (334) 
+| | </div> (335) 
+| | <table> (336) 
+| | | <thead> (337) 
+| | | | <tr> (337) 
+| | | | | <th> (337) 
+| | | | | </th> (337) 
+| | | | </tr> (337) 
+| | | </thead> (338) 
+| | | <tbody> (339) 
+| | | | <tr> (340) 
+| | | | | <td> (341) 
+| | | | | </td> (341) 
+| | | | | <td> (342) 
+| | | | | </td> (342) 
+| | | | | <td> (343) 
+| | | | | </td> (343) 
+| | | | | <td> (344) 
+| | | | | </td> (344) 
+| | | | </tr> (345) 
+| | | | <tr> (346) 
+| | | | | <td> (347) 
+| | | | | </td> (347) 
+| | | | | <td> (348) 
+| | | | | </td> (348) 
+| | | | | <td> (349) 
+| | | | | </td> (349) 
+| | | | | <td> (350) 
+| | | | | </td> (350) 
+| | | | </tr> (351) 
+| | | | <tr> (352) 
+| | | | | <td> (353) 
+| | | | | </td> (353) 
+| | | | | <td> (354) 
+| | | | | </td> (354) 
+| | | | | <td> (355) 
+| | | | | </td> (355) 
+| | | | | <td> (356) 
+| | | | | </td> (356) 
+| | | | </tr> (357) 
+| | | | <tr> (358) 
+| | | | | <td> (359) 
+| | | | | | &#961; (359) 
+| | | | | </td> (359) 
+| | | | | <td> (360) 
+| | | | | </td> (360) 
+| | | | | <td> (361) 
+| | | | | | &#181; (361) 
+| | | | | </td> (361) 
+| | | | | <td> (362) 
+| | | | | </td> (362) 
+| | | | </tr> (363) 
+| | | | <tr> (364) 
+| | | | | <td> (365) 
+| | | | | </td> (365) 
+| | | | | <td> (366) 
+| | | | | </td> (367) 
+| | | | | <td> (368) 
+| | | | | </td> (368) 
+| | | | | <td> (369) 
+| | | | | </td> (369) 
+| | | | </tr> (370) 
+| | | </tbody> (371) 
+| | </table> (372) 
+| | <p> (373) 
+| | </p> (373) 
+| | <div> (374) 
+| | | <img> (375) 
+| | </div> (376) 
+| | <p> (377) 
+| | | <font> (377) 
+| | | </font> (377) 
+| | | <br> (377) 
+| | </p> (377) 
+| | <div> (378) 
+| | | <img> (379) 
+| | </div> (380) 
+| | <p> (381) 
+| | | <font> (381) 
+| | | </font> (381) 
+| | | <br> (381) 
+| | </p> (381) 
+| | <p> (382) 
+| | </p> (382) 
+| | <p> (383) 
+| | </p> (383) 
+| | <p> (384) 
+| | </p> (384) 
+| | <div> (385) 
+| | | <img> (386) 
+| | </div> (387) 
+| | <div> (388) 
+| | | <img> (389) 
+| | </div> (390) 
+| | <table> (391) 
+| | | <thead> (392) 
+| | | | <tr> (392) 
+| | | | | <th> (392) 
+| | | | | | <strong> (392) 
+| | | | | | </strong> (392) 
+| | | | | </th> (392) 
+| | | | </tr> (392) 
+| | | </thead> (392) 
+| | | <tbody> (393) 
+| | | | <tr> (394) 
+| | | | | <td> (395) 
+| | | | | </td> (395) 
+| | | | | <td> (396) 
+| | | | | </td> (396) 
+| | | | </tr> (397) 
+| | | | <tr> (398) 
+| | | | | <td> (399) 
+| | | | | | &#961; (399) 
+| | | | | </td> (399) 
+| | | | | <td> (400) 
+| | | | | </td> (400) 
+| | | | </tr> (401) 
+| | | | <tr> (402) 
+| | | | | <td> (403) 
+| | | | | </td> (403) 
+| | | | | <td> (404) 
+| | | | | </td> (404) 
+| | | | </tr> (405) 
+| | | | <tr> (406) 
+| | | | | <td> (407) 
+| | | | | </td> (407) 
+| | | | | <td> (408) 
+| | | | | </td> (408) 
+| | | | </tr> (409) 
+| | | </tbody> (410) 
+| | </table> (411) 
+| | <p> (412) 
+| | </p> (412) 
+| | <div> (413) 
+| | | <img> (414) 
+| | </div> (415) 
+| | <p> (416) 
+| | </p> (418) 
+| | <div> (419) 
+| | | <img> (420) 
+| | </div> (421) 
+| | <table> (422) 
+| | | <thead> (423) 
+| | | | <tr> (423) 
+| | | | | <th> (423) 
+| | | | | | <strong> (423) 
+| | | | | | </strong> (423) 
+| | | | | </th> (423) 
+| | | | </tr> (423) 
+| | | </thead> (423) 
+| | | <tbody> (424) 
+| | | | <tr> (425) 
+| | | | | <td> (426) 
+| | | | | </td> (426) 
+| | | | | <td> (427) 
+| | | | | </td> (427) 
+| | | | </tr> (428) 
+| | | | <tr> (429) 
+| | | | | <td> (430) 
+| | | | | | &#961; (430) 
+| | | | | </td> (430) 
+| | | | | <td> (431) 
+| | | | | </td> (431) 
+| | | | </tr> (432) 
+| | | | <tr> (433) 
+| | | | | <td> (434) 
+| | | | | </td> (434) 
+| | | | | <td> (435) 
+| | | | | </td> (435) 
+| | | | </tr> (436) 
+| | | | <tr> (437) 
+| | | | | <td> (438) 
+| | | | | </td> (438) 
+| | | | | <td> (439) 
+| | | | | </td> (439) 
+| | | | </tr> (440) 
+| | | | <tr> (441) 
+| | | | | <td> (442) 
+| | | | | </td> (442) 
+| | | | | <td> (443) 
+| | | | | </td> (443) 
+| | | | </tr> (444) 
+| | | | <tr> (445) 
+| | | | | <td> (446) 
+| | | | | </td> (446) 
+| | | | | <td> (447) 
+| | | | | </td> (447) 
+| | | | </tr> (448) 
+| | | | <tr> (449) 
+| | | | | <td> (450) 
+| | | | | </td> (450) 
+| | | | | <td> (451) 
+| | | | | </td> (451) 
+| | | | </tr> (452) 
+| | | </tbody> (453) 
+| | </table> (454) 
+| | <p> (455) 
+| | </p> (455) 
+| </body> (456) 
+</html> (457) 
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Calibration Menu Options</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h3>Calibrate Menu</h3>
+<hr />
+<img src="../images/calibrate/mainScr.jpg" width="370" height="206" alt="Main screen with the Callibrate menu expanded." vspace="10" hspace="30" />
+<p>Calibrations should be done once before the first test is run on the machine. All the calculations will be saved for successive uses. Prior to running any of the calibrations, remove any samples from the sample chamber. Leave the chamber insert in the chamber, close the lid, and attach the air hose. To perform these calibrations, simply follow the prompts given when this option is selected from the Calibrate Menu. Calibrations should be done once before the first test is run on the machine. All the calculations will be saved for successive uses. Prior to running any of the calibrations, remove any samples from the sample chamber. Leave the chamber insert in the chamber, close the lid, and attach the air hose. To perform these calibrations, simply follow the prompts given when this option is selected from the <strong>Calibrate Menu</strong>. </p>
+<a name="flow" id="flow"></a>
+<h4>Adjust Flow Parameters</h4>
+<p>The procedure for calibrating flow parameters has two steps. The first step builds a table of low flow controller settings as flow rate is seen. This information is stored in a file (CAPCAL.D8A). This table is used when performing a bubble point test to determine what controller setting will produce the desired bubble flow. </p>
+<p>The second step is to slowly increment the opening of Valve 2 until the first flow rate is detected. The valve position is read and the count value is stored in a file (CAPCAL.D8A). This value is used to keep the system from opening the valve too far and releasing too much pressure at once.
+This calibration must be run prior to running the Lohm calibration.
+</p>
+<a name="calc" id="calc"></a>
+<h4>Calculate Lohm and Max Air Flow</h4>
+<p>The Lohm factor is a correction value for the difference in air pressure between the pressure transducers and the sample chamber. It must be calibrated before any tests are run on the instrument. A separate lohm calibration should be run for<i> each sample chamber or set of adapter plates being used</i>.</p>
+<p>The maximum air flow calibration uses the current pressure in the instrument to find the maximum amount of air flow that can be obtained through the instrument with out a sample in the chamber. When complete, both values (Lohm and Max air flow) are saved to a file (CAPWIN.INI).</p>
+<a name="max" id="max"></a>
+<h4>Max-Liquid Flow</h4>
+<p>The maximum liquid flow calibration finds the maximum amount of liquid flow that occurs during the Liquid Permeability test. When complete, the value is saved to a file (Capwin.ini).</p>
+<a name="calireg" id="calireg"></a>
+<h4>Calibrate Regulator</h4>
+<p>During this calibration, the regulator is set to certain count values and the correlated pressures are found for the count values selected. (The regulator's function is to control pressure going into the system and convert that pressure to counts.) A table is then made out of this data. This particular calibration should be run if the inlet pressure of the machine changes (for example if the machine has been moved to a new location, with a new air source.)</p>
+<a name="chamber" id="chamber"></a>
+<h4>Chamber Volume </h4>
+<p>Chamber volume is calibrated for the Pressure Hold Test and Micro flow Test. During this calibration, the total volume of the machine's interior (including all tubing and connections) is calculated. In the Micro flow Test itself, the flow rate is calculated from volume and pressure; thus this calibration makes sure the volume part of the calculation is accurate.</p>
+<a name="lohm" id="lohm"></a>
+<h4>Load Backup Lohm Table</h4>
+<p>The Lohm table created in the <strong>Calculate Lohm and Max Air Flow</strong> option is stored in the "Parms" directory. If the user wishes to use another table of values besides the one already made, this option will allow you to select another pre-made table. A specific table should be used for every different size adapter plate and chamber used.</p>
+<br />
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Modify/preferences.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Help/help.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+
+</body>
+</html>

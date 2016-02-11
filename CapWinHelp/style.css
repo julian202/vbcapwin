@@ -1,0 +1,274 @@
+/* Cascading Style Sheet for the PMI CapWin Help System
+Written by Edward Corvinelli
+-----------------------------------------------------------------*/
+
+/* Class to make a block bold */
+.bold{
+font-weight: bold;}
+/* Class to make a block bold and underlined */
+.uBold{
+font-weight: bold;
+text-decoration: underline;
+}
+.center{
+text-align:center;
+}
+/*floats image to the right*/
+.right{
+float: right;
+padding-left: 20px;
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+}
+/* floats image to the left*/
+.left{
+float:left;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+/* turns text blue*/
+.blue{
+color:#000080;
+background:transparent;
+}
+/*turns text black & alters font*/
+.black{
+color: #000000;
+background: transparent;
+font-family: "Times New Roman",Helvetica,Arial, sans-serif;
+}
+/* creates a black border around an element*/
+.light{
+border-width: 2px;
+border-color: #000;
+border-style: solid;
+}
+/*Creates red letters*/
+.red{
+color:#EE0000;
+background:transparent;
+}
+/*Creates red letters that are bold*/
+.redB{
+color:#E00;
+background:transparent;
+font-weight: bold;
+}
+
+/* General rules for the body of the Table of Contents*/
+
+/*class for a standard ordered list*/
+.orderList{
+margin: 15px;
+text-align: justify;
+}
+/* Class for the ordered list with red lettering */
+.olr{
+margin: 15px;
+text-align: justify;
+color:#EE0000;
+background:transparent;
+}
+/* Class for the <div> tag when holding images */
+.imag{
+padding: 10px;
+margin-left: 60px;
+margin-top: 12px;
+margin-bottom: 12px;
+}
+/*class for the <div> tag to hold small images */
+.smimag{
+padding: 10px;
+margin-left: 125px;
+margin-top: 12px;
+margin-bottom: 12px;
+}
+#num{
+padding: 10px;
+margin-left: 3805px;
+margin-top: 12px;
+margin-bottom: 12px;
+}
+/*Arial font for code  */
+.code{
+margin:20px;
+font-family: Arial, Helvetica, serif, sans-serif;
+font-size: 1.0em;
+line-height: 1.4em;
+font-style: normal;
+color:#005D00;
+background-color: transparent;
+}
+/*Class for normal text that is to be indented  */
+.indent{
+margin:50px;
+font-family: "Times New Roman",Helvetica,Arial, sans-serif;
+font-size: 1.2em;
+line-height: 1.4em;
+font-weight: 500;
+color:#000;
+background-color: transparent;
+}
+/* Standard body rules */
+body{
+margin:10px;
+font-family: "Times New Roman",Helvetica,Arial, sans-serif;
+font-size: 1.0em;
+line-height: 1.1em;
+font-style: normal;
+color:#000;
+background-color: transparent;
+}
+/*Standard rule for the Quick start sheets ordered lists*/
+.qssol{
+margin:20px;
+font-family: Trebuchet, Helvetica, serif, sans-serif;
+font-size: .9em;
+line-height: 1.1em;
+font-style: normal;
+color:#000;
+background-color: transparent;
+}
+/*creates a section of indented text*/
+.indentQss{
+margin-left:50px;
+margin-top:10px;
+margin-bottom:0px;
+margin-right:20px;
+font-family: Trebuchet, Helvetica, serif, sans-serif;
+font-size: 1.0em;
+line-height: 1.1em;
+font-style: normal;
+color:#000;
+background-color: transparent;
+}
+/*Standard rule for the Quick start sheets paragraphs*/
+.qssp
+{
+margin:20px;
+font-family: Trebuchet, Helvetica, serif, sans-serif;
+font-size: .9em;
+line-height: 1.1em;
+font-style: normal;
+color:#000;
+background-color: transparent;
+}
+/* Standard header 1 rules */
+h1{
+
+font-family: "Arial Rounded MT Bold",Helvetica,Arial,serif;
+font-size:3.0em;
+font-style:normal;
+line-height:3.6em;
+color:#E00;
+background-color:transparent;
+}
+/* Standard header 2 rules */
+h2{font-family: "Arial Rounded MT Bold",Helvetica,Arial,serif;
+font-size:2.0em;
+font-style:normal;
+line-height:1.5em;
+color:#E00;
+background-color:transparent;}
+/* Standard header 3 rules */
+h3{font-family: "Arial Rounded MT Bold",Helvetica,Arial,serif;
+font-size:1.7em;
+margin-bottom:5px;
+font-style:normal;
+line-height:1.0em;
+color:#E00;
+background-color:transparent;}
+/* Standard header 4 rules */
+h4{font-family: "Arial Rounded MT Bold",Helvetica,Arial,serif;
+font-size:1.5em;
+font-style:normal;
+margin-bottom:5px;
+line-height:1.1em;
+color:#E00;
+background-color:transparent;}
+
+h5{font-family: "Arial Rounded MT Bold",Helvetica,Arial,serif;
+font-size:1.0em;
+font-style:normal;
+line-height:1.0em;
+margin-bottom:5px;
+color:#E00;
+background-color:transparent;}
+
+h6{font-family: "Arial Rounded MT Bold",Helvetica,Arial,serif;
+font-size:.85em;
+font-style:normal;
+line-height:.65em;
+margin-bottom:5px;
+color:#E00;
+background-color:transparent;}
+
+p{font-family: "Times New Roman",Helvetica,Arial,serif;
+font-size:.95em;
+font-style:normal;
+line-height:1.1em;
+color:#000;
+background-color:transparent;
+text-align:justify;
+}
+
+a:link{
+color:#0000F2;
+background-color: transparent;
+text-decoration: underline;
+
+}
+
+a:visited{
+color: #551A8B;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active{
+background-color: transparent;
+color: #EE0000;
+text-decoration: underline;
+}
+
+a:hover{
+background-color: #CEF5FF;
+color: #000;
+text-decoration: underline;
+
+}
+/* back or next*/
+#born{
+text-align: center;
+padding: 12px;
+}
+/*top or bottom ihnternal menu*/
+.toporbottom{
+text-align: center;
+padding: 12px;
+}
+/*Table style rules*/
+.table02{
+width: 175px;
+height: 25px;
+border-width: 0;
+text-align: left;
+}
+.table01{
+width: 75px;
+height: 25px;
+border-width: 0;
+text-align: left;
+}
+
+div{
+margin:0;
+text-align:left;
+}
+
+ul{}
+
+li{}

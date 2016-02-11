@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Explanation of Pressure Transducer Counts</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h4>Explanation of Flow Transducer Counts</h4>
+<p>The output of a flow transducer to the computer is in counts. The full range of the transducer is divided into 60,000 counts. To determine a flow reading, the computer performs the following calculation:</p>
+<p class="indent">	(Full range transducer flow / 60,000 counts) * transducer output in counts.</p>
+<p>example:<br />
+A transducer with a full range of 0 to 5000 cc/min has a low range that is 2/5ths of its full range. Therefore, a 0 to 5000 cc/min transducer has a low range of 0 to 2000 cc/min. The low range output is also divided into 60,000 counts.
+
+</p>
+<p>In the low range, 1 count equals 2000 / 60,000 or 0.1 cc/min. Therefore, the default of 50 counts would be 5 cc/min.</p>
+<p>Combining the above steps into a single calculation yields:</p>
+<p class="indent">(2 * 5000 cc/min * 50 counts) / (5 * 60,000 counts) = 5 cc/min.</p>
+
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Principles/pressTrans.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Principles/genSpecs.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

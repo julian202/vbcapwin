@@ -1,0 +1,39 @@
+EXTENDED
+ 7 
+Operator=EM
+Lot Number=9999
+Hardware Serial Number=00172014-3158
+Type of test= Wet Up/Calc. Dry, Linear
+Wet Parameter=C:\USERS\DEMO\DESKTOP\1100AEX-RENT\USERS\HOLLOW FIBER\DEFAULT.TPF
+Lohm Table=lohmtable.cal
+Tortuosity Factor= 1
+01-06-2016
+hollow fiber
+WUCD
+GalWick
+-15.9
+ .2
+ .1
+HF
+ 0, 14.57596
+ 9.798258E-02, 14.69473
+ 0, 14.70216
+ 4.6, 14.80793
+ 31.59333, 15.95489
+ 44.30833, 23.08403
+ 54.90833, 27.4547
+ 29, 28.29093
+ 22.66667, 28.32943
+ 79.13333, 33.93577
+ 174.8, 39.76211
+ 293.2667, 45.59761
+ 445.2667, 51.49178
+0,0
+ 445.2667, 51.49178
+ 31.59333, 15.95489
+ 0, 14.57596
+0,0
+
+B, .5, 200, 0, 1, 2
+W, 65, 3.9, 30, 10, 50, 35, 20, .1, 50
+0,0

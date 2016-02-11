@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Using alternate input gases</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h4>Using Alternate Input Gases</h4>
+<p>Beginning with Version 6.70.48, Capwin supports easy switching among different input gases. Flow conversion factors are used for each gas to more accurately take the properties of the source gas into account.</p>
+<p>The default gas is assumed to be air/nitrogen, which is the only gas predefined for the system. New gases must be added manually to a definition file in the main Capwin folder (GASFLOWCONVERSION.INI). </p>
+<p>The definition file may be opened in any basic text editor, such as Notepad. The default file will read as follows:</p>
+<pre class="code">
+[main]
+gas1=Air/Nitrogen
+conversion1=1
+current=1
+</pre>
+<p>
+Each gas is defined by two lines with the keys "gas1" and "conversion1", "gas2" and "conversion2", etc.
+</p>
+<!-- Section on Adding a New Gas-->
+<a name="newGas" id="newGas"></a>
+<h5>Adding a new gas definition</h5>
+<p>To add a new gas definition to Capwin, follow these steps. We will use an imaginary gas, nullane, as an example:</p>
+<ol>
+<!-- item #1 -->
+<li><div class="orderList">
+Open GASFLOWCONVERSION.INI in a text editor.<br />
+Each defined gas is numbered. Two lines are used for each gas, of the form "gas"n and "conversion"n, where n is the number of the new gas.
+</div><br /></li>
+<!-- item #2 -->
+<li><div class="orderList">
+Add a line defining the name of your new gas, with the next available index:<br />
+<pre class="code">gas2=Nullane</pre>
+</div><br /></li>
+<!-- item #3 -->
+<li><div class="orderList">
+Add a line defining the gas's flow conversion factor in terms of nitrogen. Use the appropriate index:<br />
+<pre class="code">conversion2=0.54148</pre>
+</div><br /></li>
+<!-- item # 4-->
+<li><div class="orderList">
+Close and save the text file.<br />
+If Capwin is running, quit it and restart the program. You will see that an extra gas indicator box has appeared in the main window:
+<div class="imag">
+<img src="../images/princip/title.jpg" width="370" height="355" alt="Title screen for CAPWIN" />
+</div>
+The gas indicated will be used for any tests run on the porometer.
+</div><br /></li>
+
+</ol>
+<br />
+<a name="defined" id="defined"></a>
+<h5>Selecting a defined gas for a test</h5>
+<p>You may switch among defined gases by clicking on the name of the gas in the indicator box. Click on the name of the gas in the Gas box. A selector box will appear with a list of defined gases:</p>
+<div class="imag">
+<img src="../images/princip/select.jpg" width="370" height="159" alt="Gas selection form" />
+</div>
+<p>Select the name of the gas you wish to use and click <span class="bold">OK</span>.</p>
+<p>The indicator box will now show the name of the new gas. This gas will be used in any tests run on the machine.</p>
+<div class="imag">
+<img src="../images/princip/title.jpg" width="370" height="355" alt="Title screen for the CAPWIN program" />
+</div>
+
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Principles/autoComp.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Principles/pressTrans.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

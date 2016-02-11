@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Principles of Operation</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h3>Principles of Operation</h3>
+<hr />
+<h4>Calculations Used in CAPREP</h4>
+<p>The calculations performed in the Report program use the formulas below.</p>
+<a name="capflo" id="capflo"></a>
+<!-- Capillary flow section -->
+<h5>Capillary Flow Porometry</h5>
+<div class="imag">
+<img src="../images/princip/capflo.jpg" width="370" height="142" alt="Chart" />
+</div>
+<!-- Gas permeability section -->
+<a name="gasperm" id="gasperm"></a>
+<h5>Gas Permeability</h5>
+<div class="imag">
+<img src="../images/princip/gas.jpg" width="370" height="142" alt="Another chart" />
+</div>
+<div class="smimag">
+<img src="../images/princip/liquidgas.jpg" width="224" height="138" alt="Chart of liquid and gas densities" />
+</div>
+<!-- Maximum pore size section -->
+<a name="minPore" id="minPore"></a>
+<h5>
+Maximum Pore Size (Bubble Point)
+</h5>
+<p>The maximum pore size is calculated by the software using the following equation:</p>
+<div class="smimag">
+<img src="../images/princip/min01.jpg" width="198" height="114" alt="bubble point formula" />
+</div>
+<p>The surface tension (dynes/cm), effective pore size range and required pressures (in psi) are listed in the following table:</p>
+<div class="imag">
+<img src="../images/princip/min02.jpg" width="407" height="167" alt="Chart of fluids their surface tensions and thier pore size reanges" />
+</div>
+<!-- Mean Flow Pore Size section -->
+<a name="meanFlow"></a>
+<h5>Mean Flow Pore Size</h5>
+<p>A saturated sample will pass air when the applied pressure exceeds the capillary attraction of the fluid in the pores, allowing flow to pass through. Smaller pores have a higher capillary attraction than larger pores. Therefore, smaller pores open at higher pressures.</p>
+<p>By comparing the gas flow rates of a wet and dry sample at the same pressures, the percentage of flow passing through the pores larger than or equal to the specified size may be calculated from the pressure-size relationship. By increasing pressure in small steps, it is possible to determine by the flow contribution of very small pore size increments.</p>
+<p>The pressure at which wet flow is one-half the dry flow is used to calculate the mean flow pore size using equation [1] of the <a href="../Principles/Calc.html#minPore">Maximum Pore Size</a> section.</p>
+<!-- Pore Size Distribution section -->
+<a name="poreSize" id="poreSize"></a>
+<h5>
+Pore Size Distribution
+</h5>
+<p>The pore size distribution is calculated by dividing the data points into different groups</p>
+<ol>
+<!-- item # 1-->
+<li><div class="orderList">
+Select the limits of each group.
+</div><br /></li>
+<!-- item #2 -->
+<li><div class="orderList">
+Substitute the limits into equation [1] (see page 141) to find the respective pressures.
+</div><br /></li>
+<!-- item #3 -->
+<li><div class="orderList">
+Determine the wet and dry flows at the pressure limits from the wet and dry flow curves.
+</div><br /></li>
+<!-- item # 4-->
+<li><div class="orderList">
+Substitute the values found in equations [2] and [3]:
+</div><br /></li>
+</ol>
+<div class="imag">
+<img src="../images/princip/pore01.jpg" width="265" height="178" alt="Equation 2" />
+</div>
+<div class="imag">
+<img src="../images/princip/pore04.jpg" width="157" height="155" alt="Equation3" />
+</div>
+<!-- Darcy's Permiability Constant-->
+<a name="darcy" id="darcy"></a>
+<h5>Darcy's Permeability Constant</h5>
+<p><span class="bold">The Darcy's Permeability Constant is calculated using equation:</span></p>
+<div class="imag">
+<img src="../images/princip/darcy.jpg" width="310" height="244" alt="Darcy's Formula" />
+</div>
+<!-- Envelope Surface Area setion  -->
+<a name="envelope" id="envelope"></a>
+<h5>Envelope Surface Area</h5>
+<p>The Envelope Surface Area test is used to find the surface area of pores that allow flow through. The surface area of these pores completely envelopes the sample material, explaining the name of the test. When an ESA test is run, pressure of the system will be gradually increased and the change in through-flow and the resulting pressure drop are measured. Surface area is calculated from flow rate, pressure and the physical characteristics of the particular sample and gas being used by plugging in these data values into the Kozeny Carman equation shown below:</p>
+<div class="imag">
+<img src="../images/princip/envel.jpg" width="362" height="220" alt="Envelope surface area formula" /></div>
+<p>Flow rate, differential pressure, average pressure, thickness of sample and cross-sectional area can be measured either manually or by the porometer. Density and Viscosity must be obtained from appropriate tables and the porosity is calculated from the true density (&rho;t) and the bulk density (&rho;b) of the sample using the following equation:</p>
+<div class="imag">
+<img src="../images/princip/envel01.jpg" width="73" height="20" alt="formula  for P" />
+</div>
+<!-- Particle Size and Fiber Diameter section -->
+<a name="particle" id="particle"></a>
+<h5>Average Particle Size and Fiber Diameter form ESA Calculations</h5>
+<p>In the Envelope Surface Area test, the surface area per unit mass (Sm) and the density of the particles (&rho;p) is calculated. From these two values, the average particle size (Dp) of a powder sample can be obtained if it can be assumed that all particles of the sample are spherical and are the same size. If you are able to assume that the fibers of the sample being used (should be cylindrical) have the same diameter and length, you can find the average fiber diameter (Df),using the true density of the fiber (&rho;f). The following two equations are used to find Dp and Df respectively:</p>
+<p>Average Particle Size: Dp= 6/(Sm*&rho;p)</p>
+<p>Average Fiber Diameter: Df= 4/(Sm* &rho;f).</p>
+<!--WESA Calculations section-->
+<a name="wesa" id="wesa"></a>
+<h5>WESA Calculation</h5>
+<p>Volumetric, dynamic flow, and gravimetric methods area three traditional technologies in solid surface area analysis via adsorption. The first two methods (volumetric and dynamic flow) have been widely used because of the availability of commercial automated operating systems. Though there are significant differences among these techniques regarding the methodology of isotherm measurement they all utilize the same models to process the isotherm for surface area analysis. The most common one is Brunauer-Emmett-Teller (BET) multi layer physical adsorption model. The BET theory is almost universally employed for total surface area measurement on various solids and/or powder materials.</p>
+<p>An alternate approach for surface area analysis is the flow permeametry method which is probably the simplest experiment for surface area determination. In addition, this method is capable of measuring the external or envelope area of a powder sample, which is otherwise not readily available by any adsorption methods.</p>
+<p>The most critical aspect of using flow permeametry to measure the surface area of a powder is the control of the flow pattern. Comparison studies were made between specific surface areas measured by conventional volumetric auto sorptometer and fluid permeameter methods and flow permeametry. It was found that for materials with a surface area of only several square meters per gram, such as most pharmaceutical, metal and ceramic powders, flow permeametry offers a simple, fast and reliable technology for surface area measurement.</p>
+<p>The porosity of the sample material is calculated using the following equations:</p>
+<div class="imag">
+<img src="../images/princip/wesa01.jpg" width="200" height="173" alt="First porosity formula" />
+</div>
+<p>Using these two equations we get the following porosity equation:</p>
+<div class="smimag">
+<img src="../images/princip/wesa02.jpg" width="122" height="50" alt="second porosity formula" />
+</div>
+<p>The porosity of the sample is calculated from intrinsic properties of the sample and the geometry of the sample chamber. The surface area equation is described below:</p>
+<div class="imag">
+<img src="../images/princip/wesa03.jpg" width="213" height="167" alt="Third porosity formula" />
+</div>
+<p>From this equation it can be seen that the envelope surface area is calculated from various sample properties, gas properties, sample chamber properties and pressure and flow values. The value used for the aspect factor is a function of the porosity of the sample itself and ranges from 1 to 10. The higher the porosity the larger the aspect factor should be. For most materials a reasonable value for the aspect factor is 5.</p>
+<br />
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Envelope/envRep.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Principles/lohm.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

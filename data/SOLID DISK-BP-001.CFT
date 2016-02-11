@@ -1,0 +1,21 @@
+EXTENDED
+ 7 
+Operator=EWS
+Lot Number=11121
+Hardware Serial Number=04222014-3125
+Wet Parameter=C:\USERS\DMPC\DESKTOP\CFP 1500ALC\CAPWIN\USERS\CALIBRATION\DEFAULT.TPF
+Lohm Table=lohmtable.cal
+Piston Compression Pressure = 80 
+Tortuosity Factor= .715
+06-05-2014
+PALL
+BP
+GalWick
+ 15.9
+SOLID DISK
+ 0, 15.295
+ .001, 66.725
+0,0
+6.74.71
+B, 5, 200, 0, 1, 2
+0,0

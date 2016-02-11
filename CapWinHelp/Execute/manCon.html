@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>How the Manual Control Screen works</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h4>Manual Control</h4>
+<img src="../images/execute/manCon.jpg" width="370" height="302" alt="Manual control screen." vspace="10" hspace="30" />
+<p><strong>Manual Control Screen</strong> is used for directly controlling the instrument and for troubleshooting.
+This screen gives direct, graphical control of the valves and transducers of the porometer. Any differences between versions of the instrument, or included options, will be reflected in the schematic.
+The screen is divided into four major sections: menu bar, status lines, legend, and schematic.</p>
+<h5>
+Legend Box
+</h5>
+<img class="right" src="../images/execute/legend.jpg" width="200" height="91" alt=" Legend box from the manual control screen" />
+<p>The symbols in the legend box represent the objects that can be manipulated on the schematic. Click on a symbol in the legend box to view instructions on how to control it. </p>
+<h6 class="black">Pressure Transducer</h6>
+<img class="left" src="../images/execute/trans.jpg" width="30" height="43" alt="Pressure transducer icon." />
+<p>The red bulb represents a pressure transducer. To read the full range of the pressure gauge, click it with the left mouse button. To read its lower range (1/5 the full range), click it with the right mouse button. On instruments with two pressure transducers, the solenoid valve that shuts off flow to the low pressure transducer cannot be directly controlled so as to prevent the valve from being accidentally opened at pressures beyond its limit. Clicking P2 will activate this valve if it is safe to do so.</p>
+<h6 class="black">Flow Transducer  </h6>
+<img class="left" src="../images/execute/floTrans.jpg" width="33" height="42" alt="Flow transducer icon." />
+<p>The gray-checkered box is a flow transducer. To read the full range of a transducer, click it with the left mouse button. To read its lower range (2/5 the full range), click it with the right mouse button. Both high flow transducers are shown on the same status line. Only one of them may be read at a time; while one is being read, the other will be deactivated on the status line.</p>
+<p>If the integrity transducer is installed in the porometer, clicking it will activate it. The schematic will show a line from the integrity transducer to the top of the sample chamber. The reading from the integrity transducer is displayed on the first status line.</p>
+<h6 class="black">Regulator </h6>
+<img class="left" src="../images/execute/regu.jpg" width="48" height="50" alt="Regulator icon." />
+<p>The white circle represents the pressure regulator, which controls the total amount of pressure entering the system. To increase the pressure, either click on the top half of the circle with the left mouse button, or press I (increment) on the keyboard. To decrease the pressure, click the lower half with the left mouse button or press D (decrement) on the keyboard. Click any place on the circle with the right button to bring the pressure to zero.</p>
+<h6 class="black">Motorized Valve</h6>
+<img class="left" src="../images/execute/mValve.jpg" width="70" height="35" alt="Motorized valve icon." />
+<p>The box encasing the blue pointed object represents the motorized metering valve. It can be fully opened or closed by pressing O (open) or C (close) on the keyboard, or by clicking on the left or right half of the symbol. While in motion, it can be stopped by pressing S (stop). The pulse amount is obtained from the Pulsewidth value in the DEFAULT.TPF parameter file.</p>
+<h5>Menu Bar</h5>
+<img class="right" src="../images/execute/menu.jpg" width="256" height="64" alt="Manual Control screen menu bar" />
+<p>The menu bar contains options that do not interfere with how the instrument runs; they are for the "setting" purposes of the screen. </p>
+<h6 class="black">Exit</h6>
+<p>Exits manual control without changing any pressures or flows set by the user.</p>
+<h6 class="black">Timer</h6>
+<p><strong>Stop, Go,</strong> and <strong>Reset</strong> control the timer on the black bar just below the menu bar.</p>
+<h6 class="black">Calibrate</h6>
+<p>Shows the zero and span reference standard settings of the system electronics.</p>
+<h6 class="black">Help</h6>
+<p>Starts the <strong>CapWin Help System</strong>.</p>
+<img src="../images/execute/manTable.jpg" width="335" height="127" alt="Display table were the outputs of the machine can be observed." vspace="10" hspace="30" />
+<h5>Status Line</h5>
+<p>The status lines show information pertaining to the various transducers or gauges in the porometer. Each value shown here includes a "count" value, the actual transducer reading. The counts stand for a percentage of the maximum settings for each transducer used. The percentages can also be thought of as steps; the higher the step, the higher the pressure or flow entering the system. Voltages are read from the instrument and are converted to an integer value, the "count." The software then converts this number into the proper physical unit for display and storage. </p>
+<p>The pressure and flow transducers include a qualifier in parentheses. This is the range and number of the transducer that is currently being read. Only one reading comes back from each transducer, but the software splits the reading up into two paths for higher accuracy. Thus, the transducers have both high and low paths. </p>
+<h6 class="black">Low Flow Rate</h6>
+<p>Displays the current value of the low flow transducer, which is used for determining the bubble point. This line is also used for the value of the integrity transducer, if it is used.</p>
+<h6 class="black">High Flow Rate</h6>
+<p>There may be one or more high flow transducers, only one of which can be displayed at a time. The number in parentheses refers to the transducer being used. For example, the text in the parentheses reads "Hi-1". This means that the high range of high flow transducer #1 is currently being read.</p>
+<h6 class="black">Pressure	</h6>
+<p>Displays the current value of the active pressure transducer being read. There may be one or more pressure transducers. The text in the parenthesis indicates the range that is currently being read (either high or low). The text will read either "High Pressure" or "Low Pressure" depending on which pressure transducer is being read.</p>
+<h6 class="black">Valve 2	</h6>
+<p>Displays the position of Valve 2, which is a motorized metering valve. This valve opens in increments. The numbers displayed indicate how many increments (displayed in counts) the valve has been opened or closed. </p>
+<h6 class="black">Regulator	</h6>
+<p>The counts displayed refer to the percentage of the maximum regulator setting, which is set up in the beginning of tests. The amount of pressure incremented with each "count" is dependent on the air pressure going into the machine, and the range of the regulator.</p>
+<h6 class="black">Penetrometer</h6>
+<p>Only available for Liquid Permeability Tests</p>
+<h6 class="black">Differential Pressure</h6>
+<p>Only available for Microflow Tests</p>
+<h6 class="black">Temperature</h6>
+<p>Displays the current temperature of the system if the particular instrument supports this feature. Not all versions have temperature displays.</p>
+<br />
+<h5>Schematic</h5>
+<p>The schematic takes up most of the manual control screen. In the schematic, the user can manipulate the valves by incrementing the amount of airflow that is let through. The schematic also allows the user to choose which transducers will be read. Not all items viewed in this schematic will be necessarily included in your schematic: the parts displayed correspond with the particular model purchased. The basic system has only one pressure gauge and flow meter. The valves included vary from model to model.</p>
+<img src="../images/execute/schematic.jpg" width="370" height="219" vspace="10" hspace="30" alt="The main part of the form is the shematic" />
+<h6 class="black">Regulator</h6>
+<p>When the regulator is incremented, the pressure of the system increases. When the regulator is decremented, the pressure decreases. The Reg. Jump option at the bottom of the screen allows the user to change the increment size in terms of counts. For finer adjustments, 10 to 20 counts can be used. To raise the pressure quickly, 200 to 255 counts can be used. The maximum number of counts is 4000.</p>
+<h6 class="black">Valve 1	</h6>
+<p>Just right and above the regulator is valve V1 which controls the flow to the low flow controller. If the valve is closed, no flow will be read by that transducer. V1 directly controls the Low Flow and can be manipulated by the LFLOW Up, LFLOW Down, and LFLOW Zero controls at the bottom of the diagram.</p>
+<h6 class="black">Valve 2</h6>
+<p>To the right of valve V1 is the motorized metering valve V2. It must be open to some degree to allow flow to access the high flow transducers.</p>
+<h6 class="black">Valves 10 and 11	</h6>
+<p>Valves 10 and 11 are spool valves that direct air flow to the high flow transducer and pressure transducer that are being used. The valves are used to protect the lower-range transducers from overpressurization or too much airflow. The user can select which pressure or flow gauge to be read. V10 can be opened or closed by clicking on the two flow transducer boxes below and to the right of the valve. V11 can be manipulated by clicking on the two pressure transducers above and to the left of the valve. The schematic will be updated accordingly to show the direction of the flow.</p>
+<h6 class="black">High Flow Transducers	</h6>
+<p>Above the spool valve are the high flow transducers. <strong>High Flow 1</strong> always has a lower range than <strong>High Flow 2. High Flow 1</strong> should be used for low flow readings.</p>
+<h6 class="black">Pressure Transducers	</h6>
+<p>Above the flow transducers are the pressure transducers, which regulate the pressure of the system.</p>
+<h6 class="black">Integrity Transducer (Optional Accessory)  </h6>
+<img class="right" src="../images/execute/integr.jpg" width="127" height="121" alt="Intagrated Transducer" />
+<p>If your instrument is equipped with an integrity transducer, it can be read by clicking on its icon, which sits above located above the sample chamber and is connected to the chamber by a line. The Low Flow status line will be updated to read the integrity transducer. Click on the low flow transducer to stop reading the integrity transducer.</p>
+<h6 class="black">Microflow Transducer (Optional Accessory)  </h6>
+<img class="right" src="../images/execute/microTrans.jpg" width="130" height="130" alt="micro transducer as seen in the manual control screen." />
+<p></p>
+<h6 class="black">Compression Piston and Regulator</h6>
+<p>The piston and the regulator can be found at the far right of the schematic. When the piston is lowered, there will be a white bar that extends from the piston (peach colored box) to the sample chamber lid. The regulator is what controls the amount of compressive pressure being applied to the sample and the piston is what generates the pressure. To raise or lower the piston once the desired pressure is set, simply click on the peach colored box and the pressure will automatically be met. The regulator can be controlled by using the slider labeled "Compression Regulator" and by clicking on the regulator symbol in the legend box. The slider is used to set the increment or step sizes for the regulator, which itself can be incremented or decremented by clicking on the upper or lower halves of its symbol respectively.</p>
+<h6 class="black">Drain Valve	</h6>
+<p>The drain valve is located below the sample chamber. It is used to release pressure in the system.</p>
+
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Execute/curveFit.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Report/reportMenu.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

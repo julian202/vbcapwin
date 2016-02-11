@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Bubble Point General Operation for Automatic and Manual Mode</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h3>Bubble Point General Operations</h3>
+<hr />
+<a name="stand" id="stand"></a>
+<h4>Standard Mode (Automatic)</h4>
+
+<img src="../images/bubble/main.jpg" width="370" height="184" alt="shematic from the manual control screen." vspace="10" hspace="30" />
+<p>
+The bubble point test is used to measure the maximum pore size of a sample. The bubble point itself is the point of a wet test at which the fluid is pushed out of the largest pore of the sample. The size of the pores at which this point occurs is labeled the bubble point diameter and will be the largest pore size in the sample being tested.
+</p>
+<p>When the bubble point test begins, the software allows the regulator to let in gas which passes through valve <strong>V1</strong>, though the <strong>Low Flow</strong> controller, and finally into the top of the <strong>Sample Chamber</strong>. As long as the pressure is below the bubble point, the sample will be able to seal the chamber and the pressure will rise.</p>
+<p>The rate at which the gas enters the chamber (<strong>bublflow</strong>) is monitored using the flow controller. As the sample chamber pressure approaches the regulator's pressure setting, the flow rate decreases. When the flow rate falls to the minimum value, the amount of gas the regulator lets in increases. This influx of gas increases the pressure at the <strong>V1</strong>, increasing the flow through the valve, the flow transducer, and into the sample chamber.</p>
+<p>The sample chamber pressure is monitored and continues to rise slowly. When the pressure in the sample chamber stops rising while the flow through the flow transducer is maintained, the program takes the maximum pressure reached as the bubble point. Since the flow into the chamber has remained fairly constant, when the pressure stops rising there must be flow through the sample in order to relieve the pressure change.</p>
+<p>The bubble point test runs slowly to maintain a fine degree of accuracy. If the bubble point pressure is a high value, the pressurization process could take hours. By entering an initial pressure value as the minimum pressure (<strong>minbppres</strong>) in the <strong>Edit Auto Parameters</strong> of the <strong>Modify Menu</strong> in <strong>Capwin</strong> the test can skip ahead to the specified pressure and then continue at a slow and accurate rate. Setting a pressure for the test to begin with allows the bubble point to be reached more quickly. Make sure the initial pressure entered is not above the actual bubble point pressure.</p>
+
+<a name="manual" id="manual"></a>
+<h4>Manual Mode</h4>
+<p>The manual bubble point test is similar to the automated test except for the way in which the bubble point is taken. The amount of pressure let in by the regulator is incremented until the user visually detects the first constant flow of bubbles and selects the option in the <strong>Test Selection</strong> tab of the <strong>Type of Test</strong> selector of the <strong>Autotest</strong> screen that accepts the current pressure and flow values as the bubble point.</p>
+
+
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../InstallSamp/sampOr.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../BubblePt/standMode.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

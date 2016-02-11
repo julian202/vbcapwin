@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Explanations of Auto Test Options</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h4>Explanation of Autotest Options</h4>
+<img src="../images/execute/autoTestFr01.jpg" width="370" height="143" alt="Auto Test form featuring the options." vspace="10" hspace="30" />
+
+<h5>Output File Name  </h5>
+
+<img class="right" src="../images/execute/outFile.jpg" width="275" height="183" alt="File chooser for saving the output file name and location." />
+
+<p>Shows the name of file that will be used to store the data gathered during the test.
+Click on this line and the screen shown at right appears. You may select a file to overwrite from the list or type the name of a new file in the box at the upper-right of the screen.	You may also create a new folder from this screen for your new file.
+</p><br />
+<h5>End User, Test Reference, Sample ID, Lot Number, Operator</h5>
+<p><strong>Identification and Information</strong><br />
+These lines are labeled according to their suggested uses but may contain any information desired. Information entered here is printed on the reports of the tests.
+</p><br />
+<h5>Fluid</h5>
+<p><img class="right" src="../images/execute/value.jpg" width="300" height="114" alt="Dialog box for entering the name of the wetting fluid." /></p>
+<p>Name of the fluid used to wet the sample. Click on the status line and the box above will appear. Enter the name of the fluid you would like to use to wet the sample.</p><br />
+<h5>Surface Tension</h5>
+<p>Surface tension of the wetting fluid. See the table.</p>
+<img src="../images/execute/surTen.jpg" vspace="10" hspace="45" width="363" height="233" alt="Table of fluids and their corrosponding surface tensions." />
+<p>The CAPWIN Software System uses these values for calculations.</p>
+<h5>Wet Curve Testing Parameters File</h5>
+<p>Name of the parameter file that will control the dry phase of the test. To change the file, double click on this line. A screen similar to the one at right appears. Select an existing parameter file from the file list. To create a new parameter file, click the <strong>Edit Parameter File</strong> button. Go to the section on <a href="../Modify/edParam.html">Editing Auto Parameters</a>. </p>
+<p><img class="right" src="../images/execute/dryParamFile.jpg" width="250" height="155" alt="Parameter file chooser dialog box" />
+Name of the parameter file that will control the wet phase of the test. To change the file, double click on this line. A screen similar to the one for the <strong>Dry Curve Parameters File</strong> appears. Select an existing parameter file from the file list.<br />
+To create a new parameter file, click the <strong>Edit Parameter File</strong> button. Go to <a href="../Modify/edParam.html">Editing Auto Parameters</a> for details.
+</p><br />
+<h5>Type of Test</h5>
+<p>Type of test to be run. Double-click on this line to display the screen at right.<br />
+Select the type of test from the yellow list.<br />
+If applicable for the chosen test, a green list of options appears. Select the desired option.
+</p>
+<p><img id="left" src="../images/groups/OKbutton.jpg" width="105" height="32" alt="An OK button" />Click <strong>OK</strong>.</p>
+<p><img class="left" src="../images/groups/CancelButton.jpg" width="105" height="33" alt="A cancel button" /></p>
+<p>Changes <strong>Type of Test</strong> to that selected and returns to the <strong>Autotest</strong> screen.Returns to the <strong>Autotest</strong> screen without changing the <strong>Type of Test</strong>.</p>
+<h5>The Types of Tests and their Various Modes</h5>
+<img src="../images/groups/TestSelection01.jpg" width="370" height="362" vspace="10" hspace="30" alt="Test Selection form" />
+<a name="capflo" id="capflo"></a>
+<h6><strong>Capillary Flow Porometry</strong></h6>
+<p>Test used to find mean flow, bubble point, cumulative flow, and pore distribution.</p>
+<ul>
+<li>"	Wet up, Dry down&nbsp;	The wet curve is run with the pressure increasing followed by the dry curve with the pressure decreasing.</li>
+<li>"	Wet up, Dry up	&nbsp;	The wet curve is run with the pressure increasing then the dry curve with the pressure increasing.</li>
+<li>"	Dry up, Wet up	 &nbsp;	The dry curve is run with the pressure increasing followed by the wet curve with the pressure increasing.</li>
+<li>"	Wet-up, Calc-Dry &nbsp;	The wet curve is run with the pressure increasing. A linear dry plot is extrapolated from the wet phase data.</li>
+<li><ul>
+<li>Linear plots a line connecting the last point on the wet curve with the origin.</li>
+<li>Darcy uses the Darcy Equation and points from the wet curve to plot a parabolically shaped line, symmetric along the y- axis. </li>
+<li>Square Root uses an equation which is based on the square root function</li>
+</ul></li>
+<li><strong>Microflow Porometry</strong></li>
+</ul>
+<p>The actual gas flow cannot be measured directly by flow rate because the pores of the sample are so small. The volume of the system and the rate of the increase in pressure are plugged into the ideal gas law to find flow rate.</p>
+<h6>Bubble Point</h6>
+<ul>
+<li>Manual Mode: &nbsp;User assisted bubble point test.</li>
+<li>Standard Mode:&nbsp;	Fully automated bubble point test.</li>
+</ul>
+<h6>Gas Permeability</h6>
+<p>Gas is used to find the Darcy's Permeability Constant.</p>
+<p class="blue">These first three tests have two common options, <strong>Use Pressure Step List</strong> and <strong>Run Test as Pass/Fail</strong>. The Step List option allows the user to select a saved set of pressure values at which data values will be recorded when a test is run. The pass/fail option allows the user to select a minimum and maximum bubble point pore size which will determine if the test has passed or failed. </p>
+<h6>Integrety Test</h6>
+<p>Used to find flow rates through a saturated sample.</p>
+<h6>Envelope Surface Area</h6>
+<p>Finds the surface area of pores that are large enough to permit flow through. </p>
+<h6>Pressure Hold	</h6>
+<p>A diffusion test to determine the leak-down rate of a material.</p>
+<h6>Microflow P vs. Time	</h6>
+<p>Used for very low permeability samples. Finds flow rates corresponding to specific pressures applied and charts the rates over time. </p>
+<h6>Liquid Permeability	</h6>
+<p>Liquid is used to find the Darcy's Permeability Constant.</p>
+<h6>Hydrohead</h6>
+<p>Finds pressure at which fluid can be forced through the pores of a hydrophobic sample.</p>
+<h6 class="blue">Diameter</h6>
+<p>The diameter of the tested sample. This is determined by the diameter of the O-rings holding the sample in the sample chamber. Click on the line labeled diameter to change this value.</p>
+<h6 class="blue">Cyl. Len. (or 0)</h6>
+<p>The length of a cylindrical sample. For flat samples, use zero. Click on the line labeled cylinder length to change this value.</p>
+<h6 class="blue">Thickness</h6>
+<img class="left" src="../images/execute/close.jpg" width="105" height="25" alt="Close button" />
+<p>The thickness of a flat sample or the wall thickness of a cylindrical sample. Click on the line labeled thickness to change this value.
+Cancels the automated test setup and returns to the CAPWIN Main Screen.
+</p>
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Execute/auto.html#auto">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Execute/advanSet.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

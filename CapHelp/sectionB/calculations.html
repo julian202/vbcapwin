@@ -1,0 +1,478 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Calculations Used in CAPREP</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">
+</head>
+
+<body>
+<a name="capFlo"></a>
+<h4><font color="#FF0000">Calculations Used in CAPREP</font></h4>
+<hr>
+<p>The calculations performed in the Report program use the formulas below.</p>
+<p><font color="#FF0000">Capillary Flow Porometry</font></p>
+<table width="90%" border="0" align="center">
+	<tr>
+		<td width="25%">Pressure (PSI):</td>
+		<td width="10%">P</td>
+		<td>= Raw pressure data</td>
+	</tr>
+	<tr>
+		<td width="25%">Diameter (µm):</td>
+		<td width="10%">Dia</td>
+		<td width="65%">= (0.415 * Surface tension) / P</td>
+	</tr>
+	<tr>
+		<td width="25%">Wet Flow (L/min):</td>
+		<td width="10%">QW</td>
+		<td width="65%">= Raw wet flow data</td>
+	</tr>
+   <tr>
+		<td width="25%">Dry Flow (L/min):</td>
+		<td width="10%">QD</td>
+		<td width="65%">= Raw dry flow data</td>
+	</tr>
+   <tr>
+		<td width="25%">Cumulative Filter Flow %:</td>
+		<td width="10%">CFF</td>
+		<td width="65%">= (QW / QD) * 100</td>
+	</tr>
+   <tr>
+		<td width="25%">Filter Flow %:</td>
+		<td width="10%">FFP</td>
+		<td width="65%">= CFF - Last FFP</td>
+	</tr>
+   <tr>
+		<td width="25%">Pore Size Distribution:</td>
+		<td width="10%">PSD</td>
+		<td width="65%">= (FFP - Last FFP) / (Last Dia - Dia)</td>
+	</tr><tr>
+		<td width="25%">Average Diameter (µm):</td>
+		<td width="10%">AD</td>
+		<td width="65%">= (Dia + Last Dia) / 2</td>
+	</tr>
+</table>
+<a name="gasPerm"></a>
+<h4><font color="#FF0000">Gas Permeability</font></h4>
+<table width="90%" border="0" align="center">
+	<tr>
+		<td width="25%">Differential Pres. (PSI):</td>
+      <td width="10%">DP</td>
+		<td width="65%">= (Raw pressure data) - (Atmospheric pressure)</td>
+	</tr>
+   <tr>
+		<td width="25%">Flow (cc/sec):</td>
+		<td width="10%">F1</td>
+		<td width="65%">= Raw flow data</td>
+	</tr>
+   <tr>
+		<td width="25%">Flow per Area and Pressure:</td>
+		<td width="10%">F2</td>
+		<td width="65%">= F1 / (DP * Pi * Dia2 * 250)    <font color="#00AA00">(in L / (PSI*SqCm*Sec)</font></td>
+	</tr>
+   <tr>
+		<td width="25%">Flow per Area and Pressure:</td>
+		<td width="10%">F3</td>
+		<td width="65%">	= F2 * 60  <font color="#00AA00">(in L / (PSI*SqCm*Min)</font></td>
+	</tr>
+   <tr>
+		<td width="25%">Darcy's Permeability Constant:</td>
+		<td width="10%">DPC</td>
+		<td width="65%">= (8*F1*Length*Mu)/(Pi*Dia2(Atm*Atm-1)</td>
+	</tr>
+   <tr>
+		<td width="25%"></td>
+		<td width="10%">Atm</td>
+		<td width="65%">= (Raw pressure data) / (Atmospheric pressure)<font color="#00AA00">(in PSI)</font></td>
+</tr>
+<tr>
+		<td width="25%"></td>
+		<td width="10%">Pi</td>
+		<td width="65%">= 3.14159265</td>
+	</tr>
+
+</table>
+<table align="center" width="30%" border="1">
+<tr>
+<td width="50%"><strong>Gas/Liquid</strong></td>
+<td width="50%"><strong>M&#181;</strong></td>
+</tr>
+<tr>
+<td width="50%">Nitrogen</td>
+<td width="50%">0.0185</td>
+</tr>
+<tr>
+<td width="50%">Water</td>
+<td width="50%">1.0</td>
+</tr>
+<tr>
+<td width="50%">Air</td>
+<td width="50%">0.0185</td>
+</tr>
+<tr>
+<td width="50%">Helium</td>
+<td width="50%">0.000198</td>
+</tr>
+<tr>
+<td width="50%">Argon</td>
+<td width="50%">0.0221</td>
+</tr>
+</table>
+<a name="maxPorBubPt"></a>
+<h4><font color="#FF0000">Maximum Pore Size (Bubble Point)</font></h4>
+<p>maximum pore size is calculated by the software using the following equation:</p>
+<div align="center">
+<img src="../images/poreSizeForm.jpg" width="156" height="52" alt="Pore size formula">
+</div>
+<table align="center" border="0" width="65%">
+	<thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+	<tbody>
+	<tr>
+		<td width="10%"><font size="-1"><i>d</i></font> </td>
+		<td width="90%"><font size="-1">= maximum pore diameter (&#181;m)</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i>1</i></font> </td>
+		<td width="90%"><font size="-1">= surface tension of liquid (dynes/cm)</font></td>
+	</tr>
+    <tr>
+		<td width="10%"><font size="-1"><i>p</i></font> </td>
+		<td width="90%"><font size="-1">= differential pressure</font></td>
+	</tr>
+    <tr>
+		<td width="10%"><font size="-1"><i>C</i></font> </td>
+		<td width="90%"><font size="-1">	 = constant:	2860	when p is in Pa</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i></i></font> </td>
+		<td width="90%"><font size="-1">2.15	when p is in cm Hg</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i></i></font> </td>
+		<td width="90%"><font size="-1">	0.415	when p is in psi</font></td>
+	</tr>
+	</tbody>
+</table>
+<p>The surface tension (dynes/cm), effective pore size range and required pressures (in psi) are listed in the following table:</p>
+<table width="95%" cols="6" align="center" border="1">
+	<tr>
+		<td rowspan="2" width="20%" align="center"><font size="-1"><strong>Fluid</strong></font></td>
+  		<td rowspan="2" width="20%" align="center"><font size="-1"><strong>Surface Tension</strong><br>(dynes/cm)</font></td>
+		<td colspan="4" width="60%" align="center"><font size="-1"><strong>Pore Size Range</strong></font></td>
+</tr>
+<tr>
+	<td height="55%" align="center">&#8805;1 &#181;m</td>
+	<td height="55%" align="center">&#8805;0.5 &#181;m</td>
+	<td height="55%" align="center">&#8805;0.1 &#181;m</td>
+	<td height="55%" align="center">&#8805;0.05 &#181;m</td>
+</tr>
+<tr>
+	<td align="center" width="20%"><font size="-1">Water</font></td>
+	<td align="center" width="20%"><font size="-1">72.0</font></td>
+	<td align="center" width="15%"><font size="-1">30 psi</font></td>
+	<td align="center" width="15%"><font size="-1"></font>60 psi</td>
+	<td align="center" width="15%"><font size="-1"></font>150 psi</td>
+	<td align="center" width="15%"><font size="-1"></font>600 psi</td>
+	</tr>
+<tr>
+	<td align="center" width="20%"><font size="-1">Mineral Oil</font></td>
+	<td align="center" width="20%"><font size="-1">34.7</font></td>
+	<td align="center" width="15%"><font size="-1">15 psi</font></td>
+	<td align="center" width="15%"><font size="-1">30 psi</font></td>
+	<td align="center" width="15%"><font size="-1">75 psi</font></td>
+	<td align="center" width="15%"><font size="-1">300 psi</font></td>
+	</tr>
+   <tr>
+	<td align="center" width="20%"><font size="-1">Petroleum Distillate</font></td>
+	<td align="center" width="20%"><font size="-1">30.0</font></td>
+	<td align="center" width="15%"><font size="-1">15 psi</font></td>
+	<td align="center" width="15%"><font size="-1">25 psi</font></td>
+	<td align="center" width="15%"><font size="-1">65 psi</font></td>
+	<td align="center" width="15%"><font size="-1">250 psi</font></td>
+	</tr>
+   <tr>
+	<td align="center" width="20%"><font size="-1">Denatured Alcohol</font></td>
+	<td align="center" width="20%"><font size="-1">	22.3</font></td>
+	<td align="center" width="15%"><font size="-1">10 psi</font></td>
+	<td align="center" width="15%"><font size="-1">20 psi</font></td>
+	<td align="center" width="15%"><font size="-1">50 psi</font></td>
+	<td align="center" width="15%"><font size="-1">200 psi</font></td>
+	</tr>
+   <tr>
+	<td align="center" width="20%"><font size="-1">Silwick</font></td>
+	<td align="center" width="20%"><font size="-1">20.1</font></td>
+	<td align="center" width="15%"><font size="-1">10.1psi</font></td>
+	<td align="center" width="15%"><font size="-1">20.1psi</font></td>
+	<td align="center" width="15%"><font size="-1">50.2psi</font></td>
+	<td align="center" width="15%"><font size="-1">125.6psi</font></td>
+	</tr>
+   <tr>
+	<td align="center" width="20%"><font size="-1">Porewick</font></td>
+	<td align="center" width="20%"><font size="-1">	16.0</font></td>
+	<td align="center" width="15%"><font size="-1">8 psi</font></td>
+	<td align="center" width="15%"><font size="-1">16 psi</font></td>
+	<td align="center" width="15%"><font size="-1">40 psi</font></td>
+	<td align="center" width="15%"><font size="-1">	100 psi</font></td>
+	</tr>
+</table>
+<!-- !!!!!!!! -->
+<a name="meanFlow"></a>
+<p><font color="#FF0000">Mean Flow Pore Size</font><br>A saturated sample will pass air when the applied pressure exceeds the capillary attraction of the fluid in the pores, allowing flow to pass through. Smaller pores have a higher capillary attraction than larger pores. Therefore, smaller pores open at higher pressures.</p>
+<p>By comparing the gas flow rates of a wet and dry sample at the same pressures, the percentage of flow passing through the pores larger than or equal to the specified size may be calculated from the pressure-size relationship. By increasing pressure in small steps, it is possible to determine by the flow contribution of very small pore size increments.</p>
+<p>The pressure at which wet flow is one-half the dry flow is used to calculate the mean flow pore size using equation [1] in the above section labeled,<a href="#maxPorBubPt"> Maximum Pore Size</a>.</p>
+<!-- !!!!!!!!! -->
+<a name="poreSizeDist"></a>
+<p><font color="#FF0000">Pore Size Distribution</font><br>The pore size distribution is calculated by dividing the data points into different groups.</p>
+<ol>
+	<li>Select the limits of each group.</li>
+	<li>Substitute the limits into equation [1] (see page <a href="#maxPorBubPt"> Maximum Pore Size</a>) 			to find the respective pressures.</li>
+	<li>Determine the wet and dry flows at the pressure limits from the wet and dry flow curves.</li>
+	<li>Substitute the values found in equations [2] and [3]:</li>
+</ol>
+<div align="center">
+<img  align="middle" src="../images/formula2a.jpg" width="278" height="83" alt="Formula 2 q=wet flow subscript h over dry flow h minus wet flow l over dry flow l times 100. Where q equals filter flow precentage, l equals low pressure limit, and h equals high pressure limit.">
+</div>
+<table align="center" border="0" width="65%">
+	<thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+	<tbody>
+	<tr>
+		<td width="10%"><font size="-1"><i>Q</i></font> </td>
+		<td width="90%"><font size="-1">= filter flow percentage</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i>l</i></font> </td>
+		<td width="90%"><font size="-1">= low pressure limit</font></td>
+	</tr>
+    <tr>
+		<td width="10%"><font size="-1"><i>h</i></font> </td>
+		<td width="90%"><font size="-1">= high pressure limit</font></td>
+	</tr>
+   </tbody>
+</table>
+<div align="center">
+<img  align="middle" src="../images/formula3a.jpg" width="329" height="67" alt="Pore size formula">
+</div>
+<table align="center" border="0" width="65%">
+	<thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+	<tbody>
+	<tr>
+		<td width="10%"><font size="-1"><i>D</i></font> </td>
+		<td width="90%"><font size="-1">= pore distribution</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i>Q</i></font> </td>
+		<td width="90%"><font size="-1">= Filter flow incremental</font></td>
+	</tr>
+    <tr>
+		<td width="10%"><font size="-1"><i>d<sub>L</sub></i></font> </td>
+		<td width="90%"><font size="-1">= average pore diameter for previous point</font></td>
+	</tr>
+    <tr>
+		<td width="10%"><font size="-1"><i>Q<sub>L</sub></i></font> </td>
+		<td width="90%"><font size="-1">	 = previous value</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i>d</i></font> </td>
+		<td width="90%"><font size="-1">average diameter for current point</font></td>
+	</tr>
+	</tbody>
+</table>
+<!-- !!!!!!!! -->
+<a name="darcys"></a>
+<p><font color="#FF0000">Darcy's Permeability Constant</font><br></p>
+<p><font color="#000000"><strong>The Darcy's Permeability Constant is calculated using equation:</strong></font></p>
+<div align="center">
+<img src="../images/formula5a.jpg" width="340" height="68" alt="C equals 8 timse F times T times V diveded by P squared minus one times D squared times Pi where:">
+</div>
+<table align="center" border="0" width="65%">
+	<thead><tr><td><i><strong>Where:</strong></i></td></tr></thead>
+	<tbody>
+	<tr>
+		<td width="10%"><font size="-1"><i>C</i></font> </td>
+		<td width="90%"><font size="-1">= Darcy's Permeability Constant</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i>F</i></font> </td>
+		<td width="90%"><font size="-1">= Flow</font></td>
+	</tr>
+    <tr>
+		<td width="10%"><font size="-1"><i>T</i></font> </td>
+		<td width="90%"><font size="-1">= Sample thickness</font></td>
+	</tr>
+    <tr>
+		<td width="10%"><font size="-1"><i>	V</i></font> </td>
+		<td width="90%"><font size="-1">= Viscosity (table below)</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i>D</i></font> </td>
+		<td width="90%"><font size="-1">= Sample diameter</font></td>
+	</tr>
+   <tr>
+		<td width="10%"><font size="-1"><i>P</i></font> </td>
+		<td width="90%"><font size="-1">= Pressure (atmospheres)</font></td>
+	</tr>
+	</tbody>
+</table>
+<div align="center">
+<h4><strong>Table of Viscosity</strong></h4>
+<table align="center" width="90%" cols="6" border="1">
+<tr>
+	<td width="16%" align="center"><strong>Gas / Liquid:</strong></td>
+	<td width="16%" align="center"><strong>Air</strong></td>
+	<td width="16%" align="center"><strong>Argon</strong></td>
+	<td width="16%" align="center"><strong>Helium</strong></td>
+	<td width="16%" align="center"><strong>Nitrogen</strong></td>
+	<td width="16%" align="center"><strong>Water</strong></td>
+</tr>
+<tr>
+	<td width="16%" align="center">Viscosity:</td>
+	<td width="16%" align="center">0.0185</td>
+	<td width="16%" align="center">0.0221</td>
+	<td width="16%" align="center">0.000198</td>
+	<td width="16%" align="center">0.0185</td>
+	<td width="16%" align="center">1</td>
+</tr>
+</table>
+</div>
+<!-- !!!!!!!!! -->
+<a name="envelope"></a>
+<p><font color="#FF0000">Envelope Surface Area</font><br>The Envelope Surface Area test is used to find the surface area of pores that allow flow through. The surface area of these pores completely envelopes the sample material, explaining the name of the test. When an ESA test is run, pressure of the system will be gradually increased and the change in through-flow and the resulting pressure drop are measured. Surface area is calculated from flow rate, pressure and the physical characteristics of the particular sample and gas being used by plugging in these data values into the Kozeny Carman equation shown below:    </p>
+<div align="center">
+<img src="../images/formula5.jpg" width="384" height="34" alt="very complex math formula">
+</div>
+<table align="center" width="90%" cols="4" border="0">
+<thead><tr><th colspan="4" align="left">where:</th></tr>
+</thead>
+<tbody>
+<tr>
+<td width="10%" align="center">F</td>
+<td width="40%" align="left">= flow rate at average pressure, p</td>
+<td width="10%" align="center">l</td>
+<td width="40%" align="left">=thickness of sample</td>
+</tr>
+<tr>
+<td width="10%" align="center">p</td>
+<td width="40%" align="left">=differential pressure</td>
+<td width="10%" align="center">a</td>
+<td width="40%" align="left">= area of sample</td>
+</tr>
+<tr>
+<td width="10%" align="center">P</td>
+<td width="40%" align="left">=porosity</td>
+<td width="10%" align="center">S</td>
+<td width="40%" align="left">= through pore surface area per volume of solid</td>
+</tr>
+<tr>
+<td width="10%" align="center">&#961;</td>
+<td width="40%" align="left">= density of gas at p</td>
+<td width="10%" align="center">&#181;</td>
+<td width="40%" align="left">= viscosity</td>
+</tr>
+<tr>
+<td width="10%" align="center">K</td>
+<td width="40%" align="left">= a porosity constant
+</td>
+<td width="10%" align="center">Z</td>
+<td width="40%" align="left">= a constant</td>
+</tr>
+</tbody>
+</table>
+<p>Flow rate, differential pressure, average pressure, thickness of sample and cross-sectional area can be measured either manually or by the porometer. Density and Viscosity must be obtained from appropriate tables and the porosity is calculated from the true density ( t) and the bulk density ( b) of the sample using the following equation:</p>
+<div align="center">
+<img src="../images/formula6.jpg" width="527" height="21" alt="P equals one minus rho times b minus rho times t">
+</div>
+<!-- !!!!!!!!! -->
+<a name="partSize"
+<p><font color="#FF0000">Average Particle Size and Fiber Diameter form ESA Calculations</font><br>	In the Envelope Surface Area test, the surface area per unit mass (Sm) and the density of the particles ( p) is calculated. From these two values, the average particle size (Dp) of a powder sample can be obtained if it can be assumed that all particles of the sample are spherical and are the same size. If you are able to assume that the fibers of the sample being used (should be cylindrical) have the same diameter and length, you can find the average fiber diameter (Df),using the true density of the fiber ( f). The following two equations are used to find Dp and Df respectively:</p>
+<div align="center">
+<img src="../images/formula7.jpg" width="523" height="42" alt="Equations for the aaverage particl size and average fiber diameter">
+</div>
+<!-- !!!!!!!!! -->
+<a name="wesa"></a>
+<p><font color="#FF0000">WESA Calculation</font><br>Volumetric, dynamic flow, and gravimetric methods area three traditional technologies in solid surface area analysis via adsorption. The first two methods (volumetric and dynamic flow) have been widely used because of the availability of commercial automated operating systems. Though there are significant differences among these techniques regarding the methodology of isotherm measurement they all utilize the same models to process the isotherm for surface area analysis. The most common one is Brunauer-Emmett-Teller (BET) multilayer physical adsorption model. The BET theory is almost universally employed for total surface area measurement on various solids and/or powder materials.</p>
+<p>An alternate approach for surface area analysis is the flow permeametry method which is probably the simplest experiment for surface area determination. In addition, this method is capable of measuring the external or envelope area of a powder sample, which is otherwise not readily available by any adsorption methods.</p>
+<p>The most critical aspect of using flow permeametry to measure the surface area of a powder is the control of the flow pattern. Comparison studies were made between specific surface areas measured by conventional volumetric auto sorptometer and fluid permeameter methods and flow permeametry. It was found that for materials with a surface area of only several square meters per gram, such as most pharmaceutical, metal and ceramic powders, flow permeametry offers a simple, fast and reliable technology for surface area measurement.</p>
+<p>The porosity of the sample material is calculated using the following equations:</p>
+<div align="center">
+<img src="../images/formula8.jpg" width="90" height="64" alt="Vs equals M over rho">
+</div>
+<div align="center">
+<img src="../images/formula9.jpg" width="227" height="70" alt="Vv equals one quarter pi times D squared times H then subtract Vs">
+</div>
+<table align="center" width="50%" cols="2">
+<thead><tr><th colspan="2" align="left"><strong>where:</strong></th></tr></thead>
+<tbody>
+<tr>
+	<td width="25%" align="center">M</td>
+	<td width="75%" align="left">=	mass of sample</td>
+</tr>
+<tr>
+	<td width="25%" align="center">&#961;</td>
+	<td width="75%" align="left">	=	density of sample</td>
+</tr>
+<tr>
+	<td width="25%" align="center">D</td>
+	<td width="75%" align="left">=	diameter of sample chamber</td>
+</tr>
+<tr>
+	<td width="25%" align="center">H</td>
+	<td width="75%" align="left">=	height of sample in sample chamber</td>
+</tr>
+</tbody>
+</table>
+<p>Using these two equations we get the following porosity equation:</p>
+<div align="center">
+<img src="../images/formula10.jpg" width="175" height="60" alt="Porosity equals Vv over Vs plus Vv ">
+</div>
+<p>
+The porosity of the sample is calculated from intrinsic properties of the sample and the geometry of the sample chamber. The surface area equation is described below:
+</p>
+<div align="center">
+<img src="../images/formula11.jpg" width="282" height="91" alt="complex formula for surface area of the sample">
+</div>
+<table cols="2" align="center" width="55%">
+<thead><tr><th colspan="2" align="left"><strong>where:</strong></th></tr></thead>
+<tbody>
+<tr>
+	<td width="25%" align="center">SA</td>
+	<td width="75%" align="left">=	surface area</td>
+</tr>
+<tr>
+	<td width="25%" align="center">&#961;</td>
+	<td width="75%" align="left">= 	density of sample</td>
+</tr>
+<tr>
+	<td width="25%" align="center">P</td>
+	<td width="75%" align="left">=	pressure (in pascals)</td>
+</tr>
+<tr>
+	<td width="25%" align="center">H</td>
+	<td width="75%" align="left">=	height of sample in sample chamber</td>
+</tr>
+<tr>
+	<td width="25%" align="center">A</td>
+	<td width="75%" align="left">=	aspect factor</td>
+</tr>
+<tr>
+	<td width="25%" align="center">V</td>
+	<td width="75%" align="left">=	viscosity</td>
+</tr>
+<tr>
+	<td width="25%" align="center">F</td>
+	<td width="75%" align="left">=	flow rate</td>
+</tr>
+</tbody>
+</table>
+<p>From this equation it can be seen that the envelope surface area is calculated from various sample properties, gas properties, sample chamber properties and pressure and flow values. The value used for the aspect factor is a function of the porosity of the sample itself and ranges from 1 to 10. The higher the porosity the larger the aspect factor should be. For most materials a reasonable value for the aspect factor is 5.</p>
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../sectionA/reportGraphingScreen.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../CapRepIntro.html">Back to Intro</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

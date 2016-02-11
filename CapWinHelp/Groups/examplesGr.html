@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Examples of Using Groups in the CapWin Program</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h4>Example: Using Groups</h4>
+<p>The following is an example that will familiarize you with the usage of groups. You will be creating a group for lot number 42, sample 1. This example will be deleted when you are through.</p>
+<p>1.From the <strong>Main Screen</strong>, select <strong><u>G</u>roup</strong>&rarr;<strong> <u>N</u>ew Group</strong>.
+</p>
+<div>
+<img src="../images/groups/group.jpg" align="middle" width="307" height="221" alt="Main screen with Group menu expanded." />
+</div>
+<p>2.Type <strong>lot42</strong> in the box next to <strong>New Group</strong>.
+Click <strong>OK</strong>.</p>
+<div>
+<img src="../images/groups/newGr.jpg" align="middle" width="283" height="144" alt="New Group form."  />
+</div>
+<p>You are returned to the <strong>Main Screen. "lot42"</strong> </p>
+<p>Shows in the <strong>Group Name</strong> box.</p>
+<p>3.	Select <span class="bold">Autotest</span> from the <span class="bold">E<span class="uBold"></span>xecute Menu</span>.  </p>
+<div>
+<img src="../images/groups/executeMenu.jpg" align="middle" width="335" height="200" alt="Expanded Execute menu." /></div>
+<p>The <strong>Autotest</strong> screen appears. (The buttons at the top of this screen are explained in the <strong>Autotest</strong> section of the <strong>Execute Menu</strong> heading, but their use is not necessary for the task at hand.)</p>
+<div>
+<img src="../images/groups/autoTestFr.jpg" align="middle"  width="370" height="280" alt="AutoTest Form" />
+</div>
+<p>4.	Click on the blank space next to <strong>Output File Name</strong>. The <strong>Output Data File</strong> file window appears.
+This is how the window will be if CAPWIN was installed in the default location. If you opted for a different path, locate the <strong>Data</strong> folder under the Capwin folder and select it.
+</p>
+<p>5.	Click the <strong>New Folder </strong>icon at the top of the screen. Type lot42 in the input box. Hit save.</p>
+<span>
+<img src="../images/groups/dataSave.jpg" align="middle" width="428" height="266" alt="File Save dialog box for the data file" /></span>
+<p>A <strong>lot42</strong> folder appears below the <strong>data</strong> folder. In the input box, type in sample1, overwriting <strong>lot42</strong>. Click <strong>ok</strong>.
+The <strong>sample1.cft</strong> output data file is created. The path and file names are displayed in the <strong>Output File Name</strong> box.
+</p>
+<div><img src="../images/groups/outputFileName.jpg" width="478" height="17" alt="Output file name area of the Auto Test form." /></div>
+<p>6.	Click on the blank space next to <strong>End User</strong>. A dialog box appears.
+Type <strong>Customer #1</strong> in the input box.
+</p>
+<div>
+<img src="../images/groups/endUser.jpg" align="middle" width="363" height="138" alt="End Users form" /></div>
+<p>Click <strong>OK</strong>.</p>
+<p>7.	The Autotest options screen displays Customer #1 as the End User.  </p>
+<div>
+<img src="../images/groups/endUser01.jpg" align="middle" width="275" height="15" alt=" End User field from the Auto Test form " /></div>
+<p>8.	Following the same procedure as Step 8, enter the information shown in the illustration at right for the next 4 lines. </p>
+<div>
+<img src="../images/groups/autoTestFr01.jpg" align="middle" width="307" height="64" alt="Sction of the Auto Test form featuring test fererence number, sample ID number, lot number and operator ID"  /></div>
+<p>9. Leave <strong>Fluid</strong> as Porewick and <strong>Surface Tension</strong> as 16 dynes/cm. </p>
+<div>
+<img src="../images/groups/autoTestFr02.jpg" align="middle" width="375" height="34" alt="Section of the Auto Test form that displays fluid type and surface tension." /></div>
+<p>
+When necessary, <strong>Fluid</strong> and <strong>Surface Tension</strong> can be changed in the same manner as the previous items. The values shown on the <strong>Autotest</strong> options screen are printed on the report. Changing the parameters for the test is explained in the test procedures.
+</p>
+<p>10.	Double-click on <strong>Dry Curve Testing Parameters File</strong>.</p>
+<div>
+<img src="../images/groups/autoTestFr03.jpg" align="middle" width="370" height="20" alt="Section of the form that displays the address of the wet and dry parameters files"  /></div>
+<p>11.	The DRY Parameter File window appears.
+The file selector appears as shown if CAPWIN was installed in the default location. If you opted for a different path, locate the Parms folder within the Capwin folder and select it.
+</p>
+<div>
+<img src="../images/groups/dryParam.jpg" align="middle" width="428" height="265" alt="file chooser box for the location of the dry parameter files." />
+</div>
+<p>Click on <strong>bp-deflt.tpf.</strong></p>
+<p>Click <strong>OK</strong>.</p>
+<p>Both the Dry Curve and the Wet Curve Testing Parameters File options change to bp-deflt.tpf. This is because usually both the dry and wet phase of the test use the same parameters. </p>
+<p>12.	Double-click on Wet Parameter. </p>
+<div>
+<img src="../images/groups/autoTestFr04.jpg" align="middle" width="370" height="23" alt="This is a section of the Auto Test form showing the wet parameter file having its check box checked." />
+</div>
+<p>A dialog window appears. It will ask you if you would like to select a WET Parameter file that is different from the DRY. </p>
+<div>
+<img src="../images/groups/TestSetup01.jpg" align="middle" width="395" height="100" alt="Box that gives the user the choice between wet and dry parasmeter files." />
+</div>
+<p>Select Yes.</p>
+<p>13.	The <strong>WET Parameter File</strong> selector appears.<br />
+The file selector appears as shown if CAPWIN was installed with the default path. If you opted for a different path, locate the <strong>Parms</strong> folder under the Capwin folder and select it.Click on <strong>Bp-default.tpf.</strong><br />
+Click Open.
+</p>
+<div>
+<img src="../images/groups/wetParam.jpg" align="middle" width="428" height="266" alt="File chooser box for selscting a wet paramter file" />
+</div>
+<p>The <strong>Wet Curve Testing Parameters File</strong> is now <strong>Bp-default.tpf</strong>.   </p>
+<div>
+<img src="../images/groups/autoTestFr05.jpg" align="middle" width="370" height="30" alt="A section of the Auto Test form showing the wet parameter bow being checked " />
+</div>
+<p>14.	Next, click on the space next to the Type of Test option.
+The Test Selection screen appears.<br />
+Select <strong>Bubble Point</strong> in the yellow list and <strong>Automatic Detection</strong> in the green list.<br />
+Click OK.
+</p>
+<div>
+<img src="../images/groups/TestSelection01.jpg" align="middle" width="370" height="362" alt="Test Selection form showing bubble point and Automatic Detection as being selected." />
+</div>
+<p>The items not used by the selected test will not appear on the Autotest options screen.</p>
+<p>
+15.	Click on the space next to <strong>Type of Test</strong> again.<br />
+Select <strong>Capillary Flow Porometry</strong> from the yellow list and <strong>Wet up/Dry down</strong> from the green list.<br />
+Click <strong>OK</strong>.
+</p>
+<div>
+<img src="../images/groups/autoTest06.jpg" align="middle" width="371" height="267" alt="Auto Test form that is almost complete for the change of the user." />
+</div>
+<p>
+16.	<strong>Diameter, Cylinder Length</strong> and <strong>Thickness, Absolute Density, and Mass</strong> are discussed in the section of the manual dealing with testing procedures, (link here). Do not make any changes to them for now.
+</p>
+<div>
+<img src="../images/groups/autoTestFr07.jpg" align="middle" width="297" height="82" alt="Auto Test form that shows the samples diameter, mass, cylender length, thickness, and absolute density" />
+</div>
+<p>
+17.	If this were an actual test, you would click <strong>Start Test</strong> to save this setup and start the test. The next time this group was selected, it would display the options setup used to run the last test.<br />
+For this example, click <strong><u>C</u>lose</strong> to return to the <strong>Main Screen</strong> without saving this setup.
+</p>
+<div>
+<img src="../images/groups/autoTestFr08.jpg" width="395" height="236" alt="Auto Test form with all the fields filled." />
+</div>
+<p>18.	To delete this example, select the <strong><u>S</u>elect Group</strong> option from the <strong>Group</strong> Menu. </p>
+<div>
+<img src="../images/groups/autoTest09.jpg" align="middle" width="294" height="193" alt="Shos the main screen with the Group menu expanded and the Select group option selected." />
+</div>
+<p>19.	The <strong>SELECT</strong> screen appears.<br />
+Select <strong>DEFAULT</strong>. Click <strong>Continue</strong>. You are returned to the <strong>Main Screen</strong>.
+</p>
+<div>
+<img src="../images/groups/selsct.jpg" align="middle" width="350" height="141" alt="Select form." />
+</div>
+<p>
+20.	Select the Delete Group from the Group Menu.
+</p>
+<div>
+<img src="../images/groups/delGroup.jpg" align="middle" width="347" height="171" alt="Picture of the title screen showing the Group menu expanded and the delete group option selected." />
+</div>
+<p>A <strong>SELECT</strong> screen appears.  Select <strong>LOT42</strong>. Click <strong>Delete</strong>. You are returned to the <strong>Main Screen</strong>.<br />
+(The group in use cannot be deleted. In order to delete the <strong>LOT42</strong> group, the group selected was changed to <strong>DEFAULT</strong> before clicking <strong>"Delete Group"</strong>. The "Default")
+Locate the <strong>\capwin\data\lot42</strong> folder. Delete the <strong>lot42</strong> folder.
+</p>
+<div>
+<img src="../images/groups/selectGrFr02.jpg" align="middle" width="350" height="141" alt="Select Form" />
+</div>
+<br />
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Groups/modes.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Execute/auto.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

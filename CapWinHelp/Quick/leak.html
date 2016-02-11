@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Leak Test Quick Start Sheet</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h3 class="center"><span class="bold">Leak Test For Capillary Flow Porometers</span></h3>
+<div class="toporbottom">
+<a href="../Quick/QSintro.html">Back to Quick Start Sheet TOC</a>&nbsp;
+<a href="../Quick/integ.html">Integrity Test</a>
+</div>
+<hr />
+<p>To ensure that the instrument system is leak tight, perform a leak test before proceeding to any automated test procedures.  Leak tests can also be used as a way of diagnosing instrument problems.  The user specifies the maximum pressure of the leak test, the step pressure, and the wait time at each step.</p>
+<h5>Chamber Preparation</h5>
+<ol class="qssol">
+<!-- item #1 -->
+<li><span class="red">Disconnect the air hose attached to the sample chamber lid.</span>
+  Unscrew and remove the lid.  Take out the chamber insert, any adapter plates and samples that may be left in the sample chamber.
+<br /><br /></li>
+<!-- item #2 -->
+<li><span class="red">Check the o-rings for dryness,</span> apply vacuum grease if needed. Make sure the components are clean and free from wetting fluid left by previous testing.
+<br /><br /></li></ol>
+<h5>Leak Test Settings</h5>
+<ol class="qssol" start="3">
+<!-- item #3 -->
+<li>Under <span class="bold">Execute</span> on the main Capwin menu, <span class="red">select <span class="bold">Leak Test</span></span> (or press Ctrl + L).	A series of dialog boxes will appear.
+<br /><br /></li>
+<!-- item #4 -->
+<li>4.	The LeakTest Setup dialog box opens, prompting the user to <span class="red">Place Non-porous Insert in Chamber and Seal</span>.  <br />
+<span class="red">Take the non-porous metal or plastic disk and place it in the sample chamber.</span>  In order to ensure proper sealing between the non-porous disk and the top and bottom o-rings, make sure that the area of the disk covering the o-ring is smooth and free from deep scratches.  The disk should completely cover the o-rings.<br />
+<span class="red">Place the chamber insert into the chamber.</span>  The insert should sit no lower than the height of the sample chamber.  Screw on the lid and hand-tighten.  <span class="red">Connect the air hose to the quick-connect fitting on the lid.</span><br />
+Click <span class="bold">OK </span>to continue.
+<br /><br /></li>
+<!-- item #5 -->
+<li>A dialog box appears, prompting the user to <span class="red">Enter Maximum Pressure</span> (differential).  <br />
+<span class="red">Enter the maximum pressure of the leak test.</span>  Since this value is the differential pressure, the instrument will add on the current atmospheric pressure reading.  In determining what value to use, set the maximum pressure to a pressure greater than the maximum pressure you anticipate to use for the automated testing, but no more than the maximum pressure of your inlet pressure supply.<br />
+Click <span class="bold">OK</span> to continue.
+<br /><br /></li>
+<!-- item #6 -->
+<li>A dialog box appears, prompting the user to <span class="red">Enter Step Pressure</span>.<br />
+<span class="red">Enter the step pressure for the leak test.</span>  The step pressure is the amount of pressure that will be increased at each step interval.  This can be set to any value up to or including the maximum pressure of the leak test.  When the step pressure is set equal to the maximum pressure of the leak test, the instrument will attain the maximum pressure of the leak test in 1 step and hold for the duration of the test.  Another common practice is to use a value which will yield 10 pressure steps.<br />
+	Click <span class="bold">OK</span> to continue.
+<br /><br /></li>
+<!-- item #7 -->
+<li>A dialog box appears, prompting the user to <span class="red">Enter Wait Time</span>
+ (min).<br />
+<span class="red"Enter the wait time for the leak test at each pressure step.></span>
+  If the step pressure is set to the maximum pressure of the leak test, then the wait time is the test duration. Otherwise the pressure step will continue to increase at the time specified by the user in this input. <br />
+Click <span class="bold">OK</span> to continue.
+<br /><br /></li>
+</ol>
+<h5>Run LeakTest </h5>
+<ol class="qssol" start="8">
+<!-- item #8 -->
+<li>The LeakTest Setup dialog box appears, indicating the summary of the leak test procedure:  The program will acquire readings from X to Y Pressure Units (Gauge), in X Pressure Unit increments, waiting Z minutes between each point.  <br />
+Click <span class="bold">OK</span>.<br />
+The instrument proceeds to increase the pressure to the first step and holds for the duration of the wait time.
+<br /><br /></li>
+<!-- item #9 -->
+<li>At the end of the leak test, the instrument will vent off the pressure.  The LeakTest dialog box appears, stating the instrument passed [or failed] the leak test over the range of <span class="red">X to Y Pressure Units</span> (differential).  Do you wish to see the collected data?<br />
+<span class="red">Click Yes if you want to view the data.</span>
+
+<br /><br /></li>
+<!-- item #10 -->
+<li>10.	The Done dialog box appears, stating LeakTest Finished.  <span class="red">Remove Non-porous Insert.  Click <span class="bold">OK</span>.</span>
+<br /><br /></li>
+</ol>
+<h5>View LeakTest results</h5>
+<ol class="qssol" start="11">
+<!-- item #11 -->
+<li>If Yes was clicked, Notepad opens to show the LeakTest results.  The results are stored in the file Leaktest.asc, under the CapWin directory, and are viewed in Notepad.  Leak test data is reported as a percentage of leak per hour.  PI is the pressure at the beginning of the wait time at each step, and PF is the pressure taken at the end of each wait time.  Normally, a leak rate within 7% per hour is acceptable.
+<br /><br /></li>
+<!-- item #12 -->
+<li><span class="red">Save the file under a different name</span> if you do not want the data to be overwritten the next time the leak test is run.  Exit Notepad when you are finished viewing the data.
+<br /><br /></li>
+</ol>
+<div id="born">
+<a href="../Quick/integ.html">Integrity Test</a>&nbsp;
+<a href="../Quick/QSintro.html">Back to Quick Start Sheet TOC</a><br />
+<a href="../Quick/liquidElevated.html">Liquid Permeability Elevated</a></div>
+<br /><br />
+
+
+</body>
+</html>

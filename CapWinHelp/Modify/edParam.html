@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Modify Menu Options </title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h3>Modify Menu</h3>
+<hr />
+<p>The Modify Menu allows you to customize many functions of the CAPWIN program.</p>
+<img src="../images/modify/mainScr.jpg" width="330" height="199" alt="Main screen with the modify menu expanded" vspace="10" hspace="30" />
+<a name="autoParm" id="autoParm"></a>
+<h4>Edit Auto Parameters</h4>
+<p>An automated test has many factors. The Edit Auto Parameters option allows for easy modification of some of these factors. This screen shows the current values of the parameters in the DEFAULT.TPF file. When <strong>Edit Auto Parameters</strong> is selected, the values displayed are taken from the default parameter file (DEFAULT.TPF).</p>
+<img src="../images/modify/edit.jpg" width="370" height="381" alt="The edit parameters form." vspace="10" hspace="30" />
+<p>To change a value, click on the value and type in a new value. The maximum and minimum values for each parameter are listed at the bottom of the screen as the parameter is being edited. The units used for each parameter can be changed in the General tab of the Edit Preferences screen found in the Autotest option. (For example seconds can be changed to minutes.)</p>
+<p>(The Edit Auto Parameters feature is also located under the Autotest function of the Execute Menu. It is one of the main buttons on the Autotest Screen.)</p>
+<h5>Maximum Control Parameters</h5>
+<p><strong>maxflow (cc/m)</strong>	(Default = maximum flow for the instrument)<strong>Max Flow For Machine</strong>.<br />
+The flow limit for the test. If this flow level is reached, the test will end its current phase.
+</p>
+<h5>Bubble Point and Integrity Test</h5>
+<p><strong>bublflow (cc/m)</strong>	&nbsp;(Default = 2.0 cc/min)<br />
+Bubble flow. During the bubble flow test, the flow controller maintains the input flow at this value.</p>
+<p>This parameter affects the speed of the bubble point test and, inversely, the accuracy. The larger the bublflow value, the faster the test will run. Increasing bublflow to 20 cc/m or so can be very helpful for reaching small bubble point diameters (below 1 &mu;m) in a reasonable amount of time.</p>
+<p>For the integrity test, the <strong>bublflow (cc/m)</strong> parameter is the number of initial increments of the pressure regulator before the test starts. This will correspond to different pressures depending on the inlet pressure of the system, so this parameter should be determined empirically through trial and error.</p>
+<p><strong>F/PT (old bubltime) &nbsp;	(Default = 50)</strong><br />
+(Flow rate / Pressure change) * Time. A calculation that sets a point at which the bubble point is recorded by monitoring the pressure and flow rate of the system. While looking for the bubble point, the calculation should remain constant since the pressure is increasing as the time increases. Once the bubble point is reached, the pressure increases more slowly causing the calculation to increase. If the pressure remains constant for this many increments (the value set as this parameter), the bubble point is taken.</p>
+<p><strong>minbppres (PSI)&nbsp;	(Default = 0)</strong><br />
+Minimum bubble point pressure. This is the pressure at which the bubble point test is set to begin. (For some samples, the initial pressurization causes the sample to stretch downward within the confines of the sample area. A small amount of flow occurs until the sample is fully stretched which gives a false flow reading at the beginning of the test. Setting a minimum bubble pressure allows you to start the test at a pressure beyond which the sample is fully stretched and flow has settled back to zero.)</p>
+<p><strong>zerotime (sec) &nbsp;	(Default = 1 second)</strong><br />
+Zero time. Sets the minimum time between regulator increment pulses. Each incrementation of the regulator causes a brief period of unreliable pressure and flow data as the system seeks equilibrium. The pulse delay insures that there is sufficient time between incrementations to assure data reliability.</p>
+<h5>Motorized Valve 2 Control</h5>
+<p><strong>v2incr (counts) &nbsp;	(Default = 10 counts)</strong><br />
+Valve 2 incrementation. The position of Valve 2 is measured by the computer in counts. The v2incr defines the number of counts that are considered as one increment.
+</p>
+<h5>Regulator Control</h5>
+<p><strong>preginc (counts) &nbsp;	(Default = 1.25 cts)</strong><br />
+Pressure regulator incrementation. This is the number of counts to increment the regulator which controls the amount of pressure let into the system.
+</p>
+<p><strong>pulse delay (sec)</strong> &nbsp;	(Default = 2 secs)<br />
+Sets the delay between regulator increment pulses and resumption of data recording. Each incrementation of the regulator causes a brief period of unreliable flow data as the system seeks stability. The pulse delay insures that there is sufficient time between incrementation and measurement to assure the reliability of flow data.
+</p>
+<h5>Lohm Calibration</h5>
+<p><strong>maxpres ( PSI )</strong> &nbsp;	(Default = maximum pressure of machine)<br />
+Maximum pressure. This value determines the pressure at which the test (or phase of the test) quits pressurizing and begins depressurizing. It is usually the maximum pressure of the machine. If the pressure set here is reached during Lohm Calibration, the calibration should be stopped. Normally this will not happen.
+</p>
+<p><strong>pulsewidth (sec)</strong>&nbsp; (Default = 0.2 sec)<br />
+Pulse width. The power to run the motor that opens and closes Valve 2 is applied in pulses. This parameter is the duration (in seconds) of a single pulse. It is used to determine how much the motorized valve should be opened at each increment. Smaller values of pulsewidth will result in more data points on the Lohm Table. (The recommended value here is 0.0375.)
+</p>
+<h5>Stability Routine #1</h5>
+<p><strong>CapWin</strong> uses two stability tests to determine equilibrium; first it uses <strong>Stability Routine 1</strong>. If equilibrium is not established by the time specified in this parameter (mineqtime), CapWin switches to <strong>Stability Routine 2</strong>. </p>
+<p><strong>mineqtime (sec)</strong> &nbsp;	(Default = 30 sec)<br />
+Minimum equilibrium time. The number of seconds set as the minimum equilibrium time is the approximated time needed to remove the effects of evaporation in most systems.
+</p>
+<p><strong>presslew (counts)</strong> 	(Default = 10 cts)<br />
+Pressure slew. This parameter defines the number of counts the pressure can vary by and still be considered stable.
+</p>
+<p><strong>flowslew (counts)</strong>&nbsp; 	(Default = 50 cts)<br />
+Flow slew. This parameter defines the number of counts the flow is allowed to vary by and still be considered stable.
+</p>
+<p><strong>eqiter</strong> 		(Default = 5)<br />
+Equilibrium iterations. The value set refers to the number of times the pressure and the flow will be read to determine if they are within the slew ranges. It is usually set at 5 to remove the effects of evaporation in most systems.
+</p>
+<h5>Stability Routine #2</h5>
+<p><strong>aveiter</strong>&nbsp; 		(Default = 20)<br />
+Average iterations. Number of times to read pressure and flow values in the second stability routine. Also set at 5 to remove the effects of evaporation in most systems.
+</p>
+<p><strong>maxpdif ( psi )</strong>  &nbsp;	(Default = 0.1 PSI)<br />
+Maximum pressure differential. The value set for this parameter corresponds to the maximum difference between the minimum and maximum pressure reading in this stability routine.
+</p>
+<p><strong>maxfdif (cc/m)</strong> 	&nbsp;(Default = 50 cc/min)<br />
+Maximum flow differential. The value set for this parameter corresponds to the maximum difference between the minimum and maximum flow reading this stability routine.
+</p>
+<h5>Achieve more Accuracy by longer Stability Routines</h5>
+<p>To wait longer times for stability, increase the mineqtime parameter to stay in the first stability routine longer. If saw-toothed graphs are obtained from the data, the graphs can be made more regular by reducing the flowslew, presslew, and eqiter parameters.</p>
+<h5>Slider Bars for Quick Auto-parameter adjustment</h5>
+<p>Capwin now gives you the ability to quickly and intuitively adjust values in the Auto Parameters window. New versions of the software feature a set of slider bars for this purpose:</p>
+<p>
+The Bubble Point Test slider (linked to the <strong>bublflow</strong> parameter) will adjust the speed of the bubble point test routine - and inversely affect the test accuracy. The <strong>Wet/Dry Test</strong> and <strong>Stability Test</strong> slider bars similarly offer a tradeoff between test speed and overall accuracy. Simply adjust the sliders as desired. Some experimentation may be necessary to discover the optimum settings for an acceptable compromise between speed and accuracy.
+</p>
+<p>Clicking the <strong>Reset Defaults</strong> button will return the auto parameters to their default values. </p>
+<h5>
+Current Test Status Screen
+</h5>
+<p>The <strong>Current Test Status</strong> (below) screen is used to keep track of the test as it is running and allows you to affect some control.</p>
+<img src="../images/modify/current.jpg" width="370" height="227" alt="Current test screen displays a graph of the test that is running" vspace="10" hspace="30" />
+<p><strong>Pause</strong><br /> 	Pauses the test so that you may perform any of several tasks on the machine. When paused, this menu listing changes to Resume.</p>
+<p><strong>Turn</strong><br /> 		Ends the current phase of the test. If you are running a single-phase test (e.g., gas or liquid permeability, pressure hold), Turn will end the test where it is. If you are in the first phase of a porometry test, Turn will end the current phase only and immediately begin the second phase.</p>
+<p>Note that both <strong>Turn</strong> and <strong>Abort</strong> will immediately end a single-phase test. However, <strong>Turn</strong> will preserve the data accumulated up to that point in the test, whereas <strong>Abort</strong> will discard any data collected.</p>
+<p><strong>Abort</strong>	<br />	Ends the test. Any data points taken are not saved.</p>
+<p><strong>Manual</strong><br />	Enters manual mode.</p>
+<p><strong>Record</strong><br />	Reads the current pressure and flow as a data point without waiting for stability (for current data point only).</p>
+<p><strong>Bubble</strong><br /> 	Takes the current point as the bubble point. This option will only be visible before the bubble point is reached.</p>
+<p><strong>Help</strong><br />		Starts the CapWin Help System.</p>
+<p><strong>Graph area</strong><br />	Shows a graphical representation of all data points taken during the test.</p>
+<p><strong>Test Type status box</strong><br />	This box appears just below the graph and displays the phase of the test currently running. For example, in the diagram above a dry phase is running. </p>
+<p><strong>Status Line</strong><br /> 	Located at the bottom of the screen. Displays the current pressure and flow rate.</p>
+<img class="left" src="../images/execute/close.jpg" width="105" height="25" alt="Close Button" />
+<p>Cancels the automated test setup and returns to the <strong>CAPWIN Main Screen</strong></p>
+<h5>Current Test Status Graphv Scale </h5>
+<p><strong>startp ( psi ) &nbsp;</strong>(Default = 1 PSI)<br />
+Starting pressure. This is the starting maximum pressure for the graph of the results of the test.
+</p>
+<p><strong>startf (cc/m) &nbsp;</strong>(Default = 500 cc/min)<br />
+Starting flow. This value is the starting maximum flow rate for the graph.
+</p>
+<h5>Leak Test</h5>
+<p><strong>read_delay (sec)&nbsp; </strong>(Default= 0 sec)<br />
+The value entered here will be the amount of time delayed before beginning to collect data at each step of pressure in a leak test.<br />
+Command buttons down the right side of the screen:
+</p>
+<p><strong>Help</strong><br />
+Starts the CapWin Help System
+</p>
+<p><strong>Make Default</strong><br />
+Saves the current settings to the file DEFAULT.TPF that is located in the <strong>CapWin</strong> directory. This does not save the settings being used. To save the settings use the Save As option.
+</p>
+<p><strong>Load</strong><br />
+Loads a previously created parameter file that has been stored as a file so that those particular values will be used for the test being run.
+</p>
+<p><strong>Save As</strong><br />
+Saves the values of the parameters to a file for use at a later time. The file selector box is displayed for entry of a file name.
+</p>
+<p><strong>Save</strong><br />
+Overwrites the existing file with a new changes made to the parameter values.
+</p>
+<p><strong>Print</strong><br />
+Prints a copy of the parameter settings.
+</p>
+<p><strong>Exit</strong><br />
+Leaves the <strong>Edit Auto Parameters</strong> screen and returns control to the <strong>CAPWIN Main Screen</strong>.
+</p>
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Report/reportMenu.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Modify/fileManual.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>The Data Editor </title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h4>Data Editor</h4>
+<img src="../images/modify/dataEdit.jpg" width="370" height="286" alt="Data editor form" vspace="10" hspace="30" />
+<p>The Data Editor option allows information in the data files to be edited.</p>
+<h5>Menu Bar</h5>
+<p><strong></strong><br />FILE
+Load		Loads a data file or a portion of one into the editor. The user will be taken to a file selector:
+</p>
+<p><strong>File</strong><br /></p>
+<ul>
+<li><strong>Load</strong> &nbsp;&nbsp;		Loads a data file or a portion of one into the editor. The user will be taken to a file selector:</li>
+<li><strong>Save	</strong> &nbsp;&nbsp;	Saves the data to a file. User will be taken to a file selector box</li>
+<li><strong>Close</strong>	&nbsp;&nbsp;	Closes the editor and returns to the CAPWIN Main Screen.</li>
+<li><strong>Import</strong>
+
+	<ul>
+	<li><strong>Dry Curve</strong>&nbsp;&nbsp;Loads only the dry curve from a data file. If this option is used while another data file is open in the editor, the imported dry curve will replace the dry curve in the current file.</li>
+	<li><strong>Wet Curve</strong>&nbsp;&nbsp;Load only the wet curve from a data file. If this option is used while another data file is open in the editor, the imported wet curve will replace the wet curve in the current file.</li>
+	</ul>
+</li>
+<li><strong>Export</strong>&nbsp;&nbsp;Exports the dry curve from a porometry data file. The dry curve is saved as a gas permeability file.</li>
+</ul>
+
+<p><strong>REFRESH</strong><br />
+Updates the graphical display of the dry and wet curves.
+</p>
+<p><strong>HELP</strong><br />
+Starts the CAPWIN Help System.
+</p>
+<p>The display box at the top of the screen shows a graphical representation of the data currently stored in the editor and modifications made. When the mouse is moved over the graph, the pressure and flow rate of the data at the particular cursor point on the curve are displayed below (P indicates pressure and F indicates flow).</p>
+<p>
+The list below the graph display box is comprised of the command prompts that can be activated when the cursor is within the graph box. To use these commands, place the cursor at the position to be changed, then type the appropriate letter you wish to see:
+</p>
+<p><strong>(B)ubble Pt.</strong>	&nbsp;&nbsp;Only usable with wet curve data. This command allows the bubble point to be relocated. All wet phase data to the left of this point is lost if the bubble point is moved to a point later in the time span of the graph.</p>
+<p><strong>(T)rim	</strong>&nbsp;&nbsp;	Removes the data points to the right of the cursor's current position.</p>
+<p><strong>(Z)oom	</strong>&nbsp;&nbsp;Zooms in on the graph. The cursor position marks the upper right corner of the area to magnify. The data not shown on the rescaled graph is NOT lost.</p>
+<p><strong>(R)estore</strong>&nbsp;&nbsp;	Restores the data to its original state as it was loaded.</p>
+<p><strong>(M)ove Dry</strong>&nbsp;&nbsp;	Allows the dry curve to be rescaled vertically while keeping the intercept at "0,0".</p>
+<p>
+The bottom half of the screen contains modifiable information about the test setup. This is information that was entered on the automated test setup screen:
+</p>
+<table>
+	<tr>
+		<td width="200"><strong>Fluid</strong></td>
+		<td>Type of wetting fluid used in test.</td>
+	</tr>
+	<tr>
+		<td width="200"><strong>Date</strong></td>
+		<td>Date test is being run.</td>
+	</tr>
+   <tr>
+		<td width="200"><strong>Lines 1 &amp; 2</strong></td>
+		<td>User information about the sample.	</td>
+	</tr>
+   <tr>
+		<td width="200"><strong>Sample ID</strong></td>
+		<td>Information that identifies the sample. </td>
+	</tr>
+   <tr>
+		<td width="200"><strong>Permeability Gas/Liquid</strong></td>
+		<td>The gas or liquid used to run the permeability tests.</td>
+	</tr>
+   <tr>
+		<td width="200"><strong>Surface Tension</strong></td>
+		<td>The surface tension of the liquid.</td>
+	</tr>
+   <tr>
+		<td width="200"><strong>Diameter of Sample</strong></td>
+		<td>The diameter of the tested sample.</td>
+	</tr>
+   <tr>
+		<td width="200"><strong>Thickness of sample	</strong></td>
+		<td>The thickness of the tested sample.</td>
+	</tr>
+</table>
+<p>At the bottom of the screen there is a slider that displays different parameters of the test, beginning with <strong>Operator</strong>. If you click on the right hand arrow, more parameters will be displayed (.<strong>Lot Number, Type of Test, Wet Parameter, and finally Dry Parameter</strong>) The entry box above the slider allows you to change the parameters or their labels. These parameters are the same that have been entered in the <strong>Autotest</strong> Screen. For more information on these parameters, please refer to the <a href="../Execute/auto.html#auto">AutoTest</a> Section .</p>
+<p>Below the movable arrow there is an option for Tortuosity Factor. The default value for this factor is 0.715. If you would like to change this value click on the check box. Then enter a new value in the designated space. For more information on the Tortuosity Factor please refer to the section of the <a href="../Execute/advanSet.html#tortuosity">Advanced Settings</a> page.</p>
+<br />
+<table>
+	<tr>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Modify/fileManual.html">Back</a></td>
+		<td height="30" width="50"></td>
+		<td height="30" width="50"><a href="../Modify/dataAve.html">Next</a></td>
+		<td height="30" width="50"></td>
+	</tr>
+</table>
+</body>
+</html>

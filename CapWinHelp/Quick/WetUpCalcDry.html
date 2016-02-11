@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Quick Start Sheet Wet Up/Calculated Dry Test</title>
+	<meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />
+<link href="../style.css" type="text/css" rel="stylesheet" />
+<base target="display" />
+</head>
+
+<body>
+<h3 class="center"><span class="bold">Wet Up/Calculated Dry Test</span></h3>
+<div class="toporbottom">
+<a href="../Quick/QSintro.html">Back to Quick Start Sheet TOC</a>&nbsp;
+<a href="../Quick/presHold.html">Pressure Hold Test</a>
+</div>
+<hr />
+<p class="qssol"><span class="red">Wet Up/Calculated Dry</span> is different from the other Capillary Flow Porometry Options in that Wet Up/Calculated Dry does not have data points for the dry curve.  Instead, it calculates and then plots a dry curve using points from the wet curve. Use of this test is advantageous in cases when only a wet curve is needed.  Wet and dry curves from different files may be combined into one file in Data Editor. </p>
+<p class="qssol">The CapWin software offers three options for calculated dry curves: Linear, Darcy, and Lohm.  </p>
+<p class="indentQss"><span class="redB">Linear</span> plots a line connecting the last point of the wet curve with the origin.  Use this for samples which have a dry curve that is more or less linear.</p>
+<p class="indentQss"><span class="redB">Darcy</span> uses the Darcy equation and points from the wet curve to plot a parabolically shaped line, symmetric along the y axis. Use this for samples which show a similarly shaped dry curve.  Samples suitable for use with a Darcy dry curve typically go to high pressures and but have low flow. </p>
+<p class="indentQss"><span class="redB">Square Root</span> uses an equation which is based on the square root function.</p>
+
+<ol class="qssol">
+<!-- item #1 -->
+<li><span class="red">Prepare sample to be tested.</span>  Sample may need to be cut in order to fit and lie flat in the sample chamber.  The sample should be cut bigger than the o-ring in order to completely cover the o-ring and ensure proper sealing.  Samples smaller than the o-ring will require adapter plates.
+<br /><br /></li>
+<!-- item #2 -->
+<li><span class="red">Disconnect any hose attached to the sample chamber lid.</span>
+  Unscrew and remove the sample chamber lid.  Take out the spacing insert and adapter plates (if present).  Check the o-rings for dryness, apply vacuum grease if needed. Make sure components are clean and free from wetting fluid left by previous testing.
+<br /><br /></li>
+<!-- item #3 -->
+<li>Under <span class="bold">Group</span> on the main Capwin menu, <span class="red">choose an existing group</span> by clicking on <span class="bold">Select Group</span> Ctrl+U <span class="red">or make a new group</span> by clicking on <span class="bold">New Group</span> Ctrl+N. A group contains the pressure units used and the Autotest setup for the last test ran using this group.
+<br /><br /></li>
+<!-- item #4 -->
+<li>Under <span class="bold">Execute</span> on the main Capwin menu,<span class="red"> select <span class="bold">Autotest F2</span></span>. The <span class="bold">Autotest</span> settings screen will open.
+<br /><br /></li>
+<!-- item #5 -->
+<li>If the <span class="bold">Test Type</span> field is visible but does not show <span class="redB">Capillary Flow Porometry</span>
+ <span class="bold">- Wet up,  Dry Up Linear</span> click on <span class="bold">Test Type</span> to bring up the <span class="bold">Test Selection</span> box.  <br />
+Select Capillary Flow Porometry and click on <span class="bold"></span>
+Wet Up/Calc. <span class="bold">Dry</span> under <span class="bold">Capillary Flow Porometry Options</span>.  Choose one of the three methods (refer to top of page for more info).  Check the Show results at the end of test box if desired.  This option will display the Bubble Point and Mean Flow Pore pressures and diameters immediately following completion of test.  <br />
+	Click <span class="bold">OK</span> to return to the <span class="bold">Autotest</span>
+ screen.
+<br /><br /></li>
+<!-- item #6 -->
+<li>At the Autotest screen, <span class="red">enter information in the designated fields</span> by clicking on the field:<br />
+   <span class="red">Note:</span> Depending on which fields the supervisor has selected to be shown, not all fields may appear in Autotest.<br />
+<div class="indentQss">
+<span class="bold">Output File Name</span> - user designated<br />
+      <span class="bold">End User</span> - user designated<br />
+      <span class="bold">Test Reference</span> - user designated, eg: Gas Permeability<br />
+      <span class="bold">Sample ID</span> - user designated<br />
+      <span class="bold">Lot Number</span> - user designated<br />
+      <span class="bold">Operator</span> - user designated, eg: the initials of person running test<br />
+		<span class="bold">Fluid</span> - the wetting fluid used to saturate the sample during the Wet Up portion of the test.<br />
+		<span class="bold">Surface Tension </span> - surface tension of the fluid, in dynes/cm.<br />
+			eg: <span class="red">Porewick</span> &#126; 16.1, <span class="red">Galwick</span> &#126; 15.6, <span class="red">Silwick</span> &#126; 20.1, <span class="red">Water</span> 72.0.<br />
+ 		<span class="bold">Diameter </span>- diameter at which the sample is being tested, which is the inner diameter of the o-ring.<br />
+		<span class="bold">Thickness</span> - Thickness of sample<br />
+		<span class="bold">Cylindrical Length </span> -only required for samples tested in the radial direction
+</div>
+<br /><br /></li>
+<!-- item #7 -->
+<li><span class="redB">Place saturated sample in sample chamber</span>, making sure sample seals against o-ring.<br />
+If adapter plates are used, place the screened adapter plate on the bottom of sample chamber.  The o-ring on the bottom plate should face upwards.  Align the plate on the three chamber pins.  Yellow chip pullers are provided to aid in placement of adapter plates.  Put in the saturated sample.  Make sure sample fully covers the o-ring of the bottom plate in order to make a good seal.  Place top adapter plate into chamber with o-ring facing downward.  <span class="red">Sample should now be completely sealed against the top and bottom o-rings of the adapter plates.</span>
+
+<br /><br /></li>
+<!-- item #8 -->
+<li>Take spacing insert and place into chamber.  Avoid covering opening of the insert when placing it in chamber, as this may create pressure which will push wetting fluid from the pores of the sample and result in inaccurate measurements.  The bottom o-ring of the spacing insert should be in contact with the sample (or the adapter plate, if used).  The insert should sit no lower than the height of the sample chamber.  Screw on lid and hand tighten.  <span class="red">Connect the air hose from shroud to quick-connect fitting on lid.</span>
+
+<br /><br /></li>
+<!-- item #9 -->
+<li><span class="red">Click on the <span class="redB">Start Test </span>
+button ALT+S.</span>  The Autotest sequence will now begin.  If the <span class="bold">Hide Sample Load Prompts</span> option was selected, the test will not require further user input and will proceed to the actual test.  Otherwise, a dialogue box will appear, instructing user to Load sample, seal chamber.
+<br /><br /></li>
+<!-- item #10 -->
+<li>Click <span class="bold">OK</span> to start test.  This will bring up the <span class="bold">Current Test Status</span> screen.  A second dialogue box will appear, prompting user to press <span class="bold">OK</span> to start the test.
+<br /><br /></li>
+<!-- item #11 -->
+<li>The <span class="bold">Wet Up</span> portion of the <span class="bold">Wet Up/Calc. Dry</span> test begins.  The test will increase the pressure and measure the    flow through and pressure drop across the saturated sample.  The graph is plotted on the screen as test progresses.
+<br /><br /></li>
+<!-- item #12 -->
+<li>At the completion of the wet curve, the calculated dry curve is plotted.  Then the <span class="bold">Test Done</span> dialogue box will appear.  Click <span class="bold">OK</span>.
+<br /><br /></li>
+<!-- item #13 -->
+<li><span class="red">Remove sample from chamber.</span>  Clean chamber and components to prepare for next test run.
+<br /><br /></li>
+<!-- item #14 -->
+<li>Test results may be viewed and analyzed using <span class="bold">CapRep</span>. To access <span class="bold">CapRep</span> from the <span class="bold">Capwin</span>
+ main menu, select <span class="bold">Report</span> and click on <span class="bold">Execute Report F4</span>.
+<br /><br /></li>
+</ol>
+<div id="born">
+<a href="../Quick/presHold.html">Pressure Hold Test</a>&nbsp;
+<a href="../Quick/QSintro.html">Back to Quick Start Sheet TOC</a><br />
+<a href="../Quick/WetUpDryDown.html">Wet Up Dry Down Test</a>
+</div>
+</body>
+</html>
