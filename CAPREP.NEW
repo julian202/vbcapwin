@@ -1,0 +1,1035 @@
+What's New in the CAPREP Software:
+
+6.71 released 10-17-03
+  1) Added a trap to stop the report process if a user manages to get past the file list box with zero entries
+    (i.e. by clicking the close button instead of "done").
+     Modified the diffperm text report for files with temperature data. The two last columns (pressure in torr)
+    are replaced with delta P and temperature. Also, the value of TDat_Temp, which was fixed at 300, now reflects
+    actual average chamber temperature.
+     Fixed the diffperm pressure/temperature graph so that the secondary y-axis shows the proper divisions.  -- MJLC 11/5/03
+  2) Corrected TDat_Temp and legend in one graph and text report to read Fahrenheit instead of Celsius.      -- MJLC 11/7/03
+  3) Fixed a bug where the file list was cleared if you clicked the close button in the file selector window.
+     Altered the permeability temperature text report so that both thickness and diameter are printed correctly
+    and units will follow user's preferences.
+     Corrected the permeability temperature graph to follow the flow units (cc/m or cc/s) of the text report.
+     Fixed a bug in calculation of average permeability in permeability with temp report.
+     Fixed a problem with multigraphing in the perm. temperature reports
+     Fixed a problem in the preferences - unicode mu wasn't displaying properly in Japanese.
+     Text items widened to fix a problem in the way the Japanese translation is being displayed.    -- MJLC 12/5/03
+  4) More changes to the liquid perm temperature reports -- they weren't written to be multigraphed, so the first one
+    would multigraph quite easily, but the next two would fail. Call to do_graphs is now pulled out of the individual
+    graph creation routines and placed in the main temperature sensor routine where it can be more easily controlled. -- MJLC 12/8/03
+  5) Modified temperature sensor routine to handle any number of "extended" lines.
+     Fixed a problem where pore distribution files could not be used for permeability reports when no porometry reports
+    were selected. Program was creating a temporary GP file, with data space-delimited instead of comma-delimited, which
+    the report routines were no longer reading properly. Changed it to comma-delimited values.    -- MJLC 12/16/03
+  6) Added capability for "hot-swapping" language files. Languages are now stored in the "languages" subdirectory
+    and distinguished by a two-character language suffix code. Alternates to English will have to be renamed and copied
+    over manually.                -- MJLC 12/16/03
+  7) Fixed bug where seal_length was not cleared out after the end of a test.
+     Fixed bug in automatic launch of summary sheet from capwin.      -- MJLC 1/16/04
+  8) Fixed a bug in the previous update!
+     Specified "ExePath" as the location for the language folder.     -- MJLC 1/22/04
+  9) Added support for TEMPERATURESENSOR files. These, for the moment, are assumed to be gas permeability
+    tests with one column of temperature data.                        -- MJLC 2/18/04
+  10) Changed the default font to Arial (so vertical axis text will show up properly).
+     Made slight changes to the microflow calculations to improve efficiency.
+     Removed some redundant variables from microflow: Q2, gtr2, and permeance2.       -- MJLC 3/18/04
+  11) Enlarged some caption boxes in titlescrn to avoid cutting off characters in Japanese. Distsummfrm
+     modified to fix problem displaying mu character in Japanese. Horizontal x-axis of mschart isn't displaying
+     Japanese correctly, so added a label beneath the chart instead -- not pretty, but it works for now.
+     Recompiled program with updated Graphics and Translation modules to fix other problems in Japanese.  -- MJLC 4/22/04
+  12) Code recompiled with v1.8.3 of graphics module to fix problem in *printed* Japanese graphs.     -- MJLC 4/26/04
+  13) - Graphics module v. 1.8.4 bug fix user file save; callout to excel graphing
+      - Added Excel 8.0 0bject Lib to the project references in .vbp, graphing works in Excel '97
+      - Added ExcelPlot and ExcelRange modules to Common directory, to .vbp  (Tim Richards 04 05 07)
+  14) Fixed translation problem in preferences window.    -- MJLC 5-24-04
+  15) Recompiled with new (Excel-localized) graphics library.     -- MJLC 6-8-04
+  16) Added support for "DIFFPERM+wv" - a "fake" format used when converting WVTR files into microflow files.
+      Also fixed a bug in the microflow report: chamber temperature now only calculates "true" temperature
+     if there is temperature data in the file.                    -- MJLC 6-14-04
+  17) Fixed bug in display of second y-axis on temperaturesensor2 graphs. -- MJLC 7-12-04
+  18) Fixed non-localization of graphs in Excel for Mr. Yaza --TAR 040715 Weds 3:56PM
+  19) Added permeability graphing. For permeability excel graphing only, there is an option to flip
+      the axes for pressure vs. flow instead of flow vs. pressure for HP Pelzer --- TAR 040729 Thurs 1:23PM
+  20) Made minute adjustments to the formatting of the microflow text report, at Dr. Gupta's command. -- MJLC 8-18-04
+  21) Printing WESA test results: option for average diameters. Added checkbox to TitleScrn. ---TAR 040908
+  22) Fixed type mismatch during form load that happened only in Brazil.  Caused by the implicit
+      conversion of string return value from gpps2 into a number.  This seems to work everywhere else
+      in the world, but not in Brazil.  Searched for all other implicit conversions and fixed them
+      in all places where a decimal point could be used (non-integer). - Ron 9-9-04
+  23) Background color of new report option added in v.21 changed to match form.
+      Added "air resistance" reports to the text report for permeability tests -- gives pressures at exactly
+     32 and 75 LPM through interpolation. New preference for same.
+      Changed the column heading on the text report from "permeability" to "spec. flow resistance" when using Rayls,
+     as requested by Dr. Jena.                                                        -- MJLC 10/8/04
+  24) Previous version actually did interpolation at 85 LPM, not 75. Fixed that.
+      Added still more interpolation, this time calculating flow at 10 PSI. (Wouldn't it be easier just to make this all
+     variable?)                                                                       -- MJLC 10/20/04
+  25) Added "Coresta" as a permeability unit (cc/min/cm^2 at 1 kPa). Used by the cigarette industry, apparently. -- MJLC 10/21/04
+  26) Rearranged a few options in the Settings window to put them in more logical locations
+      Localized a new setting for the Excel graph stuff
+      Added a setting to specify a minimum pressure for the permeability report. Data points with pressures below
+     this threshold are ignored in the report. Dr. Gupta didn't like the way the first data point measured was frequently
+     too low to be accurate. Defaults to 0 PSI.                                       -- MJLC 10/28/04
+  27) Updated and reorganized the summary sheet report.
+      Also added axis divisions and a legend to the graph in the distribution summary sheet.  -- MJLC 12/17/04
+  28) Updated integer values to longs in the pressure hold test to allow for larger data sets. -- MJLC 1/13/05
+  29) Fixed a bug where if user changed languages and then changed fonts, then switched back to first
+     language, font was not updated until program was restarted. (Font was being saved to the correct file,
+     but new font information wasn't being loaded when languages were switched.)              -- MJLC 2/9/05
+  30) Fixed a bug where the "previous instance running" warning was showing up as a blank messagebox. (Warning is
+     now English-only, but oh well ....)
+      Now correctly saves printer font size to the language file; was previously assuming that it was simply
+     the screen font size + 3. But font sizes are being reset anyway by crlf and pica routines in the graphics module,
+     so the preference currently has no effect on output.                                     -- MJLC 2/23/05
+  31) Forms waiting for button clicks will now return cpu time to the operating system.
+     Handles printer fonts correctly now, and also handles language changes better.  If you change
+     languages and then cancel the preferences form it won't mess up the fonts the way it used to.
+  32) Fixed weighted average routine as used in the surface area and Rayls calculation - rvw 3/25/05
+     (It would get slightly wrong values if the surface area curve was going up, but proper values
+      when the curve was going down.)
+  33) processfile routine modified to handle porometry data with a single temperature reading (flagged by
+     TEMPERATURESENSOR). Also fixed a related bug wherein files with TEMPERATURESENSOR set did not read in the
+     date -- and consequently did not handle the rest of the header correctly. By a lucky accident, this
+     turned out not to matter, but it's fixed now anyway.
+      Modified the file list form to allow selection and deletion of multiple items at once.
+      Fixed summary sheet text which mislabeled smallest pore pressure as "microns", not pressure.
+      Fixed bug where "Abort" button in text report was not updated when switching languages. (Rest of
+     graphics module text wasn't either, but nobody noticed.)
+      Fixed a bug where the window title of the GS window would not be updated for subsequent reports
+     after a first report was run (this was changed by adding a form_activate method to GS.       -- MJLC 3/29/05
+  34) Recompiled with updated ExcelPlot.bas module.   -- MJLC 4/14/05
+  35)Fixed a bug in the average temperature and rewrote the Help system using HTML pages and wrote some code
+      that will display this code in the users default web browser.-----ECJC 4/21/05
+  36) Somehow the temperature bug fix from the last version wasn't saved properly - now it is.
+      Updated language files in the main and preference forms.
+      Corrected the Frazier analysis for the porometry test. Seperate routines for the permeability and porometry
+     frazier analysis were giving different results. Each routine iterates through the data set, trying to find the
+     two pressure values adjacent to the Frazier pressure; if found, it does a slope determination to get the flow at the
+     Frazier pressure; if not found, it uses linear regression. The porometry routine, however, was not saving the initial
+     pressure and flow values; if the Frazier value happened to lie below the first point, the routine would do a slope determination
+     from zero instead of using regression. This has now been fixed. However, there is still a discrepancy between the two results.
+     This is probably because the porometry routine is using the interpolated dry curve values, not the raw values. -- MJLC 6/15/05
+  37) Changes made by Ron in Japan:  Output screen (in common) was not resizing properly - it would cut off the bottom line of
+     the text report.  Frazier check box has it's caption changed if you choose special permeability options in the prefs form, but
+     when you exit from the prefs form the title screen reloads all the text values (in case you changed language in the prefs form)
+     and so these changes are not shown on the screen until you close out the program and reload it.  Then the changes go away if
+     you ever open the prefs form again.  This is fixed by reloading the prefs form (in hiding) after you leave the prefs form and
+     after you reload the text values.  This is similar to the order things happen when the title screen is initially loaded.
+     Also, if the temperature data is ever 0, this messes up the darcy1, darcy2, and/or darcy3 calculations, which results in
+     data files that can not be processed.  The main reason a temperature value would be 0 would be because the temperature sensor
+     is not working (or the Watlow communication cable is disconnected).  If either temperature is 0, it is reset to the STP
+     temperature before the darcy calculations.  (The results of these calculations are not shown anywhere yet, but may be in the
+     future.)
+     Also, if you run a pore distribution and have the text report turned off but have a graph turned on, the flow rate shows up
+     as "/Min", with no volume value (L, mL, microL).  The volume value is initialized during the text portion of the report.
+     I moved the initializing code to the top of the routine since it is not dependent on anything that is used before it.
+  38) Fixed a bug in the liquid perm two-temperature data display: if a text report was not chosen, the units shown on the graphs
+     were wrong. This happened because unit conversion from cc/s to cc/m was done in the text routine. To fix this, made the text
+     report routine always be called -- but displayed only if selected. This will give consistency to the calculations. -- MJLC 10/5/05
+  39) Modified the TEMPERATURESENSOR2 text report to spit out the extended header information (at Mr. Yaza's request). -- MJLC 10/17/05
+
+6.70 released 8-29-03
+  1) Integrated new file selection system written by Ron: added "filelistform", modified fsel.
+     Fixed a bug in the previous incarnation of the file selection system involving multiple selection
+    of files without the multi-graph option.
+     Modified processdpfile to accept inner and outer diameters to calculate an effective diameter
+    for a linear seal in the microflow test.
+     Added support for "DIFFPERM+t" - a microflow file with saved temperature data. Need to create
+    some kind of graph for this eventually, but for now it just won't choke on the extra data.
+     Moved the functionality of Begin_Click() to new sub start_running(mode) to simplify calling from
+    two different "begin" buttons. (There is a problem with having two buttons -- see comments in Begin_Click().
+     Added a temperature vs. time graph and a temperature and pressure vs. time graph for microflow.  -- MJLC 9/23/03
+  2) Added a temperature option for liquid perm. If there is temperature data in the file, the last column
+    of the perm. text report will be replaced with temperature. There is no way for the user to change this yet.
+    Also modified the preexisting TEMPERATURESENSOR2 options with a new flag - liqTempMode. If this =0, then we're
+    doing an old-style report with 2 sensors, and user gets all graph and text options. If =1, doing a new-style
+    report. Graph options are hidden, darcy calculations are hidden, and units are different. This can be changed in
+    the text tab of preferences.                  -- MJLC 10/17/03
+
+6.69.
+ 24) Made file types disappear on main window unless user selects file as an output device.
+     Changed the legends on graphs so that long filenames will not be truncated.  -- MJLC 8/1/03
+ 23) Removed extra slope calculation from microflow test if inlet pressure > 10%.  This was giving strange results. - RVW 7/17/03
+ 22) Updated CapRepLanguage.ini to include recent additions and changes.  -- MJLC 6/17/03
+ 21) Incorporated the seal length factor into the flow calculations.      -- MJLC 6/16/03
+ 20) Added correlation coefficient (R-squared value) to pressure hold (if listed in data file) and microflow test reports.
+     Added "seal length" (seal_length$) to microflow test if included in the data file.  -- MJLC 5/20/03
+ 19) Created a new form, prefsForm. This incorporates all the items on Settings (which was running
+      out of room) in addition to the options in printest.frm and line width from the main window.
+     Made the pressure hold report more forgiving if some of the new values at the end of the file
+      are missing. Added the volume loss information to the report.
+     Also made the units of wet and dry flow in the text report variable (flow_multiplier) so user can
+      choose from L/min, mL/min, or uL/min -- extremely low-flow samples were showing up as 0 flow in the
+      report. For now, value must be set by hand in the ini file until the settings screen can be reworked
+      for more room.
+     Also clarified an error in the microflow report: if user selected a time range with fewer than 3 points, report would end without
+      explanation.                                            -- MJLC 5/5/03
+ 18) Reporting min. diameter at 98% CFF in PrintReport. Rearranged the summary sheet to show minimum, maximum, mean pore sizes. Modified the command-line
+      input. If the argument is prefaced with "resultcall", caprep launches a report with the other argument, a data file, and shows *only*
+      the summary sheet (if applicable), then kills the program (so we can do it again with the next test).  Also added a calculation of standard
+      deviation of average diameter to the summary sheet. Slightly changed the
+      graph descriptions on the title screen.       -- MJLC 4/23/03
+ 17) Fixed a bug from the previous version.
+ 16) Replaced vbCr + vbLf with vbCrLf. Removed an apparently useless 0.2 second delay from the Begin_Click routine. Reworked Begin_Click to
+      get the new multi-file selection and auto-start after test features working correctly
+      (they were before, but then it stopped...?).  -- MJLC 4/11/03
+ 15) Modified the pressure hold report to correctly print the hold rate units (PSI, PSI/sec, PSI/min, etc)    -- MJLC 4/2/03 (1 year at PMI!)
+ 14) Fixed a bug I thought I'd fixed already in the command-line interface (necessary for automatically starting CapRep after a
+      test in CapWin). Also added lot number to the summary sheet. Made the 10,25,75,90% cum FF points printed on the summary sheet
+      variables as per KG's request. Fixed a bug where the option to display those values in the summary sheet wasn't being saved
+      properly to the ini file.                       -- MJLC 3/17/03
+ 13) Added a "3-ring binder" option to the printer options window that makes use of the graphics.bas variable Binding. Automatically
+      indents the lines of text reports by 2 spaces when printing.        -- MJLC 3/5/03
+ 12) Changed the report for the pressure hold test: added check for fail rate and decay rate at the very end of the data file,
+      with appropriate printing to the text report, as well as printing of dP/dt at each point.   -- MJLC, 1/22/03
+ 11) Fixed a bug in the caption of the GS window: if you ran multiple reports, the filename for the first report would
+      be used for the caption every time.             -- MJLC 1/17/03
+ 10) *Fixed* the new multiple file selection so that it actually works properly.      -- MJLC, 1/15/03
+  9) Updated logo on title screen. Also changed the method of selecting multiple files for reports: Now user can
+     (must, actually) ctrl-click multiple files in the file open box instead of choosing one at a time. - MJLC, 12/02
+  8) Changed the parsing of command_line$ to accept filenames with spaces, set off with quotes. -- MJLC 11/25/02
+  7) Fixed a typo in the hydrohead report (mixed up "cm of water" and "inches of water"). Also removed several
+     units (e.g. "mm", "cm", "PSID") from the translation list.
+  6) Added support for microflow data files with alternative gasses.
+  5) Added new alternative calculations method that interpolates data into 255 evenly spaced (by diameter)
+     data points and then calculates the distribution function using an alternative method.
+  4) Fixed autoscale in dist. summ. sheet for ranges < 1, and small formatting problems  -- MJLC 8/12/02
+  3) Enabled third tab of options panel via "SpecOpt" setting in user .ini file -- MJLC, 7/29/02
+  2) Fixed a bug in the distribution summary sheet routine which put MFP data and comments
+     into the wrong rows. Modified font behavior of control buttons, which weren't showing characters
+     properly in Japanese. Font name is now changed along with other text in a form, but
+     size and bold attributes remain the same. Also increased the size and spacing of many
+     elements throughout the program to correctly display foreign text strings larger than their
+     English equivalents.      -- MJLC, 7/25/02
+  1) Changed averaging from over flow to over pressure.
+ 6.69.0
+    Removed "selectfonts" form and replaced with a near-identical copy in the "common"
+   library. Converted files to allow localization by pulling text strings out into an
+   external .ini file. 6/25/02 MJLC
+  4) Fixed problem with 10%, 25%, etc. CumFF when multigraphing.
+     Disabled Dist Summ for computers without a selected printer.
+  3) Adding a Pore Size Distribution Summary for GKN.
+  2) Fixed problem with Integrity test not displaying anything. Changed label on flow
+     v pressure graph.
+  1) Fixed problem with 10%, 25%, 75%, and 90% cumulative filter flow levels when
+     the data jumps through two levels.
+6.68 released 3-21-02
+  3) Fixed problem with showing bubble points in pore-table
+  2) Added specpermtype 4 for Darcy/mm at 125 pascal.
+  1) Added 10%, 25%, 75%, and 90% cumulative filter flow levels in summary page.
+6.67 released 2-15-02
+   Version number skipped to match capwin release version
+  3) Finalized new code.
+  2) Added code for reading in parameters and displaying them. Controlled by
+     option in settings under summary sheet settings.
+  1) Added the cformat$ command that will replace a comma with a period in the
+     format if you are running in a country that uses a comma as a decimal point
+     and you are outputting to an excel spreadsheed.  It seems that excel wants
+     all internal numbers passed to it to be in US format (with a period for
+     the decimal point) even though it will display them in the proper localized
+     format
+
+6.65.0 released 1-8-02
+  12) Added a PermTable to run if the first selected file in a pore table is
+      a permeability file.
+  11) Fixed a problem with excel crashing when making pore tables.
+      Fixed fitted graph to show end points at min and max.
+      Fixed pore table output to fit better with data.
+  10) Graphics routine updated to 1.6.10.  Added emfsizefactor, default to 1,
+  which modifies the size of the bounding box on the saved graphics.  This is
+  to work around a possible bug in XP where the emf file is saved at 81 dpi
+  instead of 96 dpi.
+  9) Graphics routine updated to 1.6.9.  This fixed problem with creating emf
+  when running on xp and/or on a laptop computer with an external monitor -
+  the default screen device context was using a dpi of 81 when the proper dpi
+  should have been 96.  It now uses the device context of the graphics screen,
+  which seems to fix the problem (but it didn't).
+  8) Modified Histogram to allow a multigraphable Fitted Plot.
+  7) Updated text and graphics.
+  6) Added ps_font and ms_font variables and selectfonts form to allow user to
+     set the fonts to use for display.  This should allow users in countries
+     that use non-ascii characters to properly enter their own values.
+    Changed all GPPS calls that return strings to use a null trim
+     function and not use the returned length of the string.  GPPS returns
+     an incorrect length (too long) if the return value contains multi-
+     byte characters (such as Japanese or Chinese), and this padded the
+     string with extra null characters which messed up string handling
+     functions.  This showed up in path names in the file selector.
+  5) Added cfm/ft^2 at 1" WC as specpermtyp=3.
+  4) Added Perm value for WVTR. Changed the way it reports WVTR tests.
+  3) Added cc/min/cm^2 at 120 mmHg as specpermtyp=2.
+  2) Added L/s/m^2 at 2 mbar as a second option rather than Frazier Analysis.
+  1) Changed wording for filter flow lines. Trimed file name.
+
+Version 6.64.0 released 10-01-01
+
+6.63.11) Fixed ESA to properly use cylindrical geometry for density calculations.
+
+6.63.10) Fixed excel permeability output spacing problem.
+
+6.63.9) Fixed graph output error for ESA results.
+
+6.63.8) Cut file name in permeability graph to just file name and not path.
+
+6.63.7) Put in an overall error handling routine to trap eof and div by zero errors on bad files.
+
+6.63.6) Removed one line feed from the double in permrep.
+
+6.63.5) Corrected problem of not clearing cyl len when reading next file.
+
+6.63.4) Changed DP calc to properly analyze when outlet pressure approaches inlet pressure.
+
+6.63.3) Fixed problem with going previous graph, histogram and multigraph when coming from pore dist.
+
+6.63.2) Fixed up pore table problems.
+
+6.63.1) Updated Tab Stops.
+
+Version 6.63 released 6-12-01
+
+6.62.2) New option to show flow divided by cross sectional area of sample.
+  This makes it easier to compare samples with different diameters.
+
+6.62.1) Moved pore numeric calculations to a third tab and disabled it.
+
+Version 6.62 released 5-31-01
+
+6.61.4) Re-Allowed multigraph of perm graph of perm and cap flow data files.
+
+6.61.3) Removed Cumulative FF from sample ID on top of graph.
+ Set Begin button as focus at the end of Begin routine.
+
+6.61.2) Changes max tortuosity to 2.
+ Changed multigraph to not crash when different data file types are selected.
+  types: microflow=1, fluidsensor=2, preshold=3, hydrohead=4, perm=5, porometry=6, bubblepoint=7
+ Changed multigraph to properly abort from multigraph text page.
+ Stopped multigraphing histograms.
+ Changed histogram to PORE DISTRIBUTION.
+ Fixed Pore Table on just bubble points from crashing by setting DPOINTS=0 for bubble point.
+ Removed extra line spacing on first text report page. Now shows Bubble points without scrolling.
+ Set abort=false at start of Begin.
+ Changed Multigraph to continue if cancel in file selector after first file is selected.
+
+6.61.1) Fixed mispelling of distribution in frequency graph choice.
+
+Version 6.61 released 4-29-01
+
+6.60.01) Fixed spacing on Multigraph initial form.
+
+Version 6.60.0 First version recompiled in vb6 1-24-01
+  The program is now compiled in native mode which makes it larger but faster.
+
+Version 6.57.12 work in progress started 11-20-00 never finised - switched to vb6
+
+1) Fixed problem when all wet points are greater than the half-dry curve
+
+2) Fixed problem when two wet points are exactly the same pressure and flow
+
+3) Fixed divide by zero problem when you went back to a previous page during
+  rayls calculation in gas permeability.
+
+Version 6.57.11 11-17-00
+
+1) Changes microflow test so it will work with results from liquid
+  vapor permeability.  This also corrects a problem with microflow when
+  you tried to use it with a gas other than air or helium.  Now, if you
+  use Air or Helium, you can calculate a Darcy value.  If you don't use
+  Air or Helium, the Darcy value is skipped because it doesn't know some
+  constants for the gas.
+
+2) Removed DPD from pore table
+
+3) Histogram box number is now remembered between runs
+
+4) When there are points going the wrong direction in a wet curve, rather
+  than throwing out the point that has the lower flow rate, previous points
+  with higher flow rates will be thrown out.  (If the current point has a
+  lower pressure, then the current point will be thrown out.)  This should
+  be a better method since the current point with the lower flow probably
+  represents a more stable flow rate and the previous point with the higher
+  flow rate is probably the wrong one.
+
+Version 6.57.10 10-2-00
+
+1) Resets tortuosity factor to default 0.715 at each file reading.
+
+2) Allows PermRep on CapFlow data file by creating file$+"TempGP.CFT",
+which holds the information for a gas perm file from the dry curve.
+
+3) Corrected PermRep to not crash when given a data file with only 1 point.
+
+4) Allowed a 0.001 histogram box size, had been 0.01.
+
+5) Created a settings page to allow user to set output parameters
+
+6) Removed file convert button.
+
+7) Corrected Darcy output in microflow reports.
+
+Version 6.57.09 7-17-00
+
+1) Adds support for the printer test screen - it now works
+better with Japanese Windows, which had a graphics printing problem
+
+2) Corrected error and form of microflow report formating.
+
+3) Fixed minor problem of the wrong title being printed for gas perm
+results when you have the EFD test selected and wrong graphs being shown
+when using EFD or ESA data files - sometimes the surface area graph would
+show up with the wrong information, and sometimes the premeability graph
+would not show up when it should.
+
+4) Fixed problem with two copies of CAPREP being run at the same time.
+It now no longer tries to activate the other copy - this doesn't work
+properly in VB5 so it was removed.
+
+5) Viscosity of helium changed to 0.0198 from wrong 0.000198
+
+6) Added line to hydrohead test to report the pressure in cm of water
+
+Version 6.57.08 4-19-00
+
+1) Modified EFD and ESA so that either is possible from either
+file type. If ESA file then EFD maxflow=32000.
+
+2) Corrected output so that gas perm is done on ESA file when ESA
+is not selected. Also it now outputs equation used for ESA and EFD.
+
+3) Moved check for text file output to the beginning of the first graph
+rather than at the end of the first graph.  This fixes a problem where
+if the first graph was not selected but a subsequent graph was selected
+and the user tried to output to a text file, the program would crash
+with a "divide by zero" error when the graphic was initialized.  Now
+no graphics will be initialized.  (The graphics routine has also been
+updated so that it won't crash if this happens in the future, it will
+allow the program to continue but alert the user that there is a
+problem.
+
+4) Fixed multi-graph title page so it always displays properly and always
+enabled the "Next" button.  It would not display if the microflow graph
+wasn't turned on, and if it would display sometimes it would not give
+a "Next" button and sometimes it would falsely give a "Back" button.
+
+5) Modified text reports that use tabbed outputs when sending to excel
+or a tab-delimited data file - sometimes the first two columns would
+be put together.
+
+Version 6.57.07 1-21-00
+
+1) Added display of text output file name, option box to auto-
+generate text output file name based on input file name,
+output file name extension is automatically changed based on
+the type of output file (excel=xls, others=txt), and output
+file path is now stored independently of the input file path.
+(if the output file had not been stored, it is initialized
+based on the input file path.)
+
+2) Changed graph selection to a tab box to make room for more
+selections.  CAPREP program now needs TABCTL32.OCX in order
+to run.
+
+3) Added selection for all text reports.
+
+4) Removed restrictions on having different selections on at the
+same time.  The program will now only use those selections that
+apply to the type of data file being run.
+
+5) Added support for next_graph_enable and prev_graph_enable, new
+global variables from the graphics program that enable going
+next and back in views.  If the user wants to go back, the
+global variable prev_graph_requested is set to true.  In order
+to implement this, there are two new global integers in this
+program - total_num_graphs and current_graph_num - that keep
+track of the total number of graphs (and text reports) along
+with the current number.
+
+6) Fixed support for command line input.  If the command line
+has something in it, it assumes that it is a series of file
+names to be automatically run using the default settings.
+As long as the command line has something in it, the begin
+button will be "pressed" automatically, and the file name will
+be set to the next file name in the command line.  This name
+will be removed from the command line once it has been processed
+so that the next file can be processed.  If Multi-graph is
+turned on, each set of 5 files will be used.  The continue button
+will also be automatically "pressed" if it is a porometry report.
+
+7) All random access files have been replaced by dynamic arrays.
+These files were introduced in a much earlier version to limit
+the amount of memory required for the program.  Since moving
+to 32-bit Windows, this limitation is not needed any more, and
+the random access files are harder to use and may slow things
+down slightly.
+
+8) Two-y-axis graphs now have their second y-axis labeled properly.
+There was a problem due to integer truncation of a variable that
+could cause the second y-axis to be labeled incorrectly.  This
+would be most visible where the second y-axis should be less
+than the main y-axis.
+
+9) Added Estimated Fiber Diameter for pressure drop test as per
+end user instruction.
+
+10) Corrected ESA equation to properly account for density of gas.
+
+11) Corrected divide by zero error when first pressure = patm.
+
+12) Corrected wet_data dimension error when first wet point too low.
+
+13) Corrected error in EFD code
+
+Version 6.57.06 12-20-99
+
+1) Added EMF output to graphics system
+
+2) Histogram plot is now independently selectable - it had
+been linked to the cumulative pore volume plot.
+
+3) Fixed three "new" frequency distribution graphs - they will now
+remember being selected between runs.  Also, they used to keep
+showing the first data set during subsequent data sets when in
+multi-graph mode.  They were also showing some wrong information.
+The "Cumulative and Differential FF%" now actually shows the
+differential FF% rather than a log frequency distribution
+even though the raw differential FF% isn't really that useful.
+
+4) In doing above, all newer graphs have been re-numbered so that
+there are no conflicts.
+
+5) Corrected Frazier Permeability analysis for when using a
+cap flow data file.
+
+6) Corrected divide by zero error in perm data files.
+
+7) Added in rayls/m output.
+
+8) cleaned up gas perm equations
+
+Version 6.57.05 11-22-99
+
+1) Removed old buggy Excel-specific code to make room for new routines.
+
+2) Modified all text reports to insert optional tab characters between
+fields.  These tabs will be ignored on all but tab delimited and excel
+outputs.  Excel output is now a type of text file output rather than
+being its own type of output.
+
+3) added in pressure drop test and averaging gas perm for test other
+than rayls.
+
+Version 6.57.04 11-18-99
+
+1) Fixed Frazier calculation at bottom of perm result.  It
+was only working for PSI.  It now works for all pressure units.
+
+2) If Frazier calculation at bottom was used using only two
+data points (one on each side of 0.5 inH2O), then the label
+will say that rather than saying that linear regression was used.
+
+3) Gurley and Frazier options under permeability are now saved
+Before, it would default back to Darcys when you closed the program.
+
+4) Changed equation used for calculating Surface Area from
+the Kozeny eqution to the equation including a Knudsen flow
+correction for gas-solid interface slip. Uses k=5, Z=48*pi/13
+
+5) More ESA corrections, uses min flow in integration - before it
+assumed the min flow was 0.
+
+6) Added in rayls calculation for gas permeability
+
+7) Changed the arguments to the Format$ statement in the initial screen
+graph because they were causing a problem in Japanese Windows for some
+unknown reason.
+
+Version 6.57.03 8-6-99
+
+1) Added in ability to read data needed for surface area
+analysis which is output from capflow in the data file.
+This adds density and mass before the atmospheric pressure.
+This replaces the previous method for getting Wesa results
+for surface area analysis using gas permeability results.
+
+2) Corrected problem with multigraphing ESA data by not
+killing exepath + *.%%% file after permrep. Error had been
+from trying to kill that file while it was still open.
+
+3) Corrected problem when trying to do a gas perm analysis
+on a file that has wesa info (mass, dens).
+
+4) Corrected error in handling surface area and permeability
+both being checked.
+
+5) Added average surface area calculation to WESA code
+
+6) Corrected handling of gas perm/wesa to auto change to
+wesa if using a wesa file.
+
+Version 6.57.02 6-2-99
+
+1) Added %Filter Flow histogram plot
+
+Version 6.57.01 5-6-99
+
+1) Removed common dialog ocx and replaced with direct
+call to Win32API file selector.  This fixes a few
+minor things and makes it easier to update to newer
+versions of VB because you don't have to worry about
+the version of the common dialog ocx file.  Because
+of this, the fsel routine now needs to be passed the
+handle of the calling window, so any routines in the
+caprep.bas module that call fsel also need to know
+the handle of the calling window.  Routines in forms
+can find their handle with me.hwnd.
+
+2) All old-style 3-d componants are replaced with
+standard ones.  This eliminates the need for the
+THREED.OCX file, which is not standard in VB5 any
+more.  (It is still available, but must be installed
+manually, which is a pain.)
+
+3) When you click on an option that is exclusive of an
+already selected option, the message box that asks you
+if you want to turn off the older option now works if
+you click "No".  (It doesn't turn off the older oprion
+and instead turns off the new option you just clicked
+on.)  In the previous version, clicking on either Yes
+or No would turn off the older option(s).
+
+4) Win32API calls are now updated so that they work with NT.
+
+5) User list is now moved to capusers.ini in the default
+section.  If it isn't there, it will still look in the
+capwin.ini file, and copy it to the capusers.ini file
+
+Also fixed problem with microflow and pore count
+where wrong font was being used for printout
+if a graph was printed first.  This was fixed in graphics
+package.
+
+Version 6.57.00 First version in VB5-32 released 1-15-99
+
+1) All references to file numbers now use the freefile command
+
+2) Now uses PMIDLL32.DLL for rotating test on printout (VB
+STILL has a problem printing rotated text!)
+
+3) If you don't have "permeability chart" checked, it used to
+skip the darcy's calculation.  It now only skips the darcys
+calculation if you check the surface area box (the surface
+area results are in the column that is also used for the
+darcy's calculation.)
+
+Version 6.56.17 9-29-98
+
+1) Made changed to 16-bit code when errors found while doing
+conversion to 32-bit code
+
+2) Older data files without tortuosity factor now work (They
+were giving "division by zero" error).
+
+Version 6.56.16:
+
+1) Changes to microflow
+
+Version 6.56.15:
+
+1) CAPREPB experimental version
+
+Version 6.56.14:
+
+1) Changes for Raybestos
+
+Version 6.56.13:
+
+1) Added tortuosity factor
+
+2) Added Liquid Permeability routine for Proctor and Gamble
+routine
+
+3) Fixed Wesa to only ask for Mass
+
+Version 6.56.12:
+
+1) Added temporary dialog box asking user for mass and
+density(RD)
+
+2) Added excel data file for capillary flow report (RD)
+
+3) Added graphs for frequency distribution (RD)
+
+Version 6.56.11S:
+
+1) Added Surface Area to Permeability Report (RD)
+
+2) Added file name to top of text report pages (RD)
+
+3) Changed mass format for fluid sensor routine (RD)
+
+4) Took fluid sensor from appearing in data report changed
+liquid to fluid
+
+Version 6.56.11o:
+
+1) Added differential mass to fluid sensor routine (RD)
+
+2) Added curve smoothing to fluid sensor routine
+
+Version 6.56.11m:
+
+1) Added minimize button to caprep (RD)
+
+2) Centered graphchoice frame
+
+3) Set C:\Capwin\RP_cover.txt as file that contains report
+header (RD)
+
+Version 6.56.11I: 1) Changed appearance of grapphchoice dialog
+box
+
+2) Allows user to get data when wet curve never reaches half
+dry curve
+
+3) Removed files no longer used by program
+
+Version 6.56.11h:
+
+1) Added name of fluid and density to text report for loadcell
+(fluidsensor routine)(RD)
+
+2) Specified wet in text report of loadcell (fluidsesor)
+routine for flow rate.
+
+3) Added extra decimal point for pressure in loadcell
+(fluidsensor) routine.
+
+4) Fixed calculation of volume in loadcell routine
+
+Version 6.56.11E:
+
+1) Added more options for new data format(rd)
+
+2) Modified dialog box for load cell data(fluidsensor).
+
+3) It now shows the density on the dialog box instead of
+calling the input box routine.
+
+4) Fixed problem with both text reports appearing at same
+time(rd)
+
+Version 6.56.11:
+
+1) Fixed error in calculation of percent porosity
+
+2) Using new graphics method to prevent user from zooming in
+too far also did alingnment to caprese.frm 3) Fixed problem
+with line width being too thin on some printers (rd) Added a
+frame to ask user for new values( frame will save old values
+though so that user will not have to keep reentering value)
+
+4) Added new data format to reports.
+
+5) Instead of frame to ask user for a line width, it now
+appears on the caprep main frame.  It will appear hidden until
+user double clicks on the printer option button.
+
+Version 6.56.10:
+
+1) Fixed square pore treatment.  Now good everywhere.DS
+
+Version 6.56.09:
+
+1) Fixed help button.  New search routine for capstuff.dat.
+
+Version 6.56.08: 
+
+1) extended wet flow measure from "##0.000" to "##0.00000" for
+integrity report (DWW)
+
+2) Made cosmetic change to CapFlow Text Report.  The column
+data was off center from the column headers.  (DWW)
+
+3) The abort button for the text screen of a hydrohead test did
+not function properly if the Multigraph option was choosen.
+Abort button will now take the user back to the main screen.
+Also corrected a cosmetic problem whereby the new page of a
+text report would be printed out and shown briefly after a user
+hit abort for a CapFlow report.  (DWW)
+
+4) Removed the pore diameter line from hydrohead test
+
+5) Graphics 1.2.4 -> 1.2.5
+
+Version 6.56.07: 3/12/96
+
+1) removed bubble point pressure from integrity report
+
+Version 6.56.06: 3/8/96
+
+1) added Hydrohead test
+
+Version 6.56.05: 2/20/96
+
+1) Fixed max pore dist value in sum sheet so it conforms to
+international standards
+
+Version 6.56.04 1/23/96:
+
+1) fixed handling of integrity test.  No more crash.  (DWS)
+
+Version 6.56.03: 1/9/96
+
+1) Added Frazier Analysis as an option box for Gas Permeability
+tests and Cap Flow tests.  The Frazier Analysis is returned on
+the summary sheet for Cap Flow and on the last line of the
+report for Gas Perm.  Current units are CFM.ft^2 per 0.5 inches
+of water.
+
+2) Revamped organization of Excel procedures for Microflow and
+Gas Perm.  Instead of being an if-then statement within a
+command button, you must now get an Excel Report by choosing
+"Excel Report" as the output device, and then the correct
+procedure is called within the "Begin" code.  Adding additional
+excel reports for other tests will now be simpler due to the
+new structure.  (DWW)
+
+Version 6.56.02: 12/28/95
+
+1) Corrected error in calculation of percent porosity in Pore
+Analysis.
+
+2) Inserted a Form_Feed after the summary sheet.
+
+Version 6.56.01: 11/30/95
+
+1) Corrected errors with Pore Table report (Cancel buttons
+work).
+
+2) Added feature to Pore Table Report which shows all processed
+files at the end of the report.
+
+3) As per the request of Seika, determined the diameter at the
+highest Pore Mean Distribution, and reported this answer in
+both the summary sheet and the pore table.
+
+4) As per another request of Seika, added capability to handle
+square pores.  This will apply only to those tests that
+determine pore distribution and bubble point.  (DWW)
+
+Version 6.56: 11/7/95
+
+1) Changes inspired by the Ford project.  A diffusion
+permeameter report option was added.
+
+2) The multigraph function works for the diffusion permeameter
+report.
+
+3) Time is printed in seconds and all pressure units are either
+in PSID or PSIA for the diffperm.
+
+4) "Q" on the text report was replaced with "Volumetric Flow
+Through The Surface."
+
+5) Handles the new report format, which now may begin with
+"EXTENDED" followed on the next line by the number of lines of
+"extended" information that follow.  This new format is for ALL
+data files and not simply the DiffPerm report.
+
+6) Added a user bar on the main screen.  This allows CapRep to
+access the capwin.ini file and retrieve useful information such
+as what units the user inputed their sample thickness and
+diameter in, as well as where to save files.
+
+7) Changed background of CapRep to a solid color of green.
+(DWW)
+
+8) 11/7/95: Labeled dry/wet graph with "wet", "dry", and "1/2
+dry" (DWS)
+
+Version 6.55.03: 10/15/95
+
+1) Added button to create an excel report for a dat file.  This
+is different from the Text Covert in that the Text Convert
+feature creates a file that can be imported into a spreadsheet,
+whereas The Excel Report button directly makes an Excel
+spreadsheet.  (DWW)
+
+Version 6.55.02: 10/12/95
+
+1) Disabled Print Button in Text Output Screen (DWS)
+
+Version 6.55.01: 8-23-95
+
+1) Fixed bug in the report selection error messages.
+
+2) Added option to automatically clear offending report
+selections.
+
+Version 6.55.00: July 7, 1995
+
+1) Installed new graphics routines from BET Report Program
+
+Version 6.54.16: June 5, 1995
+
+1) Fixed resistivity which could not be calculated if data
+contained any points with a flow of 0.  Now it simply skips
+such points.
+
+Version 6.54.15: January 25, 1995
+
+1) Fixed slight problem where initial graphics screen would not
+be reset when you ran a second report or on multi-graphics.
+
+Version 6.54.14: January 3, 1995
+
+1) Updated graphics.bas so it works with the porosimeter as
+well.  Allow non-zero y-minimum on manual graph setting but
+doesn't save ymin.
+
+Version 6.54.13: August 1, 1994
+
+1) Gas permeability files have always only used the initial
+letter of the gas name (or liquid name) to determine the gas or
+liquid that was being used.  Valid values would be A for air, N
+for nitrogen, W for water, H for helium, and R for argon.  The
+viscosity for each gas was a constant in the program.  Now a
+new gas letter has been added, "X", which means that the
+customer has entered the actual gas name and viscosity later in
+the file.  After the zero on the line that would normally be
+the surface tension of the wetting fluid for porometry tests,
+but is zero to signify permeability tests, there are two new
+lines if the gas line is X.  The first new line is the actual
+name of the gas.  The second new line is the viscosity value
+(in cP) of the gas (or liquid).  Such files can only be
+generated in CAPWIN version 6.53.27 or higher.
+
+Version 6.54.12: August 26, 1994
+
+1) Fixed other places where IOCB #4 was being closed which
+would mess up text file output.
+
+2) Fixed file selector for when initial path was invalid, such
+as when you store a file to the A disk and then don't have the
+A disk in the drive when you re-run the file selector.  It now
+switches down one directory when it gets an error, until it
+reaches the root directory, and then it switches to C.  If C
+doesn't work it tries D, etc..
+
+Version 6.54.11: August 22, 1994
+
+1) At customer's request, added line to first page of main
+report printout that shows the complete path and file name of
+the data file being printed.  For multiple reports, prints path
+and file name of each data file, along with the sample ID of
+each data file.
+
+Version 6.54.10: August 20, 1994
+
+1) Fixed problem with text file output.  End of routine was
+closing all files and then sending a form_feed.  Text file
+output was being closed before the form_feed which caused an
+error.  It now only closes 1, 2, and 3 in place of a general
+"Close" statement.  (Text file uses IOCB # 4)
+
+Version 6.54.09: August 10, 1994
+
+1) Added capability to work on systems without having any
+printer driver installed.  Printing functions will be disabled
+if no driver is installed, but you can still print to the
+screen or to a text file.
+
+2) Fixed bug that caused files to be unusable when 1/2 dry
+didn't meet wet and last dry point was beyond last two wet
+points in pressure.
+
+Version 6.54.08: August 4, 1994
+
+1) The new file selector was implemented.  See documentation
+about this file selector.
+
+Version 6.54.07:
+
+1) Allows gas permeability files to have data points with flow
+equal to 0.  Before this would be read as the end of the data
+file.  CAPWIN would never store a flow equal to 0, but would
+store 1 instead, but this would mess up very low flow tests, so
+it was changed to allow 0 flow values to be stored into the
+*.CFT file.
+
+Version 6.54.06:
+
+1) Adds END command to the "Unload Form" of the main form so
+that if you close the main form with a double click on the
+close box it will end the task as well.  The older version
+would end the task only if you clicked on the "CLOSE" button,
+but not if you double-clicked on the upper left hand button.
+
+Version 6.54.05:
+
+1) Uses LINE INPUT for all input of strings.  This fixed a
+problem with a user who put commas in his sample ID.
+
+Version 6.54.04:
+
+1) Resumed using NEWBET.DLL because of problems with truetype
+fonts on some printers.
+
+Version 6.54.03:
+
+1) Removed need for NEWBET.DLL, handles all font rotation
+directly.  (This didn't work, see version 6.54.04).
+
+Version 6.54.02:
+
+1) Added manual graph zooming.
+
+Version 6.54.01:
+
+1) Fixed graphics when numbers too large on Y axis.
+
+Version 6.54.00:
+
+1) New graphics methods.  Show now work with all printers and
+all types of paper.
+
+Version 6.53.01:
+
+1) Added STR$ to all PRINT # commands.  This fixes problems in
+Europe with comma used for decimal point.
+
+Version 6.53.00:
+
+1) First version in Visual Basic version 3.00
+
+Version 6.52.03:
+
+1) Added option for hollow samples.  Variable DIAM is used to
+read in the initial diameter (older version used DiskArea
+variable for this.) If DIAM is 0, then next line in file
+contains DIAM, Cyl_Len.
+
+2) Box name in Dia_Thk.Frm changed from Diam to Diam_Box due to
+name conflict.
+
+Version 6.52.02:
+
+1) Added changable version number.
+
+2) Both Cum.  FF and PD graphcs must now be checked for "Cum FF
+and PD" graph to be displayed.  (Formerly, either of the two
+could be checked.)
+
+3) GetFile subroutine now closes only file #1.  This corrects
+"Bad File Name Or #" error when outputting to a text file.
+
+Version 6.52.01:
+
+1) "Analyzing Data" cancel didn't work.
+
+Version 6.52.00:
+
+First Visual Basic version (v1.00).
+
+

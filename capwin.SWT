@@ -1,0 +1,97 @@
+[Setup Wizard Template]
+TemplateDate=4/19/00 3:18:14 PM
+
+[Select Project and Options]
+txtProjFile=D:\vb5code\Capcode\Capwin.VBP
+chkProjRebuild=0
+optBldSetup=True
+chkIncludeDEP=0
+optInternet=False
+optDEPOnly=False
+
+[Distribution Method]
+optFloppyTarg=False
+optSingleDirTarg=False
+optMultDirTarg=True
+
+[Multiple Directories]
+cboFloppyDrives=0
+cboFloppyDriveSize=0
+txtDirTarget=D:\vb5 install disks\capwin\
+
+[Internet Package]
+optRemoteSite=True
+optLocalSite=False
+txtLocalSite=
+
+[Data Access]
+chkUseJet=1
+chkUseODBC=0
+Isam0=
+
+[ActiveX Server Components]
+File1=
+
+[Confirm Dependencies]
+File1="C:\WINDOWS\SYSTEM\MSCOMM32.OCX",True,32764
+File2="D:\vb5code\Common\WIN95IO.DLL",True,32762
+File3=
+
+[Shared ActiveX Application]
+optDeployApplication=True
+optDeployShared=False
+optRemoteServer1=True
+optRemoteServer0=False
+
+[File Summary]
+File1="C:\WINDOWS\SYSTEM\MSVBVM50.dll",True,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File2="E:\VB5\SETUPKIT\KITFIL32\SYS32\StdOle2.tlb",True,"$(WinSysPathSysFile)",$(TLBRegister),False
+File3="E:\VB5\SETUPKIT\KITFIL32\SYS32\OleAut32.dll",True,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File4="E:\VB5\SETUPKIT\KITFIL32\SYS32\OlePro32.dll",True,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File5="E:\VB5\SETUPKIT\KITFIL32\SYS32\AsycFilt.dll",True,"$(WinSysPathSysFile)",,False
+File6="E:\VB5\SETUPKIT\KITFIL32\SYS32\Ctl3d32.dll",True,"$(WinSysPathSysFile)",,False
+File7="E:\VB5\SETUPKIT\KITFIL32\SYS32\ComCat.dll",True,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File8="C:\WINDOWS\SYSTEM\MSCOMM32.OCX",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File9="D:\vb5code\Common\WIN95IO.DLL",True,"$(WinSysPath)",,True
+File10="C:\Program Files\capwin\Caphelp.hlp",True,"$(AppPath)",,False
+File11="c:\Program Files\capwin\Capwin.exe",True,"$(AppPath)",,False
+File12="C:\Program Files\capwin\CAPREP.EXE",True,"$(AppPath)",,False
+File13="C:\WINDOWS\SYSTEM\TABCTL32.OCX",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File14="C:\WINDOWS\SYSTEM\pmidll32.DLL",True,"$(WinSysPath)",,True
+File15="C:\Program Files\capwin\Caprep.DEP",True,"$(AppPath)",,False
+File16="C:\Program Files\capwin\CAPREP.NEW",True,"$(AppPath)",,False
+File17="C:\Program Files\capwin\FONT.DAT",True,"$(AppPath)",,False
+File18="C:\Program Files\capwin\USERS\default\capgraph.ini",True,"$(AppPath)\users\default",,False
+File19="C:\Program Files\capwin\USERS\default\caprep.ini",True,"$(AppPath)\users\default",,False
+File20="C:\Program Files\capwin\USERS\default\default.tpf",True,"$(AppPath)\users\default",,False
+File21="C:\Program Files\capwin\USERS\default\rp_cover.txt",True,"$(AppPath)\users\default",,False
+File22="C:\Program Files\capwin\capusers.ini",True,"$(AppPath)",,False
+File23="C:\Program Files\capwin\CAPWIN.NEW",True,"$(AppPath)",,False
+File24="C:\Program Files\capwin\DATA\examples\BUBBLEPT.CFT",True,"$(AppPath)\data\examples",,False
+File25="C:\Program Files\capwin\DATA\examples\GASPERM.CFT",True,"$(AppPath)\data\examples",,False
+File26="C:\Program Files\capwin\DATA\examples\INTEGRTY.CFT",True,"$(AppPath)\data\examples",,False
+File27="C:\Program Files\capwin\DATA\examples\LIQPERM.CFT",True,"$(AppPath)\data\examples",,False
+File28="C:\Program Files\capwin\DATA\examples\POREDIST.CFT",True,"$(AppPath)\data\examples",,False
+File29="C:\Program Files\capwin\DATA\examples\POREDIT.CFT",True,"$(AppPath)\data\examples",,False
+File30="C:\Program Files\capwin\DATA\examples\PRESHOLD.CFT",True,"$(AppPath)\data\examples",,False
+File31="C:\Program Files\capwin\debug\CAPBUGS.DOC",True,"$(AppPath)\debug",,False
+File32="C:\Program Files\capwin\debug\GEORGE.HT",True,"$(AppPath)\debug",,False
+File33="C:\Program Files\capwin\debug\README.TXT",True,"$(AppPath)\debug",,False
+File34="C:\Program Files\capwin\PARMS\BP-DEFLT.TPF",True,"$(AppPath)\parms",,False
+File35="C:\Program Files\capwin\PARMS\FASTTEST.TPF",True,"$(AppPath)\parms",,False
+File36="C:\Program Files\capwin\PARMS\FRAZIER.TPF",True,"$(AppPath)\parms",,False
+File37="C:\Program Files\capwin\PARMS\GP-DEFLT.TPF",True,"$(AppPath)\parms",,False
+File38="C:\Program Files\capwin\PARMS\HH-DEFLT.TPF",True,"$(AppPath)\parms",,False
+File39="C:\Program Files\capwin\PARMS\IT-DEFLT.TPF",True,"$(AppPath)\parms",,False
+File40="C:\Program Files\capwin\PARMS\PD-DEFLT.TPF",True,"$(AppPath)\parms",,False
+File41="C:\Program Files\capwin\PARMS\SAMPL131.TPF",True,"$(AppPath)\parms",,False
+File42="C:\Program Files\capwin\PARMS\SLOWGP.TPF",True,"$(AppPath)\parms",,False
+File43="C:\Program Files\capwin\PARMS\SLOWTEST.TPF",True,"$(AppPath)\parms",,False
+File44="C:\Program Files\capwin\PARMS\STANDARD\SSDRY.TPF",True,"$(AppPath)\parms\standard",,False
+File45="C:\Program Files\capwin\PARMS\STANDARD\SSWET.TPF",True,"$(AppPath)\parms\standard",,False
+File46="C:\Program Files\capwin\CAPCAL.D8A",True,"$(AppPath)",,False
+File47="C:\Program Files\capwin\capwin.ini",True,"$(AppPath)",,False
+File48="C:\Program Files\capwin\CVTABLE.CAL",True,"$(AppPath)",,False
+File49="C:\Program Files\capwin\LEAKTEST.ASC",True,"$(AppPath)",,False
+File50="C:\Program Files\capwin\capwincompreg.cal",True,"$(AppPath)",,False
+File51="C:\Program Files\capwin\capwinrg.cal",True,"$(AppPath)",,False

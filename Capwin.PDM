@@ -1,0 +1,810 @@
+[Root]
+Most Recent Package=Capwin Dep File 2
+
+
+[Package|Dep File 1|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=c:\vb6disks\Capwin
+
+[Package|Dep File 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Dep File 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Dep File 1|Files Found]
+
+[Package|Dep File 1|Files Released]
+
+[Package|Dep File 1|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\WIN95IO.DLL=
+C:\Program Files\CAPWIN\CAPREP.EXE=
+
+[Package|Dep File 1|Out-of-Date Dependency Information]
+
+[Package|Dep File 1|Files Added]
+c:\program files\capwin\caprep.exe=
+c:\program files\capwin\caprep.new=
+c:\program files\capwin\font.dat=
+c:\program files\capwin\users\default\capgraph.ini=
+c:\program files\capwin\users\default\caprep.ini=
+c:\program files\capwin\users\default\default.tpf=
+c:\program files\capwin\users\default\rp_cover.txt=
+c:\program files\capwin\capusers.ini=
+c:\program files\capwin\capwin.new=
+c:\program files\capwin\data\examples\bubblept.cft=
+c:\program files\capwin\data\examples\gasperm.cft=
+c:\program files\capwin\data\examples\integrty.cft=
+c:\program files\capwin\data\examples\liqperm.cft=
+c:\program files\capwin\data\examples\poredist.cft=
+c:\program files\capwin\data\examples\poredit.cft=
+c:\program files\capwin\data\examples\preshold.cft=
+c:\program files\capwin\debug\capbugs.doc=
+c:\program files\capwin\debug\george.ht=
+c:\program files\capwin\debug\readme.txt=
+c:\program files\capwin\parms\bp-deflt.tpf=
+c:\program files\capwin\parms\fasttest.tpf=
+c:\program files\capwin\parms\frazier.tpf=
+c:\program files\capwin\parms\gp-deflt.tpf=
+c:\program files\capwin\parms\hh-deflt.tpf=
+c:\program files\capwin\parms\it-deflt.tpf=
+c:\program files\capwin\parms\pd-deflt.tpf=
+c:\program files\capwin\parms\sampl131.tpf=
+c:\program files\capwin\parms\slowgp.tpf=
+c:\program files\capwin\parms\slowtest.tpf=
+c:\program files\capwin\parms\standard\ssdry.tpf=
+c:\program files\capwin\parms\standard\sswet.tpf=
+
+[Package|Dep File 1|Files Removed]
+
+[Package|Dep File 1|Files In Project]
+C:\Program Files\CAPWIN\Capwin.exe=Yes
+C:\Program Files\CAPWIN\Caphelp.hlp=Yes
+C:\Program Files\CAPWIN\CAPREP.EXE=Yes
+C:\Program Files\CAPWIN\CAPREP.NEW=Yes
+C:\Program Files\CAPWIN\FONT.DAT=Yes
+C:\Program Files\CAPWIN\users\default\capgraph.ini=Yes
+C:\Program Files\CAPWIN\users\default\caprep.ini=Yes
+C:\Program Files\CAPWIN\users\default\default.tpf=Yes
+C:\Program Files\CAPWIN\users\default\rp_cover.txt=Yes
+C:\Program Files\CAPWIN\capusers.ini=Yes
+C:\Program Files\CAPWIN\CAPWIN.NEW=Yes
+C:\Program Files\CAPWIN\data\examples\BUBBLEPT.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\GASPERM.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\INTEGRTY.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\LIQPERM.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\POREDIST.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\POREDIT.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\PRESHOLD.CFT=Yes
+C:\Program Files\CAPWIN\debug\CAPBUGS.DOC=Yes
+C:\Program Files\CAPWIN\debug\GEORGE.HT=Yes
+C:\Program Files\CAPWIN\debug\README.TXT=Yes
+C:\Program Files\CAPWIN\parms\BP-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\FASTTEST.TPF=Yes
+C:\Program Files\CAPWIN\parms\FRAZIER.TPF=Yes
+C:\Program Files\CAPWIN\parms\GP-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\HH-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\IT-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\PD-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\SAMPL131.TPF=Yes
+C:\Program Files\CAPWIN\parms\SLOWGP.TPF=Yes
+C:\Program Files\CAPWIN\parms\SLOWTEST.TPF=Yes
+C:\Program Files\CAPWIN\parms\standard\SSDRY.TPF=Yes
+C:\Program Files\CAPWIN\parms\standard\SSWET.TPF=Yes
+C:\WINDOWS\SYSTEM32\MSVBVM60.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM32\MSCOMM32.OCX=Yes
+C:\WINDOWS\SYSTEM32\TABCTL32.OCX=Yes
+C:\WINDOWS\SYSTEM32\comctl32.ocx=Yes
+
+[Package|Dep File 1|Configure Registry Files]
+Applicable=No
+
+[Package|Dep File 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Dep File 1|Install Locations]
+C:\Program Files\CAPWIN\Capwin.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\WIN95IO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMM32.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\Caphelp.hlp=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Program Files\CAPWIN\CAPREP.EXE=$(AppPath)
+C:\WINDOWS\SYSTEM\pmidll32.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\CAPREP.NEW=$(AppPath)
+C:\Program Files\CAPWIN\FONT.DAT=$(AppPath)
+C:\Program Files\CAPWIN\users\default\capgraph.ini=$(AppPath)\users\default
+C:\Program Files\CAPWIN\users\default\caprep.ini=$(AppPath)\users\default
+C:\Program Files\CAPWIN\users\default\default.tpf=$(AppPath)\users\default
+C:\Program Files\CAPWIN\users\default\rp_cover.txt=$(AppPath)\users\default
+C:\Program Files\CAPWIN\capusers.ini=$(AppPath)
+C:\Program Files\CAPWIN\CAPWIN.NEW=$(AppPath)
+C:\Program Files\CAPWIN\data\examples\BUBBLEPT.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\GASPERM.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\INTEGRTY.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\LIQPERM.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\POREDIST.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\POREDIT.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\PRESHOLD.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\debug\CAPBUGS.DOC=$(AppPath)\debug
+C:\Program Files\CAPWIN\debug\GEORGE.HT=$(AppPath)\debug
+C:\Program Files\CAPWIN\debug\README.TXT=$(AppPath)\debug
+C:\Program Files\CAPWIN\parms\BP-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\FASTTEST.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\FRAZIER.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\GP-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\HH-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\IT-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\PD-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\SAMPL131.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\SLOWGP.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\SLOWTEST.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\standard\SSDRY.TPF=$(AppPath)\parms\standard
+C:\Program Files\CAPWIN\parms\standard\SSWET.TPF=$(AppPath)\parms\standard
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\Win95io.dll=$(WinSysPath)
+D:\WINNT\system32\MSCOMM32.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\WINNT\system32\pmidll32.dll=$(AppPath)
+D:\WINNT\system32\TABCTL32.OCX=$(WinSysPath)
+D:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+D:\WINNT\system32\MSCHRT20.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\pmidll32.dll=$(AppPath)
+C:\WINDOWS\SYSTEM32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSCOMM32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\comctl32.ocx=$(WinSysPath)
+
+[Package|Dep File 1|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\CAPWIN\Capwin.exe=No
+C:\Program Files\CAPWIN\Caphelp.hlp=No
+C:\Program Files\CAPWIN\CAPREP.EXE=No
+C:\Program Files\CAPWIN\CAPREP.NEW=No
+C:\Program Files\CAPWIN\FONT.DAT=No
+C:\Program Files\CAPWIN\users\default\capgraph.ini=No
+C:\Program Files\CAPWIN\users\default\caprep.ini=No
+C:\Program Files\CAPWIN\users\default\default.tpf=No
+C:\Program Files\CAPWIN\users\default\rp_cover.txt=No
+C:\Program Files\CAPWIN\capusers.ini=No
+C:\Program Files\CAPWIN\CAPWIN.NEW=No
+C:\Program Files\CAPWIN\data\examples\BUBBLEPT.CFT=No
+C:\Program Files\CAPWIN\data\examples\GASPERM.CFT=No
+C:\Program Files\CAPWIN\data\examples\INTEGRTY.CFT=No
+C:\Program Files\CAPWIN\data\examples\LIQPERM.CFT=No
+C:\Program Files\CAPWIN\data\examples\POREDIST.CFT=No
+C:\Program Files\CAPWIN\data\examples\POREDIT.CFT=No
+C:\Program Files\CAPWIN\data\examples\PRESHOLD.CFT=No
+C:\Program Files\CAPWIN\debug\CAPBUGS.DOC=No
+C:\Program Files\CAPWIN\debug\GEORGE.HT=No
+C:\Program Files\CAPWIN\debug\README.TXT=No
+C:\Program Files\CAPWIN\parms\BP-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\FASTTEST.TPF=No
+C:\Program Files\CAPWIN\parms\FRAZIER.TPF=No
+C:\Program Files\CAPWIN\parms\GP-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\HH-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\IT-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\PD-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\SAMPL131.TPF=No
+C:\Program Files\CAPWIN\parms\SLOWGP.TPF=No
+C:\Program Files\CAPWIN\parms\SLOWTEST.TPF=No
+C:\Program Files\CAPWIN\parms\standard\SSDRY.TPF=No
+C:\Program Files\CAPWIN\parms\standard\SSWET.TPF=No
+D:\WINNT\system32\pmidll32.dll=No
+C:\Program Files\CAPWIN\pmidll32.dll=No
+
+[Package|Dep File 1|Distribution]
+Type=multi
+Size=1.44 MB
+Title=PMI Perm-Porometer
+
+[Package|Dep File 1|IconGroups]
+Group0=CAPWIN
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Dep File 1|CAPWIN]
+Icon1=Capwin.exe
+Title1=CAPWIN
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=CAPREP.EXE
+Title2=CAPREP
+StartIn2=$(AppPath)
+Key2=Icon3
+
+[Package|Dep File 1|DepFile]
+DepCabFile=Capwin.CAB
+DepCabRun=Capwin.INF
+
+[Package|Dep File 1|Package]
+PackageFolder=c:\vb6disks\Capwin
+ProjectFolder=C:\vb6code\Capcode
+ServerSideCab=
+File1=c:\vb6disks\Capwin\Capwin.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=c:\vb6disks\Capwin
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\WIN95IO.DLL=
+C:\Program Files\CAPWIN\CAPREP.EXE=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+c:\program files\capwin\caprep.exe=
+c:\program files\capwin\caprep.new=
+c:\program files\capwin\font.dat=
+c:\program files\capwin\users\default\capgraph.ini=
+c:\program files\capwin\users\default\caprep.ini=
+c:\program files\capwin\users\default\default.tpf=
+c:\program files\capwin\users\default\rp_cover.txt=
+c:\program files\capwin\capusers.ini=
+c:\program files\capwin\capwin.new=
+c:\program files\capwin\data\examples\bubblept.cft=
+c:\program files\capwin\data\examples\gasperm.cft=
+c:\program files\capwin\data\examples\integrty.cft=
+c:\program files\capwin\data\examples\liqperm.cft=
+c:\program files\capwin\data\examples\poredist.cft=
+c:\program files\capwin\data\examples\poredit.cft=
+c:\program files\capwin\data\examples\preshold.cft=
+c:\program files\capwin\debug\capbugs.doc=
+c:\program files\capwin\debug\george.ht=
+c:\program files\capwin\debug\readme.txt=
+c:\program files\capwin\parms\bp-deflt.tpf=
+c:\program files\capwin\parms\fasttest.tpf=
+c:\program files\capwin\parms\frazier.tpf=
+c:\program files\capwin\parms\gp-deflt.tpf=
+c:\program files\capwin\parms\hh-deflt.tpf=
+c:\program files\capwin\parms\it-deflt.tpf=
+c:\program files\capwin\parms\pd-deflt.tpf=
+c:\program files\capwin\parms\sampl131.tpf=
+c:\program files\capwin\parms\slowgp.tpf=
+c:\program files\capwin\parms\slowtest.tpf=
+c:\program files\capwin\parms\standard\ssdry.tpf=
+c:\program files\capwin\parms\standard\sswet.tpf=
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Program Files\CAPWIN\Capwin.exe=Yes
+C:\Program Files\CAPWIN\Caphelp.hlp=Yes
+C:\Program Files\CAPWIN\CAPREP.EXE=Yes
+C:\Program Files\CAPWIN\CAPREP.NEW=Yes
+C:\Program Files\CAPWIN\FONT.DAT=Yes
+C:\Program Files\CAPWIN\users\default\capgraph.ini=Yes
+C:\Program Files\CAPWIN\users\default\caprep.ini=Yes
+C:\Program Files\CAPWIN\users\default\default.tpf=Yes
+C:\Program Files\CAPWIN\users\default\rp_cover.txt=Yes
+C:\Program Files\CAPWIN\capusers.ini=Yes
+C:\Program Files\CAPWIN\CAPWIN.NEW=Yes
+C:\Program Files\CAPWIN\data\examples\BUBBLEPT.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\GASPERM.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\INTEGRTY.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\LIQPERM.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\POREDIST.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\POREDIT.CFT=Yes
+C:\Program Files\CAPWIN\data\examples\PRESHOLD.CFT=Yes
+C:\Program Files\CAPWIN\debug\CAPBUGS.DOC=Yes
+C:\Program Files\CAPWIN\debug\GEORGE.HT=Yes
+C:\Program Files\CAPWIN\debug\README.TXT=Yes
+C:\Program Files\CAPWIN\parms\BP-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\FASTTEST.TPF=Yes
+C:\Program Files\CAPWIN\parms\FRAZIER.TPF=Yes
+C:\Program Files\CAPWIN\parms\GP-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\HH-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\IT-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\PD-DEFLT.TPF=Yes
+C:\Program Files\CAPWIN\parms\SAMPL131.TPF=Yes
+C:\Program Files\CAPWIN\parms\SLOWGP.TPF=Yes
+C:\Program Files\CAPWIN\parms\SLOWTEST.TPF=Yes
+C:\Program Files\CAPWIN\parms\standard\SSDRY.TPF=Yes
+C:\Program Files\CAPWIN\parms\standard\SSWET.TPF=Yes
+C:\WINDOWS\SYSTEM32\MSVBVM60.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM32\MSCOMM32.OCX=Yes
+C:\WINDOWS\SYSTEM32\TABCTL32.OCX=Yes
+C:\WINDOWS\SYSTEM32\comctl32.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\Program Files\CAPWIN\Capwin.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\WIN95IO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMM32.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\Caphelp.hlp=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Program Files\CAPWIN\CAPREP.EXE=$(AppPath)
+C:\WINDOWS\SYSTEM\pmidll32.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\CAPREP.NEW=$(AppPath)
+C:\Program Files\CAPWIN\FONT.DAT=$(AppPath)
+C:\Program Files\CAPWIN\users\default\capgraph.ini=$(AppPath)\users\default
+C:\Program Files\CAPWIN\users\default\caprep.ini=$(AppPath)\users\default
+C:\Program Files\CAPWIN\users\default\default.tpf=$(AppPath)\users\default
+C:\Program Files\CAPWIN\users\default\rp_cover.txt=$(AppPath)\users\default
+C:\Program Files\CAPWIN\capusers.ini=$(AppPath)
+C:\Program Files\CAPWIN\CAPWIN.NEW=$(AppPath)
+C:\Program Files\CAPWIN\data\examples\BUBBLEPT.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\GASPERM.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\INTEGRTY.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\LIQPERM.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\POREDIST.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\POREDIT.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\data\examples\PRESHOLD.CFT=$(AppPath)\data\examples
+C:\Program Files\CAPWIN\debug\CAPBUGS.DOC=$(AppPath)\debug
+C:\Program Files\CAPWIN\debug\GEORGE.HT=$(AppPath)\debug
+C:\Program Files\CAPWIN\debug\README.TXT=$(AppPath)\debug
+C:\Program Files\CAPWIN\parms\BP-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\FASTTEST.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\FRAZIER.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\GP-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\HH-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\IT-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\PD-DEFLT.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\SAMPL131.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\SLOWGP.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\SLOWTEST.TPF=$(AppPath)\parms
+C:\Program Files\CAPWIN\parms\standard\SSDRY.TPF=$(AppPath)\parms\standard
+C:\Program Files\CAPWIN\parms\standard\SSWET.TPF=$(AppPath)\parms\standard
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\Win95io.dll=$(WinSysPath)
+D:\WINNT\system32\MSCOMM32.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\WINNT\system32\pmidll32.dll=$(AppPath)
+D:\WINNT\system32\TABCTL32.OCX=$(WinSysPath)
+D:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+D:\WINNT\system32\MSCHRT20.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\pmidll32.dll=$(AppPath)
+C:\WINDOWS\SYSTEM32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSCOMM32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\comctl32.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=$(WinSysPathSysFile)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\CAPWIN\Capwin.exe=No
+C:\Program Files\CAPWIN\Caphelp.hlp=No
+C:\Program Files\CAPWIN\CAPREP.EXE=No
+C:\Program Files\CAPWIN\CAPREP.NEW=No
+C:\Program Files\CAPWIN\FONT.DAT=No
+C:\Program Files\CAPWIN\users\default\capgraph.ini=No
+C:\Program Files\CAPWIN\users\default\caprep.ini=No
+C:\Program Files\CAPWIN\users\default\default.tpf=No
+C:\Program Files\CAPWIN\users\default\rp_cover.txt=No
+C:\Program Files\CAPWIN\capusers.ini=No
+C:\Program Files\CAPWIN\CAPWIN.NEW=No
+C:\Program Files\CAPWIN\data\examples\BUBBLEPT.CFT=No
+C:\Program Files\CAPWIN\data\examples\GASPERM.CFT=No
+C:\Program Files\CAPWIN\data\examples\INTEGRTY.CFT=No
+C:\Program Files\CAPWIN\data\examples\LIQPERM.CFT=No
+C:\Program Files\CAPWIN\data\examples\POREDIST.CFT=No
+C:\Program Files\CAPWIN\data\examples\POREDIT.CFT=No
+C:\Program Files\CAPWIN\data\examples\PRESHOLD.CFT=No
+C:\Program Files\CAPWIN\debug\CAPBUGS.DOC=No
+C:\Program Files\CAPWIN\debug\GEORGE.HT=No
+C:\Program Files\CAPWIN\debug\README.TXT=No
+C:\Program Files\CAPWIN\parms\BP-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\FASTTEST.TPF=No
+C:\Program Files\CAPWIN\parms\FRAZIER.TPF=No
+C:\Program Files\CAPWIN\parms\GP-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\HH-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\IT-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\PD-DEFLT.TPF=No
+C:\Program Files\CAPWIN\parms\SAMPL131.TPF=No
+C:\Program Files\CAPWIN\parms\SLOWGP.TPF=No
+C:\Program Files\CAPWIN\parms\SLOWTEST.TPF=No
+C:\Program Files\CAPWIN\parms\standard\SSDRY.TPF=No
+C:\Program Files\CAPWIN\parms\standard\SSWET.TPF=No
+D:\WINNT\system32\pmidll32.dll=No
+C:\Program Files\CAPWIN\pmidll32.dll=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=multi
+Size=1.44 MB
+Title=PMI Perm-Porometer
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=CAPWIN
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|CAPWIN]
+Icon1=Capwin.exe
+Title1=CAPWIN
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=CAPREP.EXE
+Title2=CAPREP
+StartIn2=$(AppPath)
+Key2=Icon3
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=c:\vb6disks\Capwin
+ProjectFolder=C:\vb6code\Capcode
+ServerSideCab=
+File1=c:\vb6disks\Capwin\setup.exe
+File2=c:\vb6disks\Capwin\Setup.Lst
+File3=c:\vb6disks\Capwin\Capwin1.CAB
+File4=c:\vb6disks\Capwin\Capwin2.CAB
+File5=c:\vb6disks\Capwin\Capwin3.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz
+
+
+[Package|Upgrade Setup Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=e:\vb6disks\capwinupdate
+
+[Package|Upgrade Setup Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Upgrade Setup Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Upgrade Setup Package|Files Found]
+EXCEL8.OLB=D:\Program Files\Microsoft Office\Office\EXCEL8.OLB
+
+[Package|Upgrade Setup Package|Files Released]
+
+[Package|Upgrade Setup Package|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\Win95io.dll=
+D:\WINNT\system32\Win95io.dll=
+C:\Program Files\CAPWIN\CAPREP.EXE=
+C:\WINDOWS\SYSTEM32\Win95io.dll=
+
+[Package|Upgrade Setup Package|Out-of-Date Dependency Information]
+
+[Package|Upgrade Setup Package|Files Added]
+c:\program files\capwin\caprep.exe=
+c:\program files\capwin\caprep.new=
+c:\program files\capwin\capwin.new=
+
+[Package|Upgrade Setup Package|Files Removed]
+
+[Package|Upgrade Setup Package|Files In Project]
+C:\Program Files\CAPWIN\Caphelp.hlp=Yes
+C:\Program Files\CAPWIN\CAPREP.EXE=Yes
+C:\program files\capwin\CAPREP.NEW=Yes
+C:\program files\capwin\CAPWIN.NEW=Yes
+C:\Program Files\Capwin\Capwin.exe=Yes
+D:\WINNT\system32\MSVBVM60.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\WINNT\system32\MSCOMM32.OCX=Yes
+D:\WINNT\system32\TABCTL32.OCX=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINNT\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\WINNT\system32\MSCHRT20.OCX=Yes
+D:\WINNT\system32\COMCTL32.OCX=Yes
+D:\Program Files\Microsoft Office\Office\EXCEL8.OLB=Yes
+
+[Package|Upgrade Setup Package|Configure Registry Files]
+Applicable=No
+
+[Package|Upgrade Setup Package|Configure Remote Servers]
+Applicable=No
+
+[Package|Upgrade Setup Package|Install Locations]
+C:\Program Files\CAPWIN\Capwin.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\WIN95IO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMM32.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\Caphelp.hlp=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Program Files\CAPWIN\CAPREP.EXE=$(AppPath)
+C:\WINDOWS\SYSTEM\pmidll32.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\program files\capwin\CAPREP.NEW=$(AppPath)
+C:\program files\capwin\CAPWIN.NEW=$(AppPath)
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\Win95io.dll=$(WinSysPath)
+D:\WINNT\system32\MSCOMM32.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\WINNT\system32\pmidll32.dll=$(AppPath)
+D:\WINNT\system32\TABCTL32.OCX=$(WinSysPath)
+C:\Public\Capwin.exe=$(AppPath)
+C:\WINDOWS\SYSTEM32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\Win95io.dll=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\MSCOMM32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\MSCHRT20.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\pmidll32.dll=$(AppPath)
+D:\WINNT\system32\COMCTL32.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Office\Office\EXCEL8.OLB=$(WinSysPath)
+
+[Package|Upgrade Setup Package|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\CAPWIN\Capwin.exe=No
+C:\Program Files\CAPWIN\Caphelp.hlp=No
+C:\Program Files\CAPWIN\CAPREP.EXE=No
+C:\program files\capwin\CAPREP.NEW=No
+C:\program files\capwin\CAPWIN.NEW=No
+D:\WINNT\system32\pmidll32.dll=No
+C:\Public\Capwin.exe=No
+C:\Program Files\CAPWIN\pmidll32.dll=No
+
+[Package|Upgrade Setup Package|Distribution]
+Type=single
+Size=1.44 MB
+Title=CAPWIN
+
+[Package|Upgrade Setup Package|IconGroups]
+Group0=CAPWIN
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Upgrade Setup Package|CAPWIN]
+Icon1=Capwin.exe
+Title1=CAPWIN
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=CAPREP.EXE
+Title2=CAPREP
+StartIn2=$(AppPath)
+Key2=Icon3
+
+[Package|Upgrade Setup Package|Package]
+PackageFolder=e:\vb6disks\capwinupdate
+ProjectFolder=E:\vb6code\capcode
+ServerSideCab=
+File1=e:\vb6disks\capwinupdate\setup.exe
+File2=e:\vb6disks\capwinupdate\Setup.Lst
+File3=e:\vb6disks\capwinupdate\Capwin.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Capwin Dep File 2|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=z:\Development\Installers\capwin
+
+[Package|Capwin Dep File 2|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Capwin Dep File 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Capwin Dep File 2|Files Found]
+EXCEL8.OLB=D:\Program Files\Microsoft Office\Office\EXCEL8.OLB
+
+[Package|Capwin Dep File 2|Files Released]
+
+[Package|Capwin Dep File 2|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\Win95io.dll=
+D:\WINNT\system32\Win95io.dll=
+C:\Program Files\CAPWIN\CAPREP.EXE=
+C:\WINDOWS\SYSTEM32\Win95io.dll=
+
+[Package|Capwin Dep File 2|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\comdlg32.ocx=
+C:\WINDOWS\system32\MSWINSCK.OCX=
+C:\WINDOWS\system32\COMCTL32.OCX=
+C:\WINDOWS\system32\TABCTL32.OCX=
+
+[Package|Capwin Dep File 2|Files Added]
+c:\program files\capwin\caprep.exe=
+c:\program files\capwin\caprep.new=
+c:\program files\capwin\capwin.new=
+
+[Package|Capwin Dep File 2|Files Removed]
+
+[Package|Capwin Dep File 2|Files In Project]
+C:\Program Files\CAPWIN\Caphelp.hlp=Yes
+C:\Program Files\CAPWIN\CAPREP.EXE=Yes
+C:\program files\capwin\CAPREP.NEW=Yes
+C:\program files\capwin\CAPWIN.NEW=Yes
+Z:\Executable Respository\TestCapwin\Capwin 6.73.110.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\MSCOMM32.OCX=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\WINDOWS\system32\COMCTL32.OCX=Yes
+C:\WINDOWS\system32\MSWINSCK.OCX=Yes
+C:\WINDOWS\system32\comdlg32.ocx=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+
+[Package|Capwin Dep File 2|Configure Registry Files]
+Applicable=No
+
+[Package|Capwin Dep File 2|Configure Remote Servers]
+Applicable=No
+
+[Package|Capwin Dep File 2|Install Locations]
+C:\Program Files\CAPWIN\Capwin.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\WIN95IO.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMM32.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\Caphelp.hlp=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Program Files\CAPWIN\CAPREP.EXE=$(AppPath)
+C:\WINDOWS\SYSTEM\pmidll32.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\program files\capwin\CAPREP.NEW=$(AppPath)
+C:\program files\capwin\CAPWIN.NEW=$(AppPath)
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\Win95io.dll=$(WinSysPath)
+D:\WINNT\system32\MSCOMM32.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\WINNT\system32\pmidll32.dll=$(AppPath)
+D:\WINNT\system32\TABCTL32.OCX=$(WinSysPath)
+C:\Public\Capwin.exe=$(AppPath)
+C:\WINDOWS\SYSTEM32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\Win95io.dll=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\MSCOMM32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\MSCHRT20.OCX=$(WinSysPath)
+C:\Program Files\CAPWIN\pmidll32.dll=$(AppPath)
+D:\WINNT\system32\COMCTL32.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Office\Office\EXCEL8.OLB=$(WinSysPath)
+Z:\Executable Respository\TestCapwin\Capwin 6.73.110.exe=$(AppPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\COMCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINDOWS\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+
+[Package|Capwin Dep File 2|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\CAPWIN\Capwin.exe=No
+C:\Program Files\CAPWIN\Caphelp.hlp=No
+C:\Program Files\CAPWIN\CAPREP.EXE=No
+C:\program files\capwin\CAPREP.NEW=No
+C:\program files\capwin\CAPWIN.NEW=No
+D:\WINNT\system32\pmidll32.dll=No
+C:\Public\Capwin.exe=No
+C:\Program Files\CAPWIN\pmidll32.dll=No
+
+[Package|Capwin Dep File 2|Distribution]
+Type=single
+Size=1.44 MB
+Title=CAPWIN
+
+[Package|Capwin Dep File 2|IconGroups]
+Group0=CAPWIN
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Capwin Dep File 2|CAPWIN]
+Icon1=Capwin.exe
+Title1=CAPWIN
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=CAPREP.EXE
+Title2=CAPREP
+StartIn2=$(AppPath)
+Key2=Icon3
+
+[Package|Capwin Dep File 2|DepFile]
+DepCabFile=Capwin 6.73.110.CAB
+DepCabRun=Capwin 6.73.110.INF
+
+[Package|Capwin Dep File 2|Package]
+PackageFolder=z:\Development\Installers\capwin
+ProjectFolder=C:\Documents and Settings\pmiit\My Documents\VBProjects\Capwin
+ServerSideCab=
+File1=z:\Development\Installers\capwin\Capwin 6.73.110.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Capwin" basedir=".">
+    <target name="Deploy" description="Build a versioned executable and copy it to Z:\Disks, create svn tag.">        
+		<property file="Capwin.VBP"/>
+		
+		<exec executable="vb6" failonerror="true">
+            <arg value="/make"/>
+            <arg value="${Name}"/>
+			<arg value="${Name}"/>
+        </exec>
+		
+		<exec executable="svn" failonerror="true">
+            <arg value="commit"/>
+            <arg value="-m"/>
+            <arg value="Automatic commit by Deploy target for ${Name} version ${MajorVer}.${MinorVer}.${RevisionVer}"/>
+        </exec>
+
+		<!--
+        <exec executable="compil32" failonerror="true">
+            <arg value="/cc"/>
+            <arg value="install\${Name}-setup.iss"/>
+        </exec>
+		-->
+
+        <exec executable="svn" failonerror="true">
+            <arg value="copy"/>
+            <arg value="svn://server3/VB/${Name}/trunk"/>
+            <arg value="svn://server3/VB/${Name}/tags/${MajorVer}.${MinorVer}.${RevisionVer}"/>
+            <arg value="-m"/>
+            <arg value="Automatic tag creation by Deploy target for ${Name} version ${MajorVer}.${MinorVer}.${RevisionVer}"/>
+        </exec>
+		
+        <exec executable="xcopy" failonerror="true">
+            <arg value="${Name}.exe"/>
+            <arg value="Z:\Disks\${Name}\${MajorVer}.${MinorVer}.${RevisionVer}\"/>
+            <arg value="/Y"/>
+        </exec>
+		
+    </target>
+    
+</project>
